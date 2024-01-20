@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <title>10 paskaita</title>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- transform -->
+      <h1>Transformacija</h1>
+      <p>Transformacija nurodo kaip kinta elementas. Elementas gali kisti 3-5 budais.</p>
+      <ul>
+        <li>translate - judina elementa nurodytoje asyje.
+          <ul>
+            <li>translate(x, y)</li>
+            <li>translate3d(x, y, z)</li>
+            <li>translateX(x)</li>
+            <li>translateY(y)</li>
+            <li>translateZ(z)</li>
+          </ul>
+        </li>
+        <li>rotate - rotuoja
+          <ul>
+            <li>rotate(z)</li>
+            <li>rotate3d(x, y, z, a)</li>
+            <li>rotateX(x)</li>
+            <li>rotateY(y)</li>
+            <li>rotateZ(z)</li>
+          </ul>
+        </li>
+        <li>scale - keicia dydi / tempia/spaudzia
+          <ul>
+            <li>scale(x, y)</li>
+            <li>scale3d(x, y, z)</li>
+            <li>scaleX(x)</li>
+            <li>scaleY(y)</li>
+            <li>scaleZ(z)</li>
+          </ul>
+        </li>
+        <li>skew - tempo kampus
+          <ul>
+            <li>skew(x, y)</li>
+            <li>skewX(x)</li>
+            <li>skewY(y)</li>
+          </ul>
+        </li>
+        <li>matrix - universalus</li>
+        <li>matrix3d - universalus</li>
+        <li>perspective - perspektyvos keitimas</li>
+      </ul>
+      <p>Kartu su transform dar gali buti naudojamas ir <a href="https://developer.mozilla.org/en-us/docs/web/css/transform-origin">transform-origin</a>, kuris nusako transformacijos pradini taska. Default yra centras.</p>
+      <div id="transformPavyzdziai">
+        <div>Original</div>
+        <div>translate</div>
+        <div>rotate</div>
+        <div>rotate origin top right</div>
+        <div>scale</div>
+        <div>skew</div>
+        <div>translate ir rotate</div>
+      </div>
+    </section>
+    <section> <!-- transition -->
+      <h1>Tranzicija</h1>
+      <ul>
+        <li>transition-duration - per kiek laiko turi ivykti pasikeitimas</li>
+        <li>transition-timing-function - kaip pasikeitimo laikas yra paskirstytas (default - ease)</li>
+        <li>transition-property - nurodo, kuris stilius turi pasikeisti (default - all)</li>
+        <li>transition-delay - nurodo po kiek laiko prasides kitimas</li>
+        <li>transition - visu junginys (duration, delay, (kiti nesvarbu))</li>
+      </ul>
+      <div class="kitimas0"><span>Keiciasi dalykai</span></div>
+      <div class="kitimas1"></div>
+    </section>
+    <section> <!-- animation -->
+      <h1>Animacija</h1>
+      <h3>Animacijos nustatymai</h3>
+      <ul>
+        <li>animation-name - animacijai suteiktas vardas</li>
+        <li>animation-duration - animacijos trukme</li>
+        <li>animation-iteration-count - kiek kartu vyks animacija (default 1)</li>
+        <li>animation-play-state - animacijos busena (vykdoma ar nevykdoma)</li>
+        <li>animation-timing-function - kaip pasikeitimo laikas yra paskirstytas (default ease)</li>
+        <li>animation-direction - kryptis</li>
+        <li>animation-delay - animacijos uzdelsimas</li>
+        <li>animation-fill-mode - ka daryti pries/po animacijos</li>
+        <li>animation-composition - ka datyti su stiliais, kurie turi kelis nustatymus</li>
+        <li>animation - apjungimas (duration, delay, (kiti nesvarbu))</li>
+      </ul>
+      <h3>Animacijos aprasymas (veiksmai / zingsniai)</h3>
+      <p>Animacijos zingsniaiaprasomi naudojant keyframes.
+        Keyframes gali buti nurodomi specifiniais zodziais arba procentas. Nuo 0 iki 100. From -> To. Kiek procentu zingsniui yra skiriama - tiek apytiksliai laiko is duration'o ir bus suteikiama tam zingsniui atlikti.
+      </p>
+      <pre>
+        @keyframes animation-name{
+          0%{
+          } x% {
+          } y% {
+          } 100% {
+          }
+        }
+      </pre>
+      <input type="checkbox" name="" id="animControl">
+      <label for="animControl">
+        <span>Play</span>
+        <span>Stop</span>
+      </label>
+      <div class="anim1"></div>
+    </section>
+    <h1>Uzduotis</h1>
+    <article>
+      <div class="kvadratas"></div>
+      <div class="apskritimas"></div>
+      <div class="kvadratas"></div>
+      <div class="staciakampis"></div>
+    </article>
+    
+    <input type="checkbox" name="" id="ballControl">
+    <label for="ballControl">
+      <span>Dribble</span>
+      <span>Stop</span>
+    </label>
+    <div class="kamuolys"></div>
+  </main>
+  <footer></footer>
+</body>
+</html>

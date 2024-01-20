@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <title>12 paskaita</title>
+</head>
+<body>
+  <header></header>
+  <main>
+    <!-- 
+      Git it Github
+    -->
+    <section> <!-- Prieinamumas / Accessibility ir Lighthouse -->
+      <h1>Prieinamumas / Accessibility ir Lighthouse</h1>
+      <h3>Puslapio prieinamumo standartai</h3>
+      <ul>
+        <li>Suvokiamumas (UI/UX)</li>
+        <li>Veikiamumas</li>
+        <li>Suprantamumas</li>
+        <li>Tvirtumas</li>
+      </ul>
+      <h3>Puslapio pritaikymas visiems vartotojams</h3>
+      <p>Skirtingas negalias turintiems zmonems: klausa, skirtingos kalbos, prasto regejimo, aklieji, daltonikai.</p>
+      <p>Visi standartai israsyti <a href="https://www.w3.org/wai/" target="_blank">cia</a></p>
+      <p>Automatiniu skaitytuvu <a href="https://www.webaim.org/projects/screenreadersurvey8" target="_blank">apklausos rezultatai</a></p>
+      <p>Kas yra automatinis skaitytuvas <a href="https://youtu.be/dEbl5jvLKGQ" target="_blank">video</a></p>
+      <p>Alternatyvus tekstai paveiksliukams ir video <a href="https://axesslab.com/alt-texts/" target="_blank">info</a></p>
+      <p>ARIA (Accessible Rich Internet Application) atributai ir ju nauda <a href="https://www.w3.org/TR/wai-aria/#document_structurw_roles" target="_blank">info</a></p>
+      <p><a href="https://www.lambdatest.com/blog/responsive-css-media-queries-for-responsive-design/" target="_blank">Prisitaikymas</a> prie vartotojo irenginio</p>
+      <p>Meta tag'ai nusako svetaines meta informaacija. <a href="https://ahrefs.com/blog/seo-meta-tags/" target="_blank">info</a></p>
+    </section>
+    <section> <!-- Libraries ir Frameworks -->
+      <h1>Libraries ir Frameworks</h1>
+      <p>
+        CSS Frameworks/Libraries - Kazkieno kito parasytas CSS kodas, kuri tu gali naudoti savo projectuose. Norint naudotis framework'ureikia ji prijungti prie savo projekto naudojant CDN (content delivery network). Didzioji dauguma CSS framework'u veikia tokiu principu -  prijungus prie savo projekto gali naudoti ju viduje aprasytas klases - priskirineti HTML elementams framework'o klases, o pats gali net nerasyti jokio CSS. Yra <a href="https://www.github.com/dbohdan/classless-css" target="">classless</a> CSS framework'u. Juos naudojant, nereikia suteikti HTMl elementams klasiu. Viskas yra aprasyta naudojant tag'u/nth/attributu... selektorius.
+      </p>
+      <h3>CSS Framework'ai</h3>
+      <ul>
+        <li>Bootstrap</li>
+        <li>Tailwind</li>
+        <li>Bulma</li>
+        <li>UI Kit</li>
+        <li>Materialize</li>
+        <li>Material Design Lite</li>
+        <li>Miligram</li>
+        <li>Foundation</li>
+        <li>...</li>
+      </ul>
+      <h3>Pros</h3>
+      <ul>
+        <li>Pagreitina/palengvina darba</li>
+        <li>Nereikia/labai mazai rasyti CSS</li>
+        <li>Lengva naudotis</li>
+        <li>Idiegtas responsiveness</li>
+        <li>...</li>
+      </ul>
+      <h3>Cons</h3>
+      <ul>
+        <li>Daug perteklinio/nenaudojamo kodo</li>
+        <li>Reikia skirti laiko ismokti</li>
+        <li>Nesvarus HTML del klasiu pertekliaus</li>
+        <li>Neunikalus dizainas</li>
+        <li>Prastesnis google paieskos sistemos (SEO) ivertinimas</li>
+        <li>Pasimirsta CSS</li>
+      </ul>
+    </section>
+    <section> <!-- Preprocesors-->
+      <h1>Preprocesors ir Units (dydzio vienetai)</h1>
+      <p>CSS with superpowers</p>
+      <p>Suteikia galimybe rasyti CSS'a naujoviskesniu budu, kur galima lengvai kurti kintamuosius, nest'inti selektorius, rasyti: salygas, sunkcijas, mix'inus ir t.t.</p>
+      <p>Naudojant betkuri CSS preprocesoriu, reikia parasyta koda konvertuoti i paprasta CSS'a, kuri supras svetaine.</p>
+      <h3>Preprocesoriu sarasas</h3>
+      <ul>
+        <li>SASS/SCSS</li>
+        <li>LESS</li>
+        <li>Stylus</li>
+        <li>PostCSS</li>
+        <li>...</li>
+      </ul>
+    </section>
+    <section> <!-- Units (dydzio vienetai) -->
+      <h1>Units (dydzio vienetai)</h1>
+      <ul>
+        <li>px</li>
+        <li>% - tevinio elemento dydi</li>
+        <li><a href="https://www.youtu.be/ru3U8MHbFFI" target="_blank">vh</a> - viewport height - matomos svetaines dalies aukstis (100 - visas aukstis)</li>
+        <li>vw - viewport width - matomos svetaines dalies plotis (100 - visas aukstis)</li>
+        <li>rem - root em - 16px - sakninius nustatymus</li>
+        <li>em - 16px - teinio elemento nustatymus</li>
+      </ul>
+    </section>
+    <section> <!-- Git ir Github-->
+      <h1>Git ir Github</h1>
+      <p><b>Git</b> - programa, kuri versijuoja koda.</p>
+      <p><b>Github</b> - Svetaine, kurioje keliamas (versijuojamas) kodas.</p>
+      <h3>Git ir Github setup
+        <ol>
+          <li>Isirasyti <a href="https://www.git-scm.com" target="_blank">Git'a</a> i kompiuteri.</li>
+          <li>Pasitikrinti ar tikrai isirase Git'as. terminale panaudoti komanda "git -v"</li>
+          <li>Susikurti <a href="https://www.github.com">Github</a> paskyra.</li>
+          <li>Konfiguruoti git'a globaliai (visame irenginyje)
+            <ul>
+              <li>git config --global user.name GitHubUserName</li>
+              <li>git config --global user.email GitHubEmail</li>
+              <li>git config --global core.editor "code"</li>
+              <li>git config --global core.autcrlf input</li>
+            </ul>
+          </li>
+          <li>Patikrinti ar teisingai config'inta. terminale panaudoti komanda "git config --global --edit"</li>
+        </ol>
+      </h3>
+    </section>
+  </main>
+  <footer></footer>
+  
+</body>
+</html>

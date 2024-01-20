@@ -1,0 +1,62 @@
+section#task0 > div:nth-child(1) {
+  width: 800px;
+  height: 300px;
+
+  display: grid;
+  grid-template: 1fr 1fr / 2fr 1fr 1fr;
+  gap: 10px;
+
+  > div {
+    background-color: orange;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+  }
+
+  > div:nth-child(1) {
+    grid-row-end: span 2;
+  }
+
+  > div:nth-child(2) {
+    grid-column-end: span 2;
+  }
+}
+
+section#task0 > div:nth-child(2) {
+  width: 800px;
+  height: 300px;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+
+  div.nr {
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  > div {
+    width: 100%;
+  }
+
+  > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    > div {
+      height: 100%;
+    }
+
+    > div:nth-child(2) {
+      display: flex;
+      gap: 10px;
+
+      > div {
+        width: 100%;
+      }
+    }
+  }
+}

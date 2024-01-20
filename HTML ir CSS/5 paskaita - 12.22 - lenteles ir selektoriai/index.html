@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <title>5 paskaita</title>
+</head>
+<body>
+  <header></header>
+  <main>
+    <!-- Lenteles, Selektoriai, korteles -->
+    <section> <!-- Lenteles -->
+      <h1>Lenteles</h1>
+      <ul>
+        <li>table</li>
+        <li>thead</li>
+        <li>tbody</li>
+        <li>tfoot</li>
+        <li>tr - table row</li>
+        <li>th - table heading</li>
+        <li>td - table data</li>
+        <li>caption - lenteles pavadinimas</li>
+        <li>colgroup</li>
+        <li>col</li>
+      </ul>
+      <table>
+        <caption>Lenteles bandymas</caption>
+        <thead class="fonoSpalva">
+          <tr>
+            <th rowspan="2">Nr.</th>
+            <th rowspan="2">Vardas</th>
+            <th colspan="2">Matmenys</th>
+            <th rowspan="2">Akiu spalva</th>
+          </tr>
+          <tr>
+            <th>Ugis</th>
+            <th>Svoris</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Rokas</td>
+            <td>186</td>
+            <td>76</td>
+            <td>Melyna</td>
+          </tr>
+          <tr class="fonoSpalva">
+            <th>2</th>
+            <td>Petras</td>
+            <td>150</td>
+            <td>80</td>
+            <!-- <td rowspan="2">Ruda</td> -->
+            <td>Ruda</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Kazys</td>
+            <td>190</td>
+            <td>90</td>
+            <td>Ruda</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4" class="textRight">Ugio vidurkis:</td>
+            <td>175</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <section> <!-- Selektoriai -->
+      <h1>Selektoriai</h1> <!-- ne formu ir ne pseudo-elementai -->
+      <ol>
+        <li>:first-child</li>
+        <li>:last-child</li>
+        <li>:only-child</li>
+        <li>:first-of-type</li>
+        <li>:last-of-type</li>
+        <li>:only-of-type</li>
+        <li>:nth-child(n)</li> <!-- dazniausiai naudojamas -->
+        <li>:nth-last-child(n)</li>
+        <li>:nth-of-type(n)</li>
+        <li>:nth-last-of-type(n)</li>
+        <li>:link</li>
+        <li>:visited</li>
+        <li>:hover</li>
+        <li>:active</li>
+        <li>:empty</li>
+        <li>:fullscreen</li>
+        <li>:lang(language)</li>
+        <li>:not(selector)</li>
+        <li>:root</li>
+        <li>:target</li>
+        <p>hihi haha1</p>
+        <p>hihi haha2</p>
+        <p>hihi haha3</p>
+        <h1>h1</h1>
+        <h4>h4</h4>
+        <h4>h4</h4>
+      </ol>
+      <div>
+        <h2>Nuorodu selektoriai</h2>
+        <p>
+          :link - nelankyta nuoroda <br>
+          :visited - lankyta nuoroda <br>
+          :hover - reaguoja uzejus pelei <br>
+          :active - aktyvi nuoroda (paspaudimo momentas) <br>
+        </p>
+        <a href="https://www.google.lt" target="_blank">Google</a>
+        <a href="https://www.asdasdasdads.com" target="_blank">wtf?</a>
+      </div>
+    </section>
+    <section> <!-- korteles -->
+      <h1>Kelioniu korteles</h1>
+      <div class="kortele">
+        <h1>Tenerife</h1>
+        <img
+          src="https://s1.15min.lt/static/cache/OTcweDU4MCw4MzN4NjE3LDYxNjY1MyxvcmlnaW5hbCwsaWQ9NDMzOTM0NiZkYXRlPTIwMTglMkYxMSUyRjI3LDM3MTk0ODQ4MjM=/tenerife-5bfd228d5c3ab.jpg"
+          alt="tenerifes papludimys"
+        >
+        <p>
+          Tenerife is the largest and most populous island of the Canary Islands. It is home to 43% of the total population of the archipelago. With a land area of 2,034 square kilometres (785 sq mi) and a population of 978,100 inhabitants as of January 2022, it is also the most populous island of Spain and of Macaronesia.
+          Tenerife is the largest and most populous island of the Canary Islands. It is home to 43% of the total population of the archipelago. With a land area of 2,034 square kilometres (785 sq mi) and a population of 978,100 inhabitants as of January 2022, it is also the most populous island of Spain and of Macaronesia.
+          Tenerife is the largest and most populous island of the Canary Islands. It is home to 43% of the total population of the archipelago. With a land area of 2,034 square kilometres (785 sq mi) and a population of 978,100 inhabitants as of January 2022, it is also the most populous island of Spain and of Macaronesia.
+        </p>
+        <div>
+          <a
+            href="https://www.makalius.lt/tenerife-kelioniu-kryptis/" target="_blank"
+          >Daugiau informacijos</a>
+        </div>
+      </div>
+      <div class="kortele">
+        <h1>Tenerife</h1>
+        <img
+          src="https://s1.15min.lt/static/cache/OTcweDU4MCw4MzN4NjE3LDYxNjY1MyxvcmlnaW5hbCwsaWQ9NDMzOTM0NiZkYXRlPTIwMTglMkYxMSUyRjI3LDM3MTk0ODQ4MjM=/tenerife-5bfd228d5c3ab.jpg"
+          alt="tenerifes papludimys"
+        >
+        <p>
+          Tenerife is the largest and most populous island of the Canary Islands. It is home to 43% of the total population of the archipelago. With a land area of 2,034 square kilometres (785 sq mi) and a population of 978,100 inhabitants as of January 2022, it is also the most populous island of Spain and of Macaronesia.
+        </p>
+        <div>
+          <a
+            href="https://www.makalius.lt/tenerife-kelioniu-kryptis/" target="_blank"
+          >Daugiau informacijos</a>
+        </div>
+      </div>
+      <div class="kortele">
+        <h1>Tenerife</h1>
+        <img
+          src="https://s1.15min.lt/static/cache/OTcweDU4MCw4MzN4NjE3LDYxNjY1MyxvcmlnaW5hbCwsaWQ9NDMzOTM0NiZkYXRlPTIwMTglMkYxMSUyRjI3LDM3MTk0ODQ4MjM=/tenerife-5bfd228d5c3ab.jpg"
+          alt="tenerifes papludimys"
+        >
+        <p>
+          Tenerife is the largest and most populous island of the Canary Islands. It is home to 43% of the total population of the archipelago. With a land area of 2,034 square kilometres (785 sq mi) and a population of 978,100 inhabitants as of January 2022, it is also the most populous island of Spain and of Macaronesia.
+          Tenerife is the largest and most populous island of the Canary Islands. It is home to 43% of the total population of the archipelago. With a land area of 2,034 square kilometres (785 sq mi) and a population of 978,100 inhabitants as of January 2022, it is also the most populous island of Spain and of Macaronesia.
+        </p>
+        <div>
+          <a
+            href="https://www.makalius.lt/tenerife-kelioniu-kryptis/" target="_blank"
+          >Daugiau informacijos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>

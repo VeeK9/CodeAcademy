@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <title>6 paskaita - Formos</title>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Formos -->
+      <h1>FORMOS</h1>
+      <div class="vienasSaliaKito">
+        <div>
+          <h3>Formos tag'ai</h3>
+          <ul>
+            <li>form - forma</li>
+            <li>label - etikete ivesties laukui</li>
+            <li>input - ivairus ivesties laukas</li>
+            <li>textarea - teksto ivesties laukas (didelio kiekie)</li>
+            <li>select - pasirinkimo variantai (mazai)</li>
+            <li>datalist - pasirinkimo variantai (daug)</li>
+            <li>option - pasirinkimo variantas</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Formos atributai</h3>
+          <ul>
+            <li>for - etiketes atributas skirtas ja sujungti su ivestimi</li>
+            <li>id - label sujungimas su ivestimi (turi buti toks pats tekstas kaip ir for)</li>
+            <li>name - priskiria ivesciai varda (dazniausiai toks pat kaip id)</li>
+            <li>type - skirtas nurodyti input'o paskirti.
+              <ul>
+                <li>text - paprastas tekstas</li>
+                <li>password - slaptazodis (slepiamas tekstas)</li>
+                <li>email - elektroninis pastas</li>
+                <li>number - skaicius</li>
+                <li>submit - formos pateikimo ivestis</li>
+                <li>url - nuoroda</li>
+                <li>file - failas is irenginio</li>
+                <li>checkbox - multi variantu pasirinikimas (privalo tureti vienodas name atributu reiksmes ir skirtingas value atributu reiksmes)</li>
+                <li>radio - vieno is keletos variantu pasirinkimas (privalo tureti vienodas name atributu reiksmes ir skirtingas value atributu reiksmes</li>
+                <li>date - datos pasirinkimas (metu, menesio, dienos)</li>
+                <li>datetime-local - datos ir laiko pasirinkimas (metu, menesio, dienos, valandu ir minuciu)</li>
+                <li>month - menesio pasirinkimas</li>
+                <li>week - savaites pasirinkimas</li>
+                <li>time - laiko pasirinkimas</li>
+                <li>color - spalvos pasirinkimas</li>
+                <li>button - mygtukas be funkcionalumo</li>
+                <li>submit - formos pateikimo input'as mygtuko pavidalu</li>
+                <li>image - formos pateikimo input'as paveiksliuko pavidalu</li>
+                <li>hidden - paslepia ivesti, bet reiksme yra pateikiama</li>
+                <li>range - slenkancios juostos skaiciaus pasirinkimas</li>
+                <li>reset - mygtukas isvalantis formos ivestis</li>
+                <li>search - paieskos laukas</li>
+                <li>tel - telefono ivesties laukas</li>
+              </ul>
+            </li>
+            <li>Required - privalomas ivesties laukas (be jo neleis pateikti formos)</li>
+            <li>min - minimali reiksme (skaiciaus)</li>
+            <li>max - maximali reiksme (skaiciaus)</li>
+            <li>step - zingsnis (skaiciaus)</li>
+            <li>type - failo tipas ar tipai, kuriuos leidziama pateikti</li>
+            <li>pattern - kokia seka kazkas turi buti parasyta (regex :))</li>
+            <li>placeholder - tekstas atvaizduojamas input'o arba textarea viduje</li>
+            <li>checked - is ankasto pazymetas radio arba checkbox</li>
+            <li>cols - textarea dydzio nustatymai</li>
+            <li>rows - textarea dydzio nustatymai</li>
+            <li>value - ivesties reiksme</li>
+            <li>selected - is anksto parinktas option'as</li>
+            <li>disabled - neleidziamas pasirinkti option'as</li>
+          </ul>
+        </div>
+      </div>
+      <h2>Formos pavyzdys</h2>
+      <form id="bandymas">
+        <div>
+          <label for="vardas">Vardas:</label>
+          <input type="text" id="vardas" name="vardas">
+        </div>
+        <div>
+          <label for="">Pavarde:</label>
+          <input type="text" id="pavarde" name="pavarde">
+        </div>
+        <div>
+          <label for="tekstas">Tekstas:</label>
+          <input type="text" name="tekstas" placeholder="Cia rasyti varda..."><br>
+          <label for=""">Slaptazodis:</label>
+          <input type="password" name="slaptazodis"><br>
+          <label for="email">Email:</label>
+          <input type="email" name="elPastas" required><br>
+          <label for="numeris">Number:</label>
+          <input type="number" name="numeris" step="1"><br>
+          <label for="nuoroda">Nuoroda:</label>
+          <input type="url" name="nuoroda"><br>
+          <label for="file">Failas:</label>
+          <input type="file" name="failas"><br>
+          <label for="">Checkbox</label>
+          <label>Value1<input type="checkbox" name="checkboxName" value="value1" checked></label>
+          <span>Value2</span><input type="checkbox" name="checkboxName" value="value2">
+          <label>Value3</label><input type="checkbox" name="checkboxName" value="value3"><br>
+          <label for="">Radio</label>
+          <label>Value10<input type="radio" name="radioName" id="radioName" value="value1"></label>
+          <span>Value20</span><input type="radio" name="radioName" value="value2" checked>
+          <label>Value30</label><input type="radio" name="radioName" value="value3"><br>
+          <label for="">Data:</label>
+          <input type="date" name="pilnaData"><br>
+          <label for="">Datetime local</label>
+          <input type="datetime-local" name="pilnaDataIrLaikas"><br>
+          <label for="">Month</label>
+          <input type="month" name="menuo"><br>
+          <label for="">week</label>
+          <input type="week" name="savaite"><br>
+          <label for="">Time</label>
+          <input type="time" name="laikas"><br>
+          <label for="">Color:</label>
+          <input type="color" value="#245374" name="spalva"><br>
+          <label for="">Range</label>
+          <input type="range" name="judantiJuosta"><br>
+          <label for="">Telephone</label>
+          <input type="tel" name="telefonas"><br>
+        </div>
+        <div>
+          <label for="">aprasymas</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+          <label for="">Pasirinkimai Select:</label>
+          <select name="" id="">
+            <option value="">Reiksme 1.</option>
+            <option value="">Reiksme 2.</option>
+            <option value="">Reiksme 3.</option>
+            <option value="">Reiksme 4.</option>
+          </select>
+          <label for="">Pasirinkimai Datalist:</label>
+          <input list="mokinames">
+          <datalist id="mokinames">
+            <option value="Reiksme 1">Paaiskinimas</option>
+            <option value="Reiksme 2"></option>
+            <option value="Reiksme 3"></option>
+            <option value="Reiksme 4"></option>
+            <option value="Reiksme 5"></option>
+            <option value="Reiksme 6"></option>
+            <option value="Reiksme 7"></option>
+            <option value="Reiksme 8"></option>
+            <option value="Reiksme 9"></option>
+            <option value="Reiksme 10"></option>
+            <option value="Reiksme 11"></option>
+            <option value="Reiksme 12"></option>
+            <option value="Reiksme 13"></option>
+            <option value="Reiksme 14"></option>
+            <option value="Reiksme 15"></option>
+            <option value="Reiksme 16"></option>
+          </datalist>
+
+        </div>
+        <input type="submit" value="Pateikti Forma">
+      </form>
+    </section>
+    <section> <!-- Selektoriai -->
+      <h1>Selectors</h1>
+      <ul>
+        <li>Atributai
+          <ul>
+            <li>[atributas] - atributas</li>
+            <li>[atributas="reiksme"] - atributas su specifine reiksme</li>
+            <li>[atributas~="reiksme"] - atributas su zodziu reiksmeje</li>
+            <li>[atributas*="reiksme"] - ... zodzio dalimi reiksmeje</li>
+            <li>[atributas|="reiksme"] - ... lygus "reiksme" arba prasidedantis "reiksme-"</li>
+            <li>[atributas^="reiksme"] - ... prasideda "reiksme"</li>
+            <li>[atributas$="reiksme"] - ... pasibaigia "reiksme"</li>
+          </ul>
+        </li>
+        <li>Pseudo klases formoms
+          <ul>
+            <li>input:checked - ar input'as pazymetas</li>
+            <li>input:default - pradinis pazymetas input'as</li>
+            <li>input:disabled - formos elementas turintis disabled atributa</li>
+            <li>input:enambled - formos elementas neturintis disabled atributo</li>
+            <li>input:focus - siuo metu aktyvus input'as</li>
+            <li>input:in-range - ivestis ribose</li>
+            <li>input:out-of-range - ivestis uz ribu</li>
+            <li>input:indeterminate - nenustatyta reiksme (nesvarbus)</li>
+            <li>input:valid - teisinga ivestis</li>
+            <li>input:invalid - neteisinga ivestis</li>
+            <li>input:optional - neturi required atributo</li>
+            <li>input:required - turi required atributa</li>
+            <li>input::placeholder - galimybe redaguoti placeholder teksta</li>
+            <li>input:read-only - turintis readonly atributa</li>
+            <li>input:read-write - neturintis readonly atributo</li>
+          </ul>
+        </li>
+        <li>Pseudo elementai
+          <ul>
+            <li>::before - sukuria turini pries elementa</li>
+            <li>::after - sukuria turini uz elemento</li>
+            <li>::first-letter - pirmoji elemento raide</li>
+            <li>::first-line - pirmoji elemento teksto eilute</li>
+            <li>::marker - rikiuotu ar nerikiuotu saraso elementu zymes</li>
+            <li>::selection - pazymeto turinio stilius</li>
+            <li>::-webkit...</li>
+            <li>::-webkit-scrollbar...</li>
+          </ul>
+        </li>
+      </ul>
+      <div>
+        <h2>Pavyzdziai</h2>
+        <div>
+          <p class="sm-col-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus labore quae accusantium at reprehenderit error! Consequuntur ipsam cumque at pariatur ipsum doloremque adipisci architecto temporibus!</p>
+          <p class="sm-col-3">Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="md-col-3">Lorem ipsum dolor sit.</p>
+        </div>
+        <form>
+          <input type="checkbox">
+          <input type="checkbox">
+          <input type="number" min="5" max="25" step="5">
+          <input type="text" placeholder="Ivesk ta ar ana">
+          <select name="" id="">
+            <option value="">Pirmas</option>
+            <option value="" selected>Antras</option>
+            <option value="">Trecias</option>
+          </select>
+        </form>  
+
+      </div>
+    </section>
+    <section> <!-- custom rado/checkbox -->
+      <form id="customInputs">
+        <div>
+          <label for="">Marskineliu dydis</label>
+          <input type="radio" id="tshirt_s" name="tshirt" value="small"><label for="tshirt_s">Small</label>
+          <input type="radio" id="tshirt_m" name="tshirt" value="medium"><label for="tshirt_m">Medium</label>
+          <input type="radio" id="tshirt_l" name="tshirt" value="large"><label for="tshirt_l">Large</label>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>

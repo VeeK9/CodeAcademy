@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 Paskaita</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#semantika">Semantika</a>
+      <a href="#selectors">Selektoriai</a>
+      <a href="#mBox">Modelio dėžutė</a>
+      <a href="#bg">Fonai</a>
+    </nav>
+  </header>
+  <body>
+    <section id="semantika"> <!-- Semantika -->
+      <h1>Semantika</h1>
+      <p>Puslapiio semantika yra reikalinga norint tureti tvarkinga puslpaio struktura, kas pagelbes tiek susigaudant puslapio isdestyme, tiek esant reikalui stilizuoti atittinkamus elementus. Semantiskai tvarkingas puslapis turi aukstesni Google paieskos algoritmo bala, kuris padeda vartotojams surasti jusu puslapi.</p>
+      <ul>
+        <li>header - puslapio pagrindinis meniu (virsuje)</li>
+        <li>nav - navigacija</li>
+        <li>main - puslapio info atvaizdavimo dalis</li>
+        <li>section - puslapio skiltis</li>
+        <li>article - puslapio skiltis</li>
+        <li>aside - sonine juosta</li>
+        <li>footer - puslapio apacia</li>
+        <li>figure - paveiksliuko apipavidalinimas</li>
+        <li>figcaption - paveiksliuko (figure) pavadinimas</li>
+      </ul>
+    </section>
+    <section id="selectors"> <!-- Selektoriai -->
+      <h1>Selektoriai</h1>
+      <ul>
+        <li>*</li>
+        <li>tagName</li>
+        <li>.className</li>
+        <li>#idName</li>
+        <li>Selector1, Selector2 - keletos selektoriu parinkimas</li>
+        <li>tagName.className - tag su klase</li>
+        <li>tagName#idname - tag su id</li>
+        <li>.className#idName - klase su id</li>
+        <li>.className1.className2 - keletas klasiu</li>
+        <li>Selector1 Selector2 - selector1 viduje betkur esantis selector2</li>
+        <li>Selector1 > Selector2 - selector1 viduje esantis vaikinis selector2</li>
+        <li>Selector1 + Selector2 - uz selector1 is karto einantis selector2</li>
+        <li>Selector1 ~ Selector2 - uz selector1 visi einantys selector2</li>
+      </ul>
+      <div> <!-- Selektoriu pvz -->
+        <h6>Labas rytas 6</h6>
+        <h5 class="redText">Lab dein 5</h5>
+        <h4 class="redText" id="extra">Extra tag 4</h4>
+        <h5>More headings 5</h5>
+        <h4 class="redText">Even more headings 4</h4>
+        <div class="fancy">
+          <h5>Not fancy h5</h5>
+          <h4>Fancy text h4</h4>
+          <div>
+            <h4>Deep h4</h4>
+            <h3>Deep h3</h3>
+            <h5>Deep h5</h5>
+            <div>
+              <h4>Very deep h4</h4>
+              <h5>Very deep h5-1</h5>
+              <h5>Very deep h5-2</h5>
+              <h5>Very deep h5-3</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="mBox"> <!-- Model Box -->
+      <h1>Model Box</h1>
+      <ol>
+        <li>Content - turinys</li>
+        <li>Padding - pamusalas</li>
+        <li>Border - remeliai</li>
+        <li>Margin - parastes</li>
+        <li>Position - pozicija</li>
+      </ol>
+      <div class="boxModel">Pavyzdys</div>
+      <div> <!-- Padding -->
+        <h1>Padding</h1>
+        <p>Padding yra tarpas tarp elemento turinio ir jo remeliu.</p>
+        <p>Padding gali buti nustatomas 8 budais:</p>
+        <ul>
+          <li>padding-top: px</li>
+          <li>padding-right: px</li>
+          <li>padding-bottom: px</li>
+          <li>padding-left: px</li>
+          <li>padding: top right bottom left</li>
+          <li>padding: top right&left bottom</li>
+          <li>padding: top&bottom right&left</li>
+          <li>padding: all</li>
+        </ul>
+      </div>
+      <div> <!-- Border -->
+        <h1>Border</h1>
+        <p>Border yra remelis, kurio krastines galima aprasyti arba visas kartu viename stiliuje arba atskiruose ir net atskiroms krastinems priskirti atskirus stilius</p>
+        <p>Border-radius yra remelio kampu apvalinimas, kuris turi begale variantu... Galima apvalinti visus kampus vienodai, visus kampus atskirai ir kiekvienas kampas gali apvalintis pagal x ir y koordinates skirtingais dydziais.</p>
+        <ul>
+          <li>border</li>
+          <li>border-width</li>
+          <li>border-style</li>
+          <li>border-color</li>
+          <li>border-[krastine]-color</li>
+          <li>border-radius: px arba %</li>
+          <li>border-radius: px px px px</li>
+          <li>border-radius: px px px px / px px px px</li>
+          <li>border-top-right-radius: px arba % arba px/px</li>
+        </ul>
+      </div>
+      <div> <!-- Margin -->
+        <h1>Margin</h1>
+        <p>Margin yra atstumas nuo elemento remelio iki aplinkiniu elementu. <br>
+        Margin'ai gali persidengti jeigu vienas po kitu einantys elementai yra blokiniai.</p>
+        <p>Blokiniams elementui suteikus plocio nustatyma ir margin:0 auto; - elementas yra sucentruojamas</p>
+        <p>Margin gali buti nustatomas 8 budais:</p>
+        <ul>
+          <li>Margin-top: px</li>
+          <li>Margin-right: px</li>
+          <li>Margin-bottom: px</li>
+          <li>Margin-left: px</li>
+          <li>Margin: top right bottom left</li>
+          <li>Margin: top right&left bottom</li>
+          <li>Margin: top&bottom right&left</li>
+          <li>Margin: all</li>
+        </ul>
+      </div>
+    </section>
+    <section id="bg"> <!-- Background -->
+      <h1>Background</h1>
+      <div class="vienspalvis">Vienspalvis</div>
+      <div class="image1">
+        <div class="bgTransparent"></div>
+        <div class="z5">
+          <h1>Image as bg</h1>
+          <ul>
+            <li>background-image</li>
+            <li>background-size</li>
+            <li>background-position</li>
+            <li>background-repeat</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bgAttached"></div>
+      <div class="gradient">Gradient</div>
+    </section>
+  </body>
+  <footer></footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <title>7 paskaita</title>
+</head>
+
+<body>
+  <header>
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200719215048/202007192.png" alt="">
+    <nav>
+      <ul>
+        <li><a href="#teorija">Teorija</a></li>
+        <li><a href="#pavyzdys">Pvz</a></li>
+        <li><a href="">Niekur</a></li>
+        <li><a href="">Niekur 2</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="teorija"> <!-- flex -->
+      <h1>
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flex</a>
+      </h1>
+      <div class="lists">
+        <div>
+          <h3>Container</h3>
+          <ul>
+            <li>display: flex; - suteikiamas flex atvaizdavimas</li>
+            <li>flex-direction: row (default) | row-reverse | column | column-reverse;</li>
+            <li>flex-wrap: nowrap (default) | wrap | wrap-reverse;</li>
+            <li>flex-flow: flex-direction flex-wrap</li>
+            <li>justify-content: flex-start (default) | flex-end | center | space-between | space-around | space-evenly;
+            </li>
+            <li>align-items: flex-start | flex-end | center | stretch (default) | baseline</li>
+            <li>align-content: flex-start | flex-end | center | stretch | space-between | space-around | space-evenly;
+            </li>
+            <li>row-gap: px;</li>
+            <li>column-gap: px;</li>
+            <li>gap: row-gap column-gap;</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Item</h3>
+          <ul>
+            <li>order: number; - nurodo elemento eiliskuma isdestyme</li>
+            <li>flex-grow: number;</li>
+            <li>flex-shrink: number;</li>
+            <li>flex-basis: width;</li>
+            <li>flex: flex-grow flex-shrink flex-basis;</li>
+            <li>align-self: flex-start | flex-end | center | stretch (default) | baseline</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="pavyzdys"> <!-- flex pavyzdys -->
+      <h1>Flex veikimo pavyzdys</h1>
+      <div class="flexPvzContainer">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
+</html>

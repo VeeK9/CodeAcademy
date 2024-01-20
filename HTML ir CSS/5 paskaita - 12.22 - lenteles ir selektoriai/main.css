@@ -1,0 +1,124 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+body{
+  height: 300vh;
+  box-sizing: border-box;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+td, th{
+  border: 1px solid black;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+td:hover, th:hover{
+  background-color: black;
+  color: white;
+}
+
+.fonoSpalva{
+  background-color: aquamarine;
+}
+
+.textRight{
+  text-align: right;
+}
+
+/* Selektoriai */
+/* link */
+
+a:link{
+  color: blue;
+  border: 5px solid blue;
+}
+
+a:visited {
+  color: #ff7300;
+}
+
+a:hover{
+  color: green;
+  border-color: green;
+}
+
+a:active{
+  color: red;
+  border-color: red;
+}
+
+/* nth and child and type */
+
+ol > :nth-of-type(2), tbody > tr:nth-child(2n+1){
+  background-color: orange;
+}
+
+/* tbody > tr:nth-child(2n+1) > *{
+  border-bottom-width: 5px;
+} */
+
+tbody > tr:nth-child(1) > td:not(:first-child){
+  border-top-width: 5px;
+}
+
+tbody > tr > :first-child{
+  border-right-width: 5px;
+}
+
+/* korteles */
+
+.kortele{
+  position: relative;
+  width: 300px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0 10px 30px;
+  display: inline-block;
+  overflow: hidden;
+
+  > h1{
+    text-align: center;
+  }
+  > img{
+    width: 100%;
+    height: auto;
+  }
+  p{
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+  }
+  div {
+    position: absolute;
+    text-align: center;
+    bottom: 15px;
+    width: calc(100% - 20px);
+    > a{
+      border: none;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 10px 3px;
+      background-color: rgb(255, 166, 0);
+      color: white;
+    }
+    >a:link{
+      color: blue;
+    }
+    >a:visited{
+      color: blueviolet;
+    }
+    > a:hover{
+      color: red;
+      background-color: green;
+      font-size: 20px;
+    }
+  }
+}
+

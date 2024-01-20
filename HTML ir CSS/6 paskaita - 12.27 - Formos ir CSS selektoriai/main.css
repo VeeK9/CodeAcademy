@@ -1,0 +1,82 @@
+body{
+  height: 400vh;
+}
+
+.vienasSaliaKito > div{
+  display: inline-block;
+  width: 45%;
+}
+
+[class$='3']{
+  color: red;
+}
+
+input[type="checkbox"]{
+  width: 100px;
+  height: 50px;
+}
+
+:checked{
+  background-color: red;
+  border: 5px solid green;
+}
+
+:default{
+  background-color: black;
+  border: 2px solid black;
+}
+
+/* :focus{
+  background-color: aqua;
+  font-size: 30px; */
+/* } */
+
+:out-of-range{
+  color: red;
+}
+
+input[type='text']{
+  border: 1px solid black;
+}
+
+::placeholder{
+  color: orange;
+  background-color: beige;
+  text-transform: capitalize;
+}
+
+li::before{
+  content:' :) ';
+  color: tomato;
+}
+
+li::after{
+  content: ' :(';
+  color: red;
+}
+
+p:first-letter{
+  font-size: 50px;
+}
+
+p:first-line{
+  color: orange;
+}
+
+li li::marker{
+  color: green;
+  font-size: 24px;
+}
+
+::selection{
+  background-color: black;
+  color: yellow;
+}
+
+#customInputs[type='radio']{
+  display: none;
+}
+
+#customInputs input[type='radio']:checked + label{
+  background-color: green;
+}

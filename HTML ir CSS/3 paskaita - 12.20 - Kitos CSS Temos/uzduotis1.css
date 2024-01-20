@@ -1,0 +1,108 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+}
+
+header{
+  height: 150px;
+  width: 100%;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+section{
+  scroll-margin-top: 197px;
+  padding: 30px;
+}
+
+section#home {
+  padding-bottom: 0;
+}
+
+h1{
+  color: white;
+  font-size: 40px;
+  margin: auto 30px;
+}
+
+.logo{
+  display: inline-block;
+  background-color: white;
+  width: 100%;
+  height: 110px;
+  margin: 10px auto;
+}
+
+div.logo > img{
+  display: block;
+  margin: 15px auto;
+  height: 80%;
+  width: auto;
+}
+
+.menu{
+  display: block;
+  background-color: green;
+  width: 100%;
+  height: 60px;
+  padding: 0 ;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.buttons{
+  display: block;
+  width: 460px;
+  margin: 0 auto;
+}
+
+button{
+  display: inline-block;
+  border: 0px;
+  height: 60px;
+  width: 150px;
+  background-color: green;
+  padding: 10px;
+  font-size: 30px;
+  color: white;
+  margin: 0 auto;
+}
+
+button:hover{
+  background-color: greenyellow;
+  color: black;
+}
+
+/* main */
+
+div.info > img {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.antraste{
+  display: block;
+  padding: 0 auto;
+  height: 100px;
+  width: 100%;
+  line-height: 100px;
+  background-color: green;
+}
+
+#home, #about {
+  background-color: rgb(199, 199, 199);
+}
+
+#contact{
+  background-color: rgb(158, 239, 212);
+  height: 100vh;
+}
+
+div.info p {
+  font-size: 30px;
+}

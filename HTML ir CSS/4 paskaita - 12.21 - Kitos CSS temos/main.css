@@ -1,0 +1,54 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  height: 400vh;
+  font-family: 'Overpass', sans-serif;
+}
+
+#inheritance{
+  display: inline-block;
+  color: red;
+  background-color: rgb(192, 192, 192);
+  border: 10px solid black;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 50px;
+  width: 800px;
+  height: 500px;
+}
+
+span{
+  font-size: 80px;
+  color: green;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Priritetai */
+
+#priorities{
+  color: orange;
+}
+
+div h1#prio{
+  border: 2px solid rgb(234, 104, 104);
+} 
+
+h1.border.hihi{
+  border: 1px solid black;
+} 
+
+h1{
+  border: 5px dashed orange !important;
+}

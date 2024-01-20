@@ -1,0 +1,51 @@
+.grid {
+  display: grid;
+  margin: 50px auto;
+  width: 600px;
+  grid-template: repeat(12, 1fr) / repeat(4, 1fr);
+  
+  > * {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header {
+    background-color: black;
+    color: white;
+  }
+  
+  .menu {
+    background-color: tomato;
+    color: white;
+    grid-area: 1 / 2 / 2 / -1;
+  }
+  
+  .hero {
+    background-color: lightskyblue;
+    color: white;
+    grid-area: 2 / 1 / 7 / -1;
+  }
+  
+  .main {
+    background-color: darkblue;
+    color: white;
+    grid-area: 7 / 1 / 11 / 3;
+  }
+  
+  .image {
+    background-color: rgb(161, 248, 248);
+    grid-area: 7 / 4 / 9 / -1;
+  }
+  
+  .extra {
+    background-color: rgb(86, 199, 162);
+    grid-area: 9 / 4 / 11 / -1;
+  }
+  
+  .banner {
+    background-color: rgb(251, 199, 103);
+    grid-area: 11 / 1 / 13 / -1;
+  }
+}

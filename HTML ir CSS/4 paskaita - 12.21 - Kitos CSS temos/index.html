@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> -->
+  <link rel="stylesheet" href="./main.css">
+  <title>4 paskaita</title>
+</head>
+<body>
+  <header></header>
+  <!-- Google Fonts; Icons (CSS libraries); Multimedia -->
+  <main>
+    <section id="inheritance"> <!-- Paveldimumas -->
+      <h1>Vaikinis <span>ir</span> Tevinis elementas</h1>
+      <p>Elementas gali tureti daug vaikiniu elementu.</p>
+      <p>Elementas turi tik viena tevini elementa.</p>
+      <h1>Paveldimumas</h1>
+      <p>Elementai paveldi stilius is tevinio elemento.</p>
+      <p>Elementai perduoda stilius savo vaikiniams elementams.</p>
+    </section>
+    <section> <!-- User Agent Stylesheets -->
+      <h1>Narsykles numatytieji stiliai</h1>
+      <p>Kiekvienas (beveik) tag'as turi savo numatytuosiuos narsykles stilius, kurie pakeicia jo vaizda. <br>
+      Skirtingos narsykles gali tureti skirtingus numatytuosius stilius tiems patiems tag'ams. <br>
+      Tam, kad tag'u stiliai butu vienodi arba butu panaikinami nenaudingi narsyklius stiliai, yra naudojami Reset arba Normalize CSS'ai</p>
+      <p><b><a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">Reset CSS</a></b> - suvienodina visu tag'u stilius per visas narsykles. (Destytojas nesiulo naudoti)</p>
+      <p><b><a href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" target="_blank">Normalize CSS</a></b> - suvienodina vienodu tag'u stilius tarp skirtingu narsykliu ir panaikina nenaudingus narsykliu stilius. (Destytojas siulo naudoti)</p>
+    </section>
+    <section id="priorities"> <!-- CSS Priorities -->
+      <h1>CSS Prioritetai</h1>
+      <ol>
+        <li>!important</li>
+        <li>Inline style</li>
+        <li>Specifikacija
+          <ol>
+            <li>id - 100</li>
+            <li>class - 010</li>
+            <li>tag - 001</li>
+          </ol>
+        </li>
+        <li>Eiliskumas</li>
+        <li>User Agent Stylesheets</li>
+        <li>Inheritance</li>
+      </ol>
+      <div class="prioPvz">
+        <h1 class="border hihi" id="prio" style="border: 2px solid purple;">Prioritetu pavyzdys</h1>
+        <a href="#">Nuoroda</a>
+      </div>
+      <p>Esant dviems selektoriams, kurie selektina ta pati elementa, turi vienoda prioriteta ir keicia ar nustato ta pati stiliu yra atsizvelgiama i tu selektoriu eiliskuma. Veliau aprasyto tokio selektoriaus stiliai turi prioriteta.</p>
+      <p><span class="doNot">Jeigu imanoma - nenaudoti!!!</span> !important prieraso. !important ignoruoja visas specifikacijas, visus eiliskumus, visus prioritetus ir suteikia nurodyta stiliu (stilausVardas: stiliausNustatymas !important;). Vienintelis budas perrasyti !important yra naudojant kita !important</p>
+    </section>
+    <section> <!-- Google Fonts -->
+      <h1>fonts</h1>
+      <p>Norint puslapyje naudoti kitokius teksto sriftus negu yra pateikiami (~10) reikia juos atsisiusti/suimportuoti is sriftu bibliotekos <br>
+      Viena populiariausiu vietu ta padaryti yra <a href="https://fonts.google.com" target="_blank">Google Fonts</a> puslapis</p>
+    </section>
+    <section> <!-- Icons (CSS Libraries)-->
+      <h1>Ikonos</h1>
+      <p>
+        Norint puslapyje naudoti ikonas, reikia jas suimportuoti is kokios nors bibliotekos. <br>
+        Kadangi ikonos neturi savo tag'o, yra naudojami i arba span tag'ai jom atvaizduoti. <br>
+        Ikonos stilizuojamas kaip tekstinis elementas. Ne plotis aukstis, bet teksto dydis. Ne fono spalva, bet spalva ir t.t.
+      </p>
+      <ul>
+        <li>Google</li>
+        <li>FontAwesome</li>
+        <li>Bootstrap</li>
+        <li>MUI</li>
+        <li>AntDesign</li>
+        <li>...</li>
+      </ul>
+      <div>
+        <h3>Google Icons</h3>
+        <p></p>
+        <i class="material-icons">airplay</i>
+        <span class="material-icons">&#xe055;</span>
+      </div>
+      <div>
+        <h3>FontAwesome 4</h3>
+        <span class="fa fa-adjust"></span>
+        <i class="fa">&#xf042;</i>
+      </div>
+      <div>
+        <h3>Bootstrap</h3>
+        <i class="bi bi-currency-bitcoin"></i>
+        <span class="bi bi-linkedin"></span>
+      </div>
+    </section>
+    <section> <!--iframe -->
+      <h1>iframe tag'as</h1>
+      <p>
+        Iframe tag'as yra naudojamas norint savo puslapyje iterpti kito puslapio turini. <br>
+        Dazniausiai yra iterpiama youtube video arba google maps.
+      </p>
+      <h3>Youtube</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/M6vVTZglSzM?si=1OsAjKyJlM0aevRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <h3>Google Maps</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18432.296989819566!2d25.216675891168386!3d54.726561825403124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd91a0895702d1%3A0xb167e422b9e7d0d9!2sMaxima!5e0!3m2!1sen!2slt!4v1703161898377!5m2!1sen!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+  <footer></footer>
+  <script>
+    console.dir(document.querySelector('#inheritance'));
+  </script>
+</body>
+</html>

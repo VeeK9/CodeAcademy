@@ -1,0 +1,97 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+body{
+  padding: 50px;
+}
+
+section{
+  height: 100vh;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+thead {
+  border-bottom: 4px solid rgb(119, 239, 199);
+}
+
+.bg{
+  background-color: rgb(140, 248, 212);
+}
+
+th{
+  padding: 20px;
+  font-size: 24px;
+}
+
+tr:nth-child(2n){
+  background-color: rgb(229, 250, 250);
+}
+
+td{
+  /* border: 1px solid black; */
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  > img{
+    width: 160px;
+  }
+}
+
+.pirmas td:hover, .pirmas th:hover{
+  background-color: rgb(98, 217, 178);
+  color: white;
+  .bi-check-circle{
+    color: white;
+  }
+  .bi-globe2{
+    color: white;
+  }
+  .bi-x-circle{
+    color: white;
+  }
+}
+
+.antras tr:hover, .antras thead:hover{
+  background-color: rgb(98, 217, 178);
+  color: white;
+  .bi-check-circle{
+    color: white;
+  }
+  .bi-globe2{
+    color: white;
+  }
+  .bi-x-circle{
+    color: white;
+  }
+  th{
+    color: white;
+  }
+}
+
+th:first-child, th:last-child, td:first-child, td:last-child{
+  color: violet;
+}
+
+.bi-x-circle{
+  color: red;
+  font-size: 24px;
+}
+
+.bi-check-circle{
+  color: green;
+  font-size: 24px;
+}
+
+.bi-globe2{
+  color: violet;
+  font-size: 24px;
+}
+
+.trecias td:hover{
+  background-color: rgb(98, 217, 178);
+  color: brown;
+}

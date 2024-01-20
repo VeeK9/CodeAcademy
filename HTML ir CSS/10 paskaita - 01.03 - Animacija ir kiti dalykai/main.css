@@ -1,0 +1,262 @@
+body {
+  height: 280vh;
+}
+
+#transformPavyzdziai > div {
+  width: 200px;
+  height: 100px;
+  border: 2px solid black;
+  background-color: blueviolet;
+  font-size: 24px;
+  color: white;
+  margin-top: 50px;
+  display: grid;
+  place-items: center;
+}
+
+#transformPavyzdziai {
+  > :nth-child(2) {
+    /* transform: translateX(80px); */
+    /* transform: translateY(-110px); */
+    transform: translate(50px, -20px);
+  }
+  > :nth-child(3) {
+    transform: rotate(30deg);
+    /* transform: rotateZ(1rad); */
+    /* transform: rotateX(10deg); */
+    /* transform: rotateY(30deg); */
+    /* transform: rotate3d(1, 2, 3, 80deg); */
+  }
+  > :nth-child(4) {
+    transform: rotate(200deg);
+    transform-origin: top right;
+  }
+  > :nth-child(5) {
+    /* transform: scaleX(0.5); */
+    /* transform: scaleY(0.5); */
+    transform: scale(1.5);
+  }
+  > :nth-child(6) {
+    /* transform: skewX(50deg); */
+    /* transform: skewY(50deg); */
+    transform: skew(50deg, 20deg);
+  }
+  > :nth-child(7) {
+  transform: translateX(200px) rotate(45deg);
+  transform-origin: right 60px;
+  }
+}
+
+/* transition */
+
+.kitimas0 {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  background-color: #51aa54;
+  transform-origin: left top;
+  transition: 0.3s;
+  > span {
+    transition: 0.3s;
+    display: inline-block;
+    height: 100%;
+  }
+
+  &:hover {
+    background-color: darkred;
+    transform: scale(1.5);
+    color: azure;
+    align-items: center;
+
+    > span {
+      transform: translate(calc(50% - 6px), calc(50% - 12px));
+    }
+  }
+}
+
+.kitimas1 {
+  margin-top: 50px;
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  background-color: #51aa54;
+  transform-origin: left top;
+  transition: 2s linear 0s width,
+              2s linear 1s background-color,
+              1s ease-out 2s transform;
+
+  &:hover {
+    width: 500px;
+    background-color: tomato;
+    transform: translateX(100px);
+  }
+}
+
+/* animacija */
+
+.anim1 {
+  width: 200px;
+  height: 200px;
+  border: 3px dashed black;
+  background-color: #51aa54;
+
+  /* animation-name: betkas;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-delay: 5s;
+  animation-fill-mode: both; */
+  animation: betkas 2s infinite linear alternate both;
+  animation-play-state: paused;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+input#animControl {
+  display: none;
+}
+
+input#animControl + label {
+  padding: 10px 20px;
+  background-color: green;
+
+  > :nth-child(2) {
+    display: none;
+  }
+}
+
+input#animControl:checked + label {
+  background-color: red;
+  >:nth-child(1) {
+    display: none;
+  }
+  >:nth-child(2) {
+    display: unset;
+  }
+}
+
+input#animControl:checked ~ div.anim1 {
+  animation-play-state: running;
+}
+
+/* uzduotis */
+
+article {
+  display: flex;
+  margin: 0 auto;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 30px;
+  transform-origin: bottom;
+  animation: cssDiner 0.9s infinite linear;
+  animation-play-state: running;
+}
+
+.kvadratas {
+  width: 150px;
+  height: 150px;
+  background-color: tomato;
+}
+
+.apskritimas {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: bisque;
+}
+
+.staciakampis {
+  width: 80px;
+  height: 180px;
+  background-color: darkorange;
+}
+
+.kamuolys {
+  width: 150px;
+  height: 150px;
+  background-color: orange;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-top: 100px;
+  margin-left: 100px;
+  animation: kamuolys 0.7s infinite linear alternate both;
+  animation-play-state: paused;
+}
+
+input#ballControl {
+  display: none;
+
+  + label > :nth-child(2) {
+      display: none;
+  }
+}
+
+input#ballControl:checked + label {
+  >:nth-child(1) {
+    display: none;
+  }
+  >:nth-child(2) {
+    display: unset;
+  }
+}
+
+input#ballControl:checked ~ div.kamuolys {
+  animation-play-state: running;
+}
+
+
+/* keyframes */
+
+@keyframes betkas{
+  0% {
+    transform: translate(100px, 0px);
+    background-color: #411f9e;
+  } 50% {
+    transform: translate(200px, 50px) rotate(360deg);
+    background-color: #6d537a;
+    border-radius: 0;
+  } 100% {
+    border-radius: 50%;
+    background-color: #a659cd;
+    transform: translate(200px, 50px) rotate(0deg);
+  }
+}
+
+@keyframes cssDiner{
+  0% {
+    transform: scaleY(1) skewX(0deg);
+  } 40% {
+    transform: scaleY(1.1) skewX(5deg);   
+  } 50% {
+    transform: scaleY(1) skewX(0deg);
+  } 90% {
+    transform: scaleY(1.1) skewX(-5deg);
+  } 100% {
+    transform: scaleY(1) skewX(0deg);
+  }
+}
+
+@keyframes kamuolys{
+  0% {
+    transform: translateY(0px) scale(98%, 100%) skew(0, 0,);
+  } 20% {
+    transform: translateY(100px) scale(90%, 100%) skew(0, 0);
+  } 30% {
+    transform: translateY(220px) scale(120%, 70%) skew(-1deg, 1deg);
+  } 40% {
+    transform: translateY(230px) scale(145%, 45%) skew(3deg, -2deg);
+  } 55% {
+    transform: translateY(230px) scale(160%, 20%) skew(3deg, -2deg);
+  } 65% {
+    transform: translateY(210px) scale(120%, 60%) skew(1deg, -1deg);
+  } 78% {
+    transform: translateY(120px) scale(84%, 90%) skew(2deg, -2deg);
+  } 90% {
+    transform: translateY(60px) scale(90%, 100%) skew(1deg, -deg);
+  } 100% {
+    transform: translateY(0px) scale(98%, 101%) skew(0, 0);
+  }
+}

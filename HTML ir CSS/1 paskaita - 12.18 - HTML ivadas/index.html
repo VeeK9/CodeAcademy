@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <!--
+    head tag'o viduje yra rasoma puslapio meta informacija
+    head'o viduje yra prijungiami papildomi failai, kaip kad CSS arba JS
+  -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 paskaita</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3094/3094371.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <!--
+    body tag'o viduje rasomas turinys, kuris matomas vartotojui
+  -->
+  <body>
+    <!-- header yra meniu -->
+    <header></header>
+    <!-- main'e rasomas pagrindinis puslapio turinys -->
+    <main>
+      <h1 style="color:red">pavadinimas1</h1>
+      <h2 class="blueText">pavadinimas2</h2>
+      <h3 id="orangeText">pavadinimas3</h3>
+      <h4>pavadinimas4</h4>
+      <h5>pavadinimas5</h5>
+      <h6>pavadinimas6</h6>
+      <p>pavadinimas1</p>
+      <p>pavadinimas2</p>
+      <p>šešios žąsys su šešiais žąsyčiais</p>
+      <img src="https://cdn-icons-png.flaticon.com/512/3094/3094371.png" width="100px" height="auto" alt="jei neuzkrauna, del accesibility" title="ikonos pavadinimas">
+
+      <button id="specButton">Click Me!</button>
+      <p id="empty"></p>
+
+      <h1>Tag'ų (ne visų) sąrašas</h1>
+      <ul>
+        <li>html</li>
+        <li>head</li>
+        <li>meta</li>
+        <li>title - tabo pavadinimas</li>
+        <li>link - CSS prijungimas</li>
+        <li>script - JS prijungimas</li>
+        <li>body - svetaines turinys</li>
+        <li>header - menu</li>
+        <li>main - puslapio turinys</li>
+        <li>footer - copyrights ir t.t.</li>
+        <li>h1-h6 - antraste - heading</li>
+        <li>p - paragrafas</li>
+        <li>img - paveiksliukas - image</li>
+        <li>button - mygtukas</li>
+        <li>ul - nerikiuotas sarasas - unordered</li>
+        <li>ol - rikiuotas sarasas - ordered</li>
+        <li>dl - aprasomasis sarasas - description list</li>
+        <li>dt - terminas/pavadinimas - description term</li>
+        <li>dd - paaiskinimas - description details</li>
+        <li>li - saraso elementas - list item</li> 
+        <li>br - perkelia eilute - break line</li>
+        <li>b - bold</li>
+        <li>strong - bold</li>
+        <li>a - anchor-link - nuoroda</li>
+        <li>em - <em>emphasize</em></li>
+        <li>i - <i>italic</i></li>
+        <li>div - tuscias blokinis tag'as</li>
+        <li>span - tuscias linijinis tag'as</li>
+        <li>blockquote - citatos blokas</li>
+        <li>cite - citata</li>
+        <li>form - forma</li>
+        <li>label - formos ivesties pavadinimas</li>
+        <li>input - ivestis (labai ivairi)</li>
+        <li>textarea - teksto (daug) ivestis</li>
+        <li>datalist - pasirinkimo variantai</li>
+        <li>select - pasirinkimo variantai</li>
+        <li>option - pasirinkimo variantas</li>
+        <li>fieldset - laukas su remeliu</li>
+        <li>legend - lauko pavadinimas</li>
+        <li>table - lentele</li>
+        <li>thead - lenteles stulpeliu pavadinimai</li>
+        <li>tbody - lenteles duomenys</li>
+        <li>tfoot - lenteles vidurkiai/sumos</li>
+        <li>tr - lenteles eilutes - table row</li>
+        <li>th - lenteles stulpeliu pavadinimai - table heading</li>
+        <li>td - lenteles duomuo</li>
+        <li>nav - skirtas laikyti meniu - navigation</li>
+        <li>audio</li>
+        <li>video</li>
+        <li>source - skirtas nurodyti keliems galimiems video/audio/img saltiniams</li>
+        <li>aside - sonine juosta</li>
+        <li>article - straipsnis</li>
+        <li>section - sekcija</li>
+        <li>canvas</li>
+        <li>figure - </li>
+        <li>figcapture - </li>
+        <li>hr - eilutes perkelimas su linija</li>
+        <li>iframe - puslapio dalies iterpimas</li>
+      </ul>
+      <hr>
+
+      <h1>Atributų (ne visų) sąrašas</h1>
+      <ul>
+        <li>rel - relation - link tag'o prijungto failo santykis</li>
+        <li>href - hyperlink reference - puslapio/failo nuoroda</li>
+        <li>src - source - failo  nuoroda</li>
+        <li>defer - nurpdymas, kad faila vykdytu po viso HTML perskaitymo</li>
+        <li>style - inline stilizavimui skirtas atributas</li>
+        <li>class - klases suteikimas</li>
+        <li>id - id suteikimas</li>
+        <li>width - plocio nustatymas</li>
+        <li>height - aukscio nustatymas</li>
+        <li>alt - alternative text, uzkraunas error atveju, arba skirtas teksto skaitytuvams</li>
+        <li>title - atvaizduojamas tekstas/pavadinimas, palaikus pele ant elemento</li>
+        <li>type - formos input'o tipo nurodymas</li>
+        <li>for - label sujungimas su input/textarea/select/fieldset</li>
+        <li>name - input/textarea/select/fieldset ivesties lauko pavadinimas</li>
+        <li>rowspan - nurodo per kelis eilutes td arba th turi uzimti</li>
+        <li>colspan - nurodo per kelis stulpelius td arba th turi uzimti</li>
+        <li>target - skirtas a tag'ui nurodo kaip atidaryti ta nuoroda</li>
+      </ul>
+      <hr>
+
+      <h1>Klaviatūros trumpinių sąrašas</h1>
+      <ul>
+        <li>cmnd c - copy</li>
+        <li>cmnd v - paste</li>
+        <li>cmnd q - quit the program</li>
+        <li>cmnd s - save</li>
+        <li>cmnd shift s - save as</li>
+        <li>cmnd x - cut</li>
+        <li>cmnd z - back</li>
+        <li>cmnd shift z - forward</li>
+        <li>cmnd space - spotlight</li>
+        <li>cmnd tab - kita programa</li>
+        <li>cmnd t - naujas tab'as</li>
+        <li>cmnd a - select all</li>
+        <li>cmnd p - print</li>
+        <li>cmnd f - paieska</li>
+        <li>opt z - word wrap</li>
+        <li>cmnd enter - nauja eilute is bet kur</li>
+        <li>cmnd w - uzdaro dabartini tab'a</li>
+        <li>cmnd shift t - atidaro katik uzdaryta tab'a</li>
+        <li>shift opt arrowUp/Down - sukuria tokia pat eilute</li>
+        <li>cmnd shift v - paste, bet be formatavimo</li>
+        <li>shift cmnd 4 - screenshotas</li>
+        <li>shift cmnd 3 - snapshotas</li>
+        <li>opt arrowUp/Down - stumdo pazymetas eilutes</li>
+        <li>cmnd d - multi select pasikartojima</li>
+        <li>cmnd / - komentavimas</li>
+        <li>cmnd KC - komentavimas</li>
+      </ul>
+      <br>
+      <hr>
+      <h1>Čia yra antraštė</h1>
+      <p>Toliau seka paragrafas, <b>įsiminkite</b>, paragrafas.</p>
+      <p>Žemiau galima pridėti nuotrauką ir kokį nors sąrašą</p>
+      <img src="./3094371.png" width="150px" height="150px" title="ikona">
+      <ol>
+        <li>Vienas</li>
+        <li>Du</li>
+        <li>Trys</li>
+      </ol>
+      <p>Jeigu kažką pamiršite, visada naudokite <a href="http://www.google.com" target="_blank">Google</a></p>
+      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=25.28359651565552%2C54.6843201324533%2C25.29636383056641%2C54.68902107911691&amp;layer=mapnik" width="400px" height="300px"></iframe>
+      <hr>
+    </main>
+    <!-- footer'yje rasoma: copyrights, terms and uses, partners, social links, subscribe ir t.t. -->
+    <footer></footer>
+  </body>
+  <!-- komentaras gali buti ir cia -->
+  </html>

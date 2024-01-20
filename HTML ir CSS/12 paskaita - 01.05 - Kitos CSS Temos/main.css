@@ -1,0 +1,38 @@
+
+:root {
+  --raudona-spalva: red;  
+  --raudona-spalva-tamsi: rgb(205, 0, 0);  
+  --raudona-spalva-sviesi: rgb(250, 73, 73);  
+}
+
+p {
+  color: var(--raudona-spalva);
+}
+
+h1 {
+  color: var(--raudona-spalva-tamsi);
+}
+
+h3 {
+  color: var(--raudona-spalva-tamsi);
+}
+
+ul {
+  color: var(--raudona-spalva-sviesi);
+}
+
+/* :root {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+section {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 2em;
+} */

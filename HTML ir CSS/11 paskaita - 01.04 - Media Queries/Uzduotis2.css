@@ -1,0 +1,162 @@
+
+header {
+  text-align: center;
+
+  > h1:nth-child(1) {
+    display: unset;
+  }
+  
+  > h1:nth-child(2) {
+    display: none;
+  }
+  
+  > h1:nth-child(3) {
+    display: none;
+  }
+}
+
+section {
+  display: grid;
+  height: 80vh;
+  grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr;
+
+  > div {
+    padding: 10px;
+  }
+
+  > .header {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  > .menu {
+    color: white;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  > .hero {
+    color: white;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  > .main {
+    color: white;
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  > .banner {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  > .extra {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  > .image {
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 576px) {
+  header {
+
+    > h1:nth-child(1) {
+      display: none;
+    }
+    
+    > h1:nth-child(2) {
+      display: unset;
+    }
+  }
+
+  section {
+    grid-template: 1fr 4fr 4fr 2fr 2fr / 1fr 2fr 1fr;
+
+    > .header {
+      grid-column: span 3;
+    }
+
+    > .menu {
+      grid-area: 3 / 1 / -1 / 2;
+    }
+
+    > .hero {
+      grid-column: span 3;
+    }
+
+    > .main {
+      grid-column: span 2;
+    }
+
+    > .banner {
+      grid-column: span 2;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+
+    > h1:nth-child(2) {
+      display: none;
+    }
+    
+    > h1:nth-child(3) {
+      display: unset;
+    }
+  }
+
+  section {
+    grid-template: 1fr 6fr repeat(3, 2fr) / repeat(4, 1fr);
+
+    > .header {
+      grid-column: unset;
+    }
+
+    > .menu {
+      grid-area: 1 / 2 / 2 / -1;
+    }
+
+    > .hero {
+      grid-column: span 4;
+    }
+
+    > .main {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    > .banner {
+      grid-area: 5 / 1 / -1 / -1;
+    }
+
+    > .extra {
+      grid-column-start: 4;
+    }
+
+    > .image {
+      grid-column-start: 4;
+    }
+  }
+}
