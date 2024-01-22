@@ -4,11 +4,25 @@ html {
 
 main {
   box-sizing: border-box;
+  > section {
+    display: grid;
+    grid-template: 50px repeat(7, 1fr) / repeat(3, 1fr);
+    place-items: center;
+    
+    > h1 {
+      grid-column-start: span 3;
+      text-align: center;
+    }
+    }
 }
 
+
+/* FLEXAI */
+
+
 .flexPirmas {
-  width: 800px;
-  height: 800px;
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -17,9 +31,9 @@ main {
   align-content: space-evenly;
 
   div {
+    background-color: tomato;
     width: 33%;
     height: 33%;
-    background-color: tomato;
   }
   div:nth-child(2) {
     width: 66%;
@@ -33,8 +47,8 @@ main {
 }
 
 .flexAntras {
-  width: 800px;
-  height: 800px;
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -59,9 +73,264 @@ main {
   }
 }
 
+.flexTrecias {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+
+  div:first-child {
+    height: 66%;
+    width: 100%;
+    display: flex;
+    gap: 1px;
+
+    >div:first-child {
+      width: 66%;
+      height: 100%;
+      background-color: tomato;
+    }
+
+    > div:nth-child(2) {
+      width: 33%;
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+
+      > div {
+        height: 50%;
+        background-color: tomato;
+      }
+    }
+  }
+
+  > div:nth-child(2) {
+    height: 33%;
+    display: flex;
+    gap: 1px;
+
+    > div {
+      width: 33%;
+      height: 100%;
+      background-color: tomato;
+    }
+  }
+}
+
+.flexVienuolika {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 5px;
+  border: 2px solid black;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+
+  div {
+    width: 19%;
+    height: 19%;
+    background-color: tomato;
+  }
+
+  div:first-child {
+    width: 100%;
+    height: 80%;
+  }
+}
+
+.flexDvylika {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  border: 2px solid black;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+
+  div {
+    width: 19%;
+    background-color: tomato;
+  }
+}
+
+.flexTrylika {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  border: 2px solid black;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+
+  div {
+    height: 19%;
+    background-color: tomato;
+  }
+}
+
+.flexPenkiolika {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3px;
+  border: 2px solid black;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+
+  div {
+    width: 24.5%;
+    height: 24%;
+    background-color: tomato;
+  }
+
+  div:nth-child(1) {
+    width: 33%;
+  }
+
+  div:nth-child(2) {
+    width: 33%;
+  }
+
+  div:nth-child(3) {
+    width: 33%;
+  }
+
+  div:nth-child(8) {
+    width: 33%;
+  }
+
+  div:nth-child(9) {
+    width: 33%;
+  }
+
+  div:nth-child(10) {
+    width: 33%;
+  }
+}
+
+.flexAstuoniolika {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+
+  div {
+    height: 33%;
+    width: 33%;
+    background-color: tomato;
+  }
+
+  div:nth-child(4) {
+    height: 49.5%;
+  }
+
+  div:nth-child(5) {
+    height: 49.5%;
+  }
+}
+
+.flexDvidesimt {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3px;
+  border: 2px solid black;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+
+  div {
+    width: 24.5%;
+    height: 33%;
+    background-color: tomato;
+  }
+}
+
+
+/* GRIDAI */
+
+
+.gridPirmas {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  display: grid;
+  gap: 5px;
+  padding: 5px;
+  border: 2px solid black;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+
+  div {
+    width: 100%;
+    background-color: tomato;
+  }
+
+  div:nth-child(2) {
+    grid-column-start: span 2;
+  }
+
+  div:nth-child(3) {
+    grid-column-start: span 2;
+  }
+
+  div:nth-child(6) {
+    grid-column-start: span 2;
+  }
+}
+
+.gridAntras {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  display: grid;
+  gap: 5px;
+  padding: 5px;
+  border: 2px solid black;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+
+  div {
+    width: 100%;
+    background-color: tomato;
+  }
+
+  div:nth-child(2) {
+    grid-row-start: span 2;
+  }
+
+  div:nth-child(4) {
+    grid-row-start: span 2;
+  }
+
+  div:nth-child(5) {
+    grid-row-start: span 2;
+  }
+}
+
 .gridTrecias {
-  width: 800px;
-  height: 800px;
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
   display: grid;
   gap: 5px;
@@ -80,8 +349,8 @@ main {
 }
 
 .gridKetvirtas {
-  width: 800px;
-  height: 800px;
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
   display: grid;
   gap: 5px;
@@ -116,8 +385,8 @@ main {
 }
 
 .gridPenktas {
-  width: 800px;
-  height: 800px;
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
   display: grid;
   gap: 5px;
@@ -151,8 +420,8 @@ main {
 }
 
 .gridSestas {
-  width: 800px;
-  height: 800px;
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
   display: grid;
   gap: 5px;
@@ -183,8 +452,8 @@ main {
 }
 
 .gridSeptintas {
-  width: 800px;
-  height: 800px;
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
   display: grid;
   gap: 5px;
@@ -209,8 +478,8 @@ main {
 }
 
 .gridAstuntas {
-  width: 800px;
-  height: 800px;
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
   display: grid;
   gap: 5px;
@@ -234,8 +503,8 @@ main {
 }
 
 .gridDevintas {
-  width: 800px;
-  height: 800px;
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
   display: grid;
   gap: 5px;
@@ -270,8 +539,8 @@ main {
 }
 
 .gridDesimtas {
-  width: 800px;
-  height: 800px;
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
   display: grid;
   gap: 5px;
@@ -312,68 +581,61 @@ main {
   }
 }
 
-.flexVienuolika {
-  width: 800px;
-  height: 800px;
+.gridVienuolika {
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 5px;
   padding: 5px;
   border: 2px solid black;
-  justify-content: space-evenly;
-  align-content: space-evenly;
+  grid-template: 4fr 1fr / repeat(5, 1fr);
 
   div {
-    width: 19%;
-    height: 19%;
-    background-color: tomato;
-  }
-
-  div:first-child {
     width: 100%;
-    height: 80%;
+    background-color: tomato;
+  }
+
+  div:nth-child(1) {
+    grid-column-start: span 5;
   }
 }
 
-.flexDvylika {
-  width: 800px;
-  height: 800px;
+.gridDvylika {
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
-  display: flex;
+  display: grid;
   gap: 5px;
   padding: 5px;
   border: 2px solid black;
-  justify-content: space-evenly;
-  align-content: space-evenly;
+  grid-template-columns: repeat(5, 1fr);
 
   div {
-    width: 19%;
+    width: 100%;
     background-color: tomato;
   }
 }
 
-.flexTrylika {
-  width: 800px;
-  height: 800px;
+.gridTrylika {
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 5px;
   padding: 5px;
   border: 2px solid black;
-  justify-content: space-evenly;
-  align-content: space-evenly;
+  grid-template-rows: repeat(5, 1fr);
 
   div {
-    height: 19%;
+    width: 100%;
     background-color: tomato;
   }
 }
 
 .gridKeturiolika {
-  width: 800px;
-  height: 800px;
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
   display: grid;
   gap: 5px;
@@ -405,52 +667,49 @@ main {
   }
 }
 
-.flexPenkiolika {
-  width: 800px;
-  height: 800px;
+.gridPenkiolika {
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3px;
-  padding: 3px;
+  display: grid;
+  gap: 5px;
+  padding: 5px;
   border: 2px solid black;
-  justify-content: space-evenly;
-  align-content: space-evenly;
+  grid-template: repeat(4, 1fr) / 3fr 1fr 2fr 2fr 1fr 3fr;
 
   div {
-    width: 24.5%;
-    height: 24%;
+    width: 100%;
     background-color: tomato;
   }
 
-  div:nth-child(1) {
-    width: 33%;
+  :nth-child(1), :nth-child(2), :nth-child(3) {
+    grid-column-start: span 2;
   }
 
-  div:nth-child(2) {
-    width: 33%;
+  :nth-child(5) {
+    grid-column-start: span 2;
   }
 
-  div:nth-child(3) {
-    width: 33%;
+  :nth-child(6) {
+    grid-column-start: span 2;
   }
 
-  div:nth-child(8) {
-    width: 33%;
+  :nth-child(8), :nth-child(9), :nth-child(10) {
+    grid-column-start: span 2;
   }
 
-  div:nth-child(9) {
-    width: 33%;
+  :nth-child(12) {
+    grid-column-start: span 2;
   }
 
-  div:nth-child(10) {
-    width: 33%;
+  :nth-child(13) {
+    grid-column-start: span 2;
   }
 }
 
 .gridSesiolika {
-  width: 800px;
-  height: 800px;
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
   display: grid;
   gap: 5px;
@@ -481,8 +740,8 @@ main {
 }
 
 .gridSeptyniolika {
-  width: 800px;
-  height: 800px;
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
   display: grid;
   gap: 5px;
@@ -508,35 +767,29 @@ main {
   }
 }
 
-.flexAstuoniolika {
-  width: 800px;
-  height: 800px;
+.gridAstuoniolika {
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 5px;
+  padding: 5px;
   border: 2px solid black;
-  justify-content: space-evenly;
-  align-content: space-evenly;
+  grid-template: 2fr 1fr 1fr 2fr / repeat(3, 1fr);
 
   div {
-    height: 33%;
-    width: 33%;
+    width: 100%;
     background-color: tomato;
   }
 
-  div:nth-child(4) {
-    height: 49.5%;
-  }
-
-  div:nth-child(5) {
-    height: 49.5%;
+  div:nth-child(2), div:nth-child(4), div:nth-child(5), div:nth-child(6) {
+    grid-row-start: span 2;
   }
 }
 
 .gridDevyniolika {
-  width: 800px;
-  height: 800px;
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
   display: grid;
   gap: 5px;
@@ -567,21 +820,18 @@ main {
   }
 }
 
-.flexDvidesimt {
-  width: 800px;
-  height: 800px;
+.gridDvidesimt {
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3px;
-  padding: 3px;
+  display: grid;
+  gap: 5px;
+  padding: 5px;
   border: 2px solid black;
-  justify-content: space-evenly;
-  align-content: space-evenly;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
 
   div {
-    width: 24.5%;
-    height: 33%;
+    width: 100%;
     background-color: tomato;
   }
 }

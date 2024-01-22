@@ -5,8 +5,8 @@ console.log(stringArray2);
 
 let numbersArray = [256, 512, 1024, 8, 4, 16, 2, 128, 64, 32];
 let numbersArray2 = [2,2,4,6,8,10,4,12,2,14,10];
-let numbersArray3 = [1,4,5,6,4,8,4,5];
-let numbersArray4 = [4,6,8];
+let numbersArray3 = [13,4,5,6,4,8,4,5];
+let numbersArray4 = [4,6,8,13];
 console.log(numbersArray);
 console.log(numbersArray2);
 
@@ -121,6 +121,22 @@ function nevienodi(masyvas){
 nevienodi(numbersArray2);
 
 console.log("---------- 9 ----------");
+
+const vienodi = (arr, ...arrays) => {
+  for(element of arr){
+    let nevienodas = true;
+    for (array of arrays) {
+      if (!array.includes(element)){
+        nevienodas = false;
+        break;
+      }
+    }
+    if (nevienodas) {
+      console.log(element);
+    }
+  }
+}
+vienodi(numbersArray2, numbersArray3, numbersArray4)
 
 // function vienodi (...arrays){
 //   let vienodasArray = [];
