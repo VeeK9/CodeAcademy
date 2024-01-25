@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>25 paskaita - JS formu ivadas</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <main>
+    <section> <!-- HTML formu prisiminimas -->
+      <h1>Formu tag'ai ir atributai</h1>
+      <div class="twoColumns">
+        <div> <!-- tags -->
+          <h3>tags</h3>
+          <ul>
+            <li>form</li>
+            <li>input</li>
+            <li>textarea</li>
+            <li>select</li>
+            <li>datalist</li>
+            <li>option</li>
+            <li>label</li>
+          </ul>
+        </div>
+        <div> <!-- attributes -->
+          <h3>Attributes</h3>
+          <ul class="longList">
+            <li>type
+              <ul>
+                <li>email</li>
+                <li>password</li>
+                <li>radio</li>
+                <li>checkbox</li>
+                <li>date</li>
+                <li>text</li>
+                <li>number</li>
+                <li>range</li>
+                <li>url</li>
+                <li>submit</li>
+              </ul>
+            </li>
+            <li>for</li>
+            <li>id</li>
+            <li>name</li>
+            <li>value</li>
+            <li>checked</li>
+            <li>selected</li>
+            <li>placeholder</li>
+            <li>disabled</li>
+            <li>required</li>
+            <li>min</li>
+            <li>max</li>
+            <li>step</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section> <!-- test forma -->
+      <h1>Test Form</h1>
+      <form id="testForma">
+        <div>
+          <label for="vardas">Vardas:</label>
+          <input type="text" id="vardas" name="vardas">
+        </div>
+        <div>
+          <label for="nuotrauka">Nuotrauka:</label>
+          <input type="url" id="nuotrauka" name="nuotrauka">
+        </div>
+        <div>
+          <label for="amzius">Amzius:</label>
+          <input type="number" id="amzius" name="amzius">
+        </div>
+        <div>
+          <label for="dob">Gimimo data:</label>
+          <input type="date" id="dob" name="dob">
+        </div>
+        <div>
+          <label for="">Kelniu Dydis:</label>
+          <label for="small">S</label>
+          <input type="radio" id="small" value="small" name="kelniuDydis">
+          <label for="medium">M</label>
+          <input type="radio" id="medium" value="medium" name="kelniuDydis">
+          <label for="large">L</label>
+          <input type="radio" id="large" value="large" name="kelniuDydis">
+        </div>
+        <div>
+          <label>Megstami muzikos stiliai:</label>
+          <label for="pop">Pop</label>
+          <input type="checkbox" id="pop" value="pop" name="muzikosStiliai">
+          <label for="Rock">Rock</label>
+          <input type="checkbox" id="Rock" value="Rock" name="muzikosStiliai">
+          <label for="Classic">Classic</label>
+          <input type="checkbox" id="Classic" value="Classic" name="muzikosStiliai">
+          <label for="Country">Country</label>
+          <input type="checkbox" id="Country" value="Country" name="muzikosStiliai">
+          <label for="Metal">Metal</label>
+          <input type="checkbox" id="Metal" value="Metal" name="muzikosStiliai">
+        </div>
+        <div>
+          <label for="salis">Salis aplankyti:</label>
+          <select name="salis" id="salis" multiple>
+            <option value="vokietija">Vokietija</option>
+            <option value="prancuzija">Prancuzija</option>
+            <option value="anglija">Anglija</option>
+            <option value="turkija">Turkija</option>
+          </select>
+        </div>
+
+        <input type="submit" value="Pateikti Forma">
+      </form>
+    </section>
+    <section>
+      <h1>Veiksmai</h1>
+      <div>
+        <h3>Skaiciuotuvas</h3>
+        <form id="sudetis">
+          <input type="number" name="sk1" id="sk1">
+          <select name="veiksmas" id="veiksmas">
+            <option value="sudetis">+</option>
+            <option value="atimtis">-</option>
+            <option value="daugyba">*</option>
+            <option value="dalyba">/</option>
+          </select>
+          <input type="number" name="sk2" id="sk2">
+          <input type="submit" value="=">
+          <input type="number" id="result" disabled value="0">
+        </form>
+      </div>
+    </section>
+    <section>
+      <h1>Kino bilietai</h1>
+      <form id="kinas">
+        <div>
+          <label for="amzius2">Iveskite savo amziu:</label>
+          <input type="number" name="amzius2" id="amzius2" min="0">
+          <input type="submit" value="Tikrinti kaina">
+        </div>
+      </form>
+    </section>
+    <section>
+      <h1>Kariuomene</h1>
+      <form id="kariuomene">
+        <div>
+          <label for="amzius3">Koks tavo amzius?</label>
+          <input type="number" name="amzius3" id="amzius3">
+        </div>
+        <div>
+          <label for="kriminalas">Ar turi kriminalini irasa?</label>
+          <input type="checkbox" name="kriminalas" id="kriminalas">
+        </div>
+        <input type="submit" value="Tikrinti ar reikia i kariuomene?">
+      </form>
+    </section>
+    <section>
+      <h1>Imones bonusas</h1>
+      <form id="bonusas">
+        <div>
+          <label for="amzius4">Kiek metu dirbate imoneje:</label>
+          <input type="number" name="amzius4" id="amzius4" min="0">
+          <input type="submit" value="Tikrinti Bonusa:">
+          <input type="text" id="bonus" disabled placeholder="€">
+        </div>
+      </form>
+    </section>
+    <section>
+      <h1>Keliamieji metai</h1>
+      <h3>Ar sie metai keliamieji?</h3>
+      <form id="leap">
+        <div>
+          <label for="year">Kelinti dabar metai:</label>
+          <input type="number" name="year" id="year">
+          <input type="submit" value="Tikrinti">
+        </div>
+      </form>
+    </section>
+    <section>
+      <h1>Temperaturos konvertavimas</h1>
+      <form id="temperature">
+        <div>
+          <label for="cels">Ivesk temperatura ºC:</label>
+          <input type="number" name="cels" id="cels" placeholder="0º">
+          <input type="submit" value=">">
+          <input type="number" name="fahr" id="fahr" disabled placeholder="32º">
+          <label for="cels">ºF</label>
+        </div>
+      </form>
+    </section>
+    <section>
+      <h1>Newsletter</h1>
+      <form id="newsletter">
+        <div>
+          <label for="email">Iveskite savo el. pasta:</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div>
+          <label for="news">Ar norite gauri naujienlaiski?</label>
+          <input type="checkbox" name="news" id="news">
+        </div>
+        <input type="submit" value="Testi" id="testi">
+      </form>
+    </section>
+  </main>
+</body>
+</html>

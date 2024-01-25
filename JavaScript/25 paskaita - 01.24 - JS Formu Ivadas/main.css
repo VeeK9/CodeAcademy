@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+
+section {
+  padding: 20px 50px;
+  > h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.twoColumns{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.longList{
+  columns: 2;
+
+  > li{
+    margin-left: 20px;
+  }
+}
+
+#temperature {
+  > div {
+    display: flex;
+    gap: 10px;
+  }
+}
