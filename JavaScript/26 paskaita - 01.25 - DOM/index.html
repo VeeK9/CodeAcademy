@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>26 paskaita - DOM</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./data/datakartu.js"></script>
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <main>
+    <section> <!-- HTML formu validavimas -->
+      <h1>HTML formu validavimas</h1>
+      <p>
+        Formu validavimas - tikrinimas ar formos ivesciu laukai teisingi supildyti. <br>
+        Formu validavimas yra reikalingas tam, kad nebutu leidziama pateikti formos, jeigu kazkokie laukai neteisingai supildyti arba isvis nesupildyti.
+      </p>
+      <ul>
+        <li>required - ivesties laukas privalomas</li>
+        <li>minlength - minimalus simboliu kiekis - text/password/url/email</li>
+        <li>maxlength - maksimalus simboliu kiekis - text/password/url/email</li>
+        <li>min - maziausias galimas skaicius - number.range.date</li>
+        <li>max - didziausias galimas skaicius - number.range.date</li>
+        <li>step - skaiciaus didejimo/mazejimo zingsnis - number/range/date</li>
+        <li>pattern - specifine seka (su regex) - password/tel</li>
+        <li>accept - kokio tipo faila/us priima - file</li>
+        <li>multiple - leidimas kelti ivesciu i viena - file/email</li>
+      </ul>
+    </section>
+    <section> <!-- DOM -->
+      <h1>DOM - Document Object Model</h1>
+      <h3>Node</h3>
+      <p>
+        Node'as - HTML elementas JS'o aplinkoje
+      </p>
+      <p>
+        Galima HTML pildyti innerHTML'u - rasant HTML koda JS'o string'e ir si iklijuoti HTML dokumenta, kur to stringo viduje esantis HTML kodas bus skaitomas kaip HTML ir atvaizduojamas vartotojui. <br>
+        Bet sitas budas turi daug minusu, pradedant nuo saugumo, baigiant implementacija.
+      </p>
+      <p>
+        Geresnis budas pildyti HTML'a su JS - kurti HTML elementus (node'us) JS'e ir juos append'inti i kazkuri HTML'o elementa. <br>
+        Node'ai yra kuriami ir modifikuojami naudojant Node'u metodus.
+      </p>
+      <h3>Node'u metodai</h3>
+      <ul>
+        <li>document.createElement('tagVardas')</li>
+        <li>document.createTextNode('kazkoks tekstas...')</li>
+        <li>kam.append(ka0, ka1, ka2, ...) - i koki node'a iterpi koki/kokius node'a/node'us/tekstus.</li>
+        <li>kam.appendChild(ka) - i koki node'a iterpi VIENA kita NODE'a</li>
+        <li>kam.prepend(ka0, ka1, ka2, ...) - tas pats kas append, tik prideda i pradzia, o ne gala</li>
+        <li>kam.setAttribute('name', 'value')</li>
+        <li>kam.classList
+          <ul>
+            <li>add('vienaKlase', 'kitaKlase', ...)</li>
+            <li>remove('viena klase', 'kitaKlase', ...)</li>
+            <li>replace('klaseIsimi', 'klasePridedi')</li>
+            <li>toggle('klase')</li>
+          </ul>
+        </li>
+      </ul>
+      <div id="DOMpvz"></div>
+    </section>
+    <section id="list"> <!-- sarasas -->
+      <h1>Sarasas</h1>
+      <!-- <ul>
+        <li>tekstas</li>
+        <li>tekstas</li>
+        <li>tekstas</li>
+        <li>tekstas</li>
+        <li>tekstas</li>
+      </ul> -->
+    </section>
+    <section id="movies"> <!-- movies -->
+      <h1>Filmai</h1>
+      <div id="moviesContainer">
+        <!-- <div class="kortele">
+          <h1>Filmo pavadinimas</h1>
+          <p>Filmo aprasymas... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus eligendi odit possimus quo debitis delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed esse vitae debitis dolorum ipsam enim!</p>
+          <img 
+            src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg" 
+            alt=""
+          >
+        </div> -->
+      </div>
+    </section>
+  </main>
+</body>
+</html>
