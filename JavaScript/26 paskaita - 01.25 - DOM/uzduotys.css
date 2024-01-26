@@ -1,0 +1,107 @@
+body {
+  margin: 0px;
+}
+
+#pirma {
+  padding: 10px 10%;
+  > h1 {
+    text-align: center;
+  }
+  > p {
+    text-align: justify;
+  }
+  > img {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
+#antra {
+  > h1 {
+    text-align: center;
+  }
+  > div {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+
+  
+    > figure {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      line-height: 0;
+
+      > img {
+        height: 300px;
+      }
+    }
+  }
+}
+
+#trecia {
+  > h1 {
+    text-align: center;
+  }
+}
+
+.container3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card3 {
+  display: grid;
+  grid-template-rows: 55% 40px auto;
+  width: 300px;
+  height: 500px;
+  /* border: 1px solid lightgray; */
+  border-radius: 7px;
+  box-shadow: 1px 1px 10px lightgray;
+  padding: 10px;
+
+  > p {
+    text-align: justify;
+    overflow: scroll;
+    font-size: 12px;
+    place-items: start;
+    margin: 0;
+  }
+
+  > h3 {
+    margin: 10px;
+    line-height: 1;
+  }
+
+  > figure {
+    overflow: hidden;
+    margin: 0;
+    /* width: 100%; */
+    /* height: 300px; */
+    border-radius: 5px;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+}
+
+section {
+  position: relative;
+  min-height: 50px;
+
+  > button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+  }
+}
