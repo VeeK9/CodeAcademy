@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>27 paskaita</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <main>
+    <section> <!-- super simple -->
+      <h1>Besikartojantis vardas</h1>
+      <form id="vardoTask">
+        <div>
+          <label for="vardas">Vardas</label>
+          <input type="text" name="vardas" id="vardas">
+        </div>
+        <div>
+          <label for="kartai">Kartai</label>
+          <input type="number" min="1" name="kartai" id="kartai">
+        </div>
+        <input type="submit" value="Spausdinti">
+      </form>
+      <div id="vardoAts"></div>
+    </section>
+    <section> <!-- more difficult -->
+      <h1>Telefono taisymo registravimas</h1>
+      <form id="telTaisymas">
+        <div>
+          <label for="asmuo">Asmens Vardas:</label>
+          <input type="text" name="asmuo" id="asmuo">
+        </div>
+        <div>
+          <label for="kontaktas">Asmens El. pastas:</label>
+          <input type="email" name="kontaktas" id="kontaktas">
+        </div>
+        <div>
+          <label for="modelis">Telefono modelis:</label>
+          <input type="text" name="modelis" id="modelis" placeholder="Samsung Galaxy S24 Ultra">
+        </div>
+        <div>
+          <label for="nuotrauka">Telefono nuotrauka:</label>
+          <input type="url" name="nuotrauka" id="nuotrauka">
+        </div>
+        <div>
+          <label>Ar turite garantija/draudima?</label>
+          <label for="garantija">Garantija</label>
+          <input type="checkbox" name="garantija" id="garantija">
+          <label for="draudimas">Draudimas</label>
+          <input type="checkbox" name="draudimas" id="draudimas">
+        </div>
+        <div>
+          <label for="gedimas">Gedimo aprasymas:</label>
+          <textarea name="gedimas" id="gedimas"></textarea>
+        </div>
+        <div>
+          <label for="lokacija">Pasirinkite serviso lokacija:</label>
+          <input list="lokacijos" name="lokacija" id="lokacija">
+          <datalist id="lokacijos">
+            <option value="Vilnius Savanoriu pr. 50"></option>
+            <option value="Vilnius Zirmunu g.65"></option>
+            <option value="Vilnius Sauletekio al. 15"></option>
+            <option value="Vilnius Antakalnio g 54"></option>
+            <option value="Kaunas Veiverio pl. 54"></option>
+            <option value="Kaunas Vytauto g. 32"></option>
+            <option value="Kaunas Baltu pr. 123"></option>
+            <option value="Klaipeda Bangu g. 6"></option>
+            <option value="Klaipeda Taikos pr. 61"></option>
+          </datalist>
+        </div>
+        <div>
+          <label for="dataLaikas">Telefono pristatymo data ir laikas:</label>
+          <input type="datetime-local" name="dataLaikas" id="dataLaikas">
+        </div>
+        <input type="submit" value="Uzregistruoti">
+      </form>
+      <div id="phoneContainer">
+        <!-- <div class="telCard">
+          <h3>Lokacija</h3>
+          <p>Vardas, kontaktas</p>
+          <p>Kada planuoja atnesti</p>
+          <h3>Modelis</h3>
+          <p>Gedimo aprasymas...</p>
+          <img src="https://img.fruugo.com/product/5/56/115185565_max.jpg" alt="">
+          <p>
+            <span class="greenText">Draudimas</span>
+            <span class="redText">Garantija</span>
+          </p>
+        </div> -->
+      </div>
+    </section>
+    <section id="uzd1"> <!-- 1 uzduotis -->
+      <h1>Siaures pasvaistes nuotraukos Lietuvoje</h1>
+      <hr>
+      <h4>Ikelkite savo uzfiksuota aurora borealis:</h4>
+      <form id="uzd1form">
+        <div>
+          <label for="photo">Nuotraukos URL:</label>
+          <input type="url" name="photo" id="photo">
+        </div>
+        <div>
+          <label for="name">Autorius:</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div>
+          <label for="description">Aprasymas:</label>
+          <textarea name="description" id="description" cols="16" rows="5"></textarea>
+        </div>
+        <div>
+          <label for="date">Nuotraukos data:</label>
+          <input type="date" name="date" id="date">
+        </div>
+        <input type="submit" value="Ikelti">
+      </form>
+      <div id="uzd1wrapper">
+        <div class="uzd1card">
+          <img src="https://cdn3.onlithuania.com/content/uploads/2023/02/Arnoldas-Uzupis331423743_952070972839782_4236182762439407617_n.jpg" alt="pasvaiste Lietuvoje">
+          <p>Ojezau, Sita pamaciau, pagalvojau kad Velnias</p>
+          <h3>Zita iš Želvos</h3>
+          <h5>2024-01-23</h5>
+        </div>
+        <div class="uzd1card">
+          <img src="https://cdn2.onlithuania.com/content/uploads/2023/02/Marius-Mercaitis333097795_1634106173701961_2190734673797058516_n.jpg" alt="pasvaiste Lietuvoje">
+          <p>Visata yra toks dalykas, kad net pradedi galvoti... Toks mažas esi žmogelis tokioje begalybėje, bla bla bla ir panašiai.</p>
+          <h3>Jonas Baravykas</h3>
+          <h5>2024-01-02</h5>
+        </div>
+        <div class="uzd1card">
+          <img src="https://cdn4.onlithuania.com/content/uploads/2023/02/Jovita-Uzdraite333989809_597086928586071_8428723238936603993_n-1804x1080.jpg" alt="pasvaiste Lietuvoje">
+          <p>Bishki zhmona ikaushus buvo, tai toki nais shleptelejo ant shikneles</p>
+          <h3>Edga Nesvarbu</h3>
+          <h5>2024-01-18</h5>
+        </div>
+      </div>
+    </section>
+    <section id="uzd2"> <!-- 2 uzduotis -->
+      <h1>Susikurkite lentele!</h1>
+      <form id="uzd2form">
+        <div>
+          <label for="x">Stulpeliu skaicius:</label>
+          <input type="number" id="x" name="x">
+        </div>
+        <div>
+          <label for="y">Eiluciu skaicius:</label>
+          <input type="number" id="y" name="y">
+        </div>
+        <input type="submit" value="Sukurti!">
+      </form>
+    </section>
+    <section id="uzd3"> <!-- 3 uzduotis -->
+      <h1>Pasaulio šalys</h1>
+      <hr>
+      <form id="uzd3form">
+        <label for="notVisited">Nelankytos šalys:</label>
+        <select name="notVisited" id="notVisited" multiple>
+          <option value="">Lenkija</option>
+          <option value="">Olandija</option>
+          <option value="">Anglija</option>
+          <option value="">Ispanija</option>
+          <option value="">Norvegija</option>
+          <option value="">JAV</option>
+          <option value="">JAE</option>
+          <option value="">Japonija</option>
+          <option value="">Etiopija</option>
+          <option value="">Australija</option>
+        </select>
+        <input type="submit" value=">>>">
+        <label for="visited">Lankytos šalys:</label>
+        <select name="visited" id="visited" multiple disabled>
+          <option value="">Lietuva</option>
+        </select>
+      </form>
+    </section>
+    <section id="uzd4"> <!-- 4 uzduotis -->
+      <h1>Keturkampis 2D/3D</h1>
+      <form id="uzd4form">
+        <label for="">Iveskite krastiniu ilgiu, ir pasirinkite ka norite apskaiciuoti:</label>
+        <div>
+          <label for="plotis">X krastine</label>
+          <input type="Number" name="plotis" id="plotis" min="1">
+          <label for="aukstis">Y krastine</label>
+          <input type="Number" name="aukstis" id="aukstis" min="1">
+          <label for="gylis">Z krastine</label>
+          <input type="Number" name="gylis" id="gylis" min="0">
+        </div>
+        <div>
+          <label for="result">Pasirinkite ka apskaiciuoti:</label>
+          <select name="result" id="result">
+            <option value="plotas">Plotas</option>
+            <option value="perimetras">Perimetras</option>
+            <option value="pavirsiausPlotas">Pavirsiaus plotas</option>
+            <option value="turis">Turis</option>
+          </select>
+          <input type="submit" value="Apskaiciuoti">
+        </div>
+      </form>
+      <canvas id="rezultatas">
+      </canvas>    
+    <script>
+    </script>
+    </section>
+    <section> <!-- 5 uzduotis -->
+
+    </section>
+    <section> <!-- 6 uzduotis -->
+
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,176 @@
+body {
+  height: 300vh;;
+}
+#phoneContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.telCard{
+  width: 300px;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > * {
+    margin: 0;
+  }
+
+  > * + * {
+    margin-top: 0.5em;
+  }
+
+  > img {
+    width: 80%;
+  }
+
+  p:last-child {
+    display: flex;
+    gap: 40px;
+    flex-grow: 1;
+    align-items: flex-end;
+  }
+}
+
+.greenText {
+  color: green;
+}
+
+.redText {
+  color: red;
+}
+
+#uzd1 {
+  padding-block: 50px;
+  > h1, h4 {
+    text-align: center;
+  }
+
+  > hr {
+    width: 350px;
+  }
+
+  > form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    > div {
+      display: flex;
+      width: 270px;
+      justify-content: space-between;
+
+      > textarea {
+        resize: vertical;
+      }
+    }
+    > input {
+      width: 120px;
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+  }
+}
+
+#uzd1wrapper {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+
+.uzd1card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  /* height: 400px; */
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px gray;
+
+  > * + *{
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  > img {
+    border-radius: 10px;
+  }
+
+  > p {
+    flex-grow: 1;
+    text-align: justify;
+    font-size: 14px;
+  }
+
+  > h3, h5 {
+    align-self: flex-end;
+    padding-right: 10px;
+  }
+
+  > h5 {
+    padding-top: 0;
+    font-weight: 100;
+    padding-bottom: 5px;
+  }
+}
+
+#uzd2 {
+  > form {
+    padding-bottom: 10px;
+    > div {
+    padding-bottom: 10px;
+    }
+  }
+}
+
+#uzd3 {
+  > h1 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  > hr {
+    border: 1px solid black;
+    width: 110px;
+    margin-bottom: 20px;
+  }
+  > form {
+    display: grid;
+    grid-template-columns: 30px 100px 70px 30px 100px;
+    height: 200px;
+    justify-content: center;
+
+    > label {
+      padding: 5px;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      align-self: start;
+      justify-self: end;
+    }
+    > input {
+      width: 40px;
+      height: 40px;
+      place-self: center;
+      margin-left: 20px;
+      font-size: 12px;
+    }
+  }
+}
+
+#uzd4 {
+  > h4 {
+    margin: 5px;
+  }
+}
