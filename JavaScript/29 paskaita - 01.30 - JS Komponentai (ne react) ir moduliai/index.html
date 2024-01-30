@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>29 paskaita - Komponentai ir moduliai</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" type="module"></script>
+</head>
+<body>
+  <main>
+    <section> <!-- Moduliai / Modules -->
+      <h1>Moduliai</h1>
+      <p>
+        Moduliai yra atskiri kodo fragmentai isskaidyti skirtinguose failuose.
+      </p>
+      <p>
+        MOduliuose gali buti ivairus kodas. Nuo duomenu (kintamuju) iki funkciju, Klasiu, metodu ir kt. <br>
+        JS Klases turi buti atskiri failai. Kitaip pasakius - viename faile neturetu buti daugiau negu vina JS Klase. <br>
+        HTML'e prijungtas script'as, kuris kreipiasi i kitus script failus, privalo tureti nurodyta tipa - modulis (type='module') <br>
+        HTML failas, kuriama yra modulio tipo JS failas, privalo buti paleistas kaip serveris, kitu atveju neleis vykdyti JS failo kodo.
+      </p>
+      <h3>Export ir Import</h3>
+      <p>
+        Failuose esanti informacija gali buti iskeliama (export'uojama) ir galima kazkokia informacija isikelti (import'uoti) is kito failo
+      </p>
+      <h4>Export</h4>
+      <p>
+        Informacija galima exportuoti dviem budais:
+      </p>
+      <ul>
+        <li>export default - numatytasis/pagrindinis export'as. Jis gali buti TIK VIENAS viename faile.</li>
+        <li>export - paprastas/papildomas export'as/ai, kuriu gali buti daug viename faile. Jie visi gali buti israsyti vienoje eiluteje.</li>
+      </ul>
+      <h4>Import</h4>
+      <p>
+        Informacija gali buti importuojama ivairiais budais. <br>
+        Bet yra keletas pagrindiniu budu:
+      </p>
+      <ul>
+        <li>import RandomDefaultName from './.../x*.js' - kai yra importuojamas default export'as galima jo pavadinima pasirasyti betkoki.</li>
+        <li>import {sameName as diffName} from './.../*.js' - yra importuojamas paprastas export'as kitokiu pavadinimu.</li>
+        <li>import DefaultStuff, {nonDefaultStuff} from './.../*.js' - viename import aprasyme galima ipmportuoti ir default ir paprastus exportus.</li>
+      </ul>
+    </section>
+    <section>
+      <h1>Add New Doggo</h1>
+      <form id="addDog">
+        <div>
+          <label for="veisle">Veisle:</label>
+          <input type="text" name="veisle" id="veisle">
+        </div>
+        <div>
+          <label for="vardas">Vardas:</label>
+          <input type="text" name="vardas" id="vardas">
+        </div>
+        <div>
+          <label for="spalva">Spalva:</label>
+          <input type="color" value="#000000" name="spalva" id="spalva">
+        </div>
+        <div>
+          <label for="amzius">Amzius:</label>
+          <input type="number" name="amzius" id="amzius" min="0">
+        </div>
+        <div>
+          <label for="svoris">Svoris:</label>
+          <input type="number" name="svoris" id="svoris" min="0">
+        </div>
+        <div>
+          <label for="cipuotas">Ar Cipuotas:</label>
+          <input type="checkbox" name="cipuotas" id="cipuotas">
+        </div>
+        <div>
+          <label>Lytis:</label>
+          <label for="patinas">Patinas</label>
+          <input type="radio" name="lytis" id="patinas" value="patinas">
+          <label for="patinas">Patele</label>
+          <input type="radio" name="lytis" id="patele" value="patele">
+        </div>
+        <div>
+          <label for="nuotrauka">Nuotrauka:</label>
+          <input type="url" name="nuotrauka" id="nuotrauka">
+        </div>
+        <input type="submit" value="Prideti suni">
+      </form>
+    </section>
+  </main>
+</body>
+</html>

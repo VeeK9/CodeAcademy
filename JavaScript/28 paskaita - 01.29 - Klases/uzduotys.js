@@ -71,54 +71,56 @@ document.querySelector('#antra > form').addEventListener('submit', e =>{
 //   3.1) Sukurkite papildomą savybę "coordinates" ir priskirkite jam "x" ir "y" reikšmes.
 //   3.2) Sukurkite metodą "distance", kuris grąžina atstumą tarp dviejų taškų (Point'ų). (siūlau naudoti Math.hypot() metodą).
 
-class Point{
-  constructor(x, y){
-    this.x = x,
-    this.y = y,
-    this.coordinates = {
-      x,
-      y
-    }
-  }
-  distance(){
-    return `Atstumas tarp x ir y tasku: ${Math.floor(Math.hypot(this.x, this.y)*100)/100}`
-  }
-}
+// class Point{
+//   constructor(x, y){
+//     this.x = x,
+//     this.y = y,
+//     this.coordinates = {
+//       x,
+//       y
+//     }
+//   }
+//   distance(){
+//     return `Atstumas tarp siu tasku: ${Math.hypot((this.x-kitasPoint.x) + (this.y-kitasPoint.y))}`
+//   }
+// }
 
-const canvas3 = document.createElement('canvas');
-const pencil3 = canvas3.getContext("2d");
-const atstumas = document.createElement('h4');
-document.querySelector('#trecia > form').addEventListener('submit', e =>{
-  e.preventDefault();
-  const x = e.target.elements.xAsis.valueAsNumber;
-  const y = e.target.elements.yAsis.valueAsNumber;
-  const points = new Point(x, y);
-  atstumas.textContent = points.distance();
-  document.querySelector('#trecia > form').appendChild(atstumas);
 
-  pencil3.fillStyle = 'white';
-  pencil3.fillRect(0,0,canvas3.width, canvas3.height);
-  canvas3.style.width = 1000;
-  canvas3.style.height = 1000;
-  canvas3.setAttribute('height', '800px');
-  const xAsis = canvas3.width/2 - x*2;
-  const yAsis = y/2;
-  pencil3.strokeStyle = "lightgray";
-  pencil3.beginPath();
-  pencil3.moveTo(xAsis, yAsis);
-  pencil3.lineTo(xAsis, yAsis + y*4);
-  pencil3.lineTo(xAsis + x*4, yAsis + y*4);
-  pencil3.closePath();
-  pencil3.stroke();
-  pencil3.strokeStyle = "black";
-  pencil3.beginPath();
-  pencil3.moveTo(xAsis + x*4, yAsis + y*4);
-  pencil3.lineTo(xAsis, yAsis);
-  pencil3.closePath();
-  pencil3.stroke();
-  document.querySelector('#trecia').appendChild(canvas3);
 
-});
+// const canvas3 = document.createElement('canvas');
+// const pencil3 = canvas3.getContext("2d");
+// const atstumas = document.createElement('h4');
+// document.querySelector('#trecia > form').addEventListener('submit', e =>{
+//   e.preventDefault();
+//   const x = e.target.elements.xAsis.valueAsNumber;
+//   const y = e.target.elements.yAsis.valueAsNumber;
+//   const points = new Point(x, y);
+//   atstumas.textContent = points.distance();
+//   document.querySelector('#trecia > form').appendChild(atstumas);
+
+//   pencil3.fillStyle = 'white';
+//   pencil3.fillRect(0,0,canvas3.width, canvas3.height);
+//   canvas3.style.width = 1000;
+//   canvas3.style.height = 1000;
+//   canvas3.setAttribute('height', '800px');
+//   const xAsis = canvas3.width/2 - x*2;
+//   const yAsis = y/2;
+//   pencil3.strokeStyle = "lightgray";
+//   pencil3.beginPath();
+//   pencil3.moveTo(xAsis, yAsis);
+//   pencil3.lineTo(xAsis, yAsis + y*4);
+//   pencil3.lineTo(xAsis + x*4, yAsis + y*4);
+//   pencil3.closePath();
+//   pencil3.stroke();
+//   pencil3.strokeStyle = "black";
+//   pencil3.beginPath();
+//   pencil3.moveTo(xAsis + x*4, yAsis + y*4);
+//   pencil3.lineTo(xAsis, yAsis);
+//   pencil3.closePath();
+//   pencil3.stroke();
+//   document.querySelector('#trecia').appendChild(canvas3);
+
+// });
 
 // 4) Sukurkite klasę vardu "Rectangle_3D" ir duokite jai "width", "height" ir "depth" parametrus ir savybes.
 //   4.1) Sukurkite metodą "volume", kuris grąžina 3D stačiakampio tūrį.
