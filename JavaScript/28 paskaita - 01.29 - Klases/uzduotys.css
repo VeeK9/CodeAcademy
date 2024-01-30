@@ -1,0 +1,42 @@
+section {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+
+  > div {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    
+    > form {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+
+      > h4 {
+        margin: 0;
+      }
+
+      > input {
+        margin-bottom: 20px;
+      }
+
+      > input[type="submit"] {
+        margin-top: auto;
+        align-self: center;
+        width: max-content;
+        padding: 5px 10px;
+        border: 0px;
+        background-color: lightgray;
+        cursor: pointer;
+      }
+
+      > input[type="submit"]:hover {
+        color: white;
+        background-color: gray;
+      }
+    }
+  }
+}
