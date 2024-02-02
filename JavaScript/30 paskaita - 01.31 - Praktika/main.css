@@ -1,0 +1,135 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+
+section {
+  padding-block: 30px;
+
+  > h1, h3 {
+    text-align: center;
+  }
+}
+
+.remeliai {
+  border: 1px solid black;
+}
+
+.redText {
+  color: red;
+}
+
+.dydisL {
+  height: 400px;
+}
+
+.padding1 {
+  padding: 1rem;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.margin1 {
+  margin: 16px;
+}
+
+.bgYellow {
+  background-color: yellow;
+}
+
+table {
+  border-collapse: collapse;
+
+  > thead, th, td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+}
+
+form > div {
+  width: 350px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 5px;
+
+  > input {
+    width: 200px;
+  }
+
+  > #durationTime {
+    width: 70px;
+  }
+
+  > select {
+    width: 120px;
+  }
+}
+
+form > div:last-child > input{
+  width: 100px;
+  cursor: pointer;
+}
+
+.tripsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  > .tripCard {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 1px 5px 10px lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      transform: scale(106%);
+    }
+
+    > h3 {
+      position: absolute;
+      color: white;
+      margin-inline: auto;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-family: helvetica;
+      filter: drop-shadow(1px 1px 3px black);
+    }
+  }
+}
+
+.extended {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.425);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .extendedCard {
+    display: flex;
+    width: 500px;
+    height: 300px;
+    background-color: rgb(210, 40, 40);
+    border-radius: 10px;
+  }
+}
+
+.nematoma {
+  display: none;
+}

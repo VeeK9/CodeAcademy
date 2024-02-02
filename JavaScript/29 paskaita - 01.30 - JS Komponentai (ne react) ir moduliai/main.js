@@ -1,7 +1,7 @@
 import Suniukas, {graziausiVardai as names} from './modules/Dog.js';
-import { randomColor as getMeColour, throwError, sum, division } from './modules/helperFunctions.js';
-// import {graziausiVardai as names} from './modules/Dog.js';
 import dogsData from './modules/dogsData.js';
+// import { randomColor as getMeColour, throwError, sum, division } from './modules/helperFunctions.js';
+// import {graziausiVardai as names} from './modules/Dog.js';
 
 // console.log(sum(5,6));
 // console.log(division(5,6));

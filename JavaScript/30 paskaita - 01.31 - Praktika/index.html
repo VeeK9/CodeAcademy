@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30 paskaita - Praktika</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" type="module"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section id="task1_1">
+      <h1>Paveiksliukai 1.1</h1>
+      <div></div>
+    </section>
+    <section id="task1_2">
+      <h1>Paragrafai 1.2</h1>
+      <div></div>
+    </section>
+    <section id="task1_3">
+      <h1>Antrastes 1.3</h1>
+      <div></div>
+    </section>
+    <section id="task1_4">
+      <h1>Elementai 1.4</h1>
+      <div></div>
+    </section>
+    <section id="task2">
+      <h1>UL ir OL</h1>
+      <div></div>
+    </section>
+    <section id="task3">
+      <h1>Select</h1>
+      <form></form>
+    </section>
+    <section id="uzd2_1">
+      <h1>Form + DOM + Component nr1</h1>
+      <form>
+        <label for="fullName"></label>
+        <input type="text" name="fullName" id="fullName">
+        <input type="submit" value="Prideti">
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Vardas</th>
+            <th>Pavarde</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Petras</td>
+            <td>Petraitis</td>
+          </tr>
+          <tr>
+            <td>Jonas</td>
+            <td>Jonaitis</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="uzd2_2">
+      <form>
+        <div>
+          <label for="destination">Your trip's name:</label>
+          <input type="text" name="destination" id="destination" placeholder="e.g. Sequoia National Park">
+        </div>
+        <div>
+          <label for="location">Trip location:</label>
+          <input type="text" name="location" id="location" placeholder="e.g. California, USA">
+        </div>
+        <div>
+          <label for="durationTime">Trip duration:</label>
+          <input type="number" name="durationTime" id="durationTime" min="1">
+          <select name="duration" id="duration">
+            <option value="days">days</option>
+            <option value="weeks">weeks</option>
+            <option value="months" selected>months</option>
+            <option value="years">years</option>
+          </select>
+        </div>
+        <div>
+          <label for="price">Price of the trip:</label>
+          <input type="number" name="price" id="price" min="0" placeholder="$$$">
+        </div>
+        <div>
+          <label for="image">Image:</label>
+          <input type="url" name="image" id="image" placeholder="url">
+        </div>
+        <div>
+          <input type="submit" value="Add trip">
+        </div>
+      </form>
+      <h3>Trips:</h1>
+      <div></div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
