@@ -7,6 +7,8 @@ import Select from "./components/select.js";
 import Name from "./components/names.js";
 import Trips from "./components/trips.js";
 import data from "./components/tripsData.js";
+import Table from "./components/table.js";
+import {data4} from "./components/dataPvz.js";
 
 const imageContainer = document.querySelector('#task1_1 > div');
 
@@ -233,6 +235,10 @@ const select1 = new Select({
 });
 
 selectContainter.append(select0, select1);
+
+const table0 = new Table(data4);
+
+document.querySelector('#task4 > div').appendChild(table0);
 
 document.querySelector('#uzd2_1 > form').addEventListener('submit', e => {
   e.preventDefault();

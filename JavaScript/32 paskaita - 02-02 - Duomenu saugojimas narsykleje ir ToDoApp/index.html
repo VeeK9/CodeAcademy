@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>32 paskaita</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" type="module"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- sessions/local storage ir cookies -->
+      <h1>Session Storage vs Local Storage vs Cookies</h1>
+      <h3>Duomenu saugijimas vartotojo dalyje</h3>
+      <p>
+        Cookies, Session storage ir Local storage informacija yra saugojama jusu irenginyje/aplikacijoje/narsykleje... <br>
+        Skirtingose svetainese/narsyklese/irenginiuose cookies/session/local storage yra saugojama atskirai.
+      </p>
+      <p>
+        Visi lokaliai saugojami duomenys turetu buti string pavidalu!!!
+      </p>
+      <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--_3wj2yFG--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/q8q3l78h8h8w3vaxy8td.png" alt="">
+    </section>
+    <section> <!-- cookies -->
+      <h1>Cookies</h1>
+      <p>
+        Saugojama iki 4kb. <br>
+        Reikia rankiniu budu nustatyti iki kada duomenys yra saugojami. <br>
+        Siunciami kartu su request'ais i back-end'a.
+      </p>
+    </section>
+    <section> <!-- session storage -->
+      <h1>Session</h1>
+      <p>
+        Laiko duomenis aplikacijoje/narsykleje, per kuria atidaroma kazkuri svetaine, kuriai tie duomenys priskiriami. <br>
+        Kai pasibiagia sesija (kai isjungiama svetaine) sitie duomenys yra istrinami.
+      </p>
+      <p>
+        Daznai naudojamas saugoti JWT token
+      </p>
+      <h3>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Storage">Storage</a>
+      </h3>
+      <ul>
+        <li>sessionStorage.length - grazina issaugotu elementu kieki</li>
+        <li>sessionStorage.setItem('raktas', 'reiksme')</li>
+        <li>sessionStorage.getItem('raktas') - grazina reiksme pagal rakta</li>
+        <li>sessionStorage.removeItem('raktas')</li>
+        <li>sessionStorage.clear() - istrina viska is sessionStorage</li>
+        <li>sessionStorage.key(index) - grazina raktini zodi esanti atitinkamoje indekso pozicijoje.</li>
+      </ul>
+    </section>
+    <section> <!-- local storage -->
+      <h1>Local</h1>
+      <p>
+        Laiko duomenis aplikacijoje/narsykleje, per kuria atidaroma kazkuri svetaine, kuriai tie duomenys priskiriami. <br>
+        Duomenys yra issaugojami per daugeli sesiju. Duomenys gali buti istrinami tik naudojant atitinkamus metodus (kode) arba per dev tools.
+      </p>
+      <h3>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Storage">Storage</a>
+      </h3>
+      <ul>
+        <li>localStorage.length - grazina issaugotu elementu kieki</li>
+        <li>localStorage.setItem('raktas', 'reiksme')</li>
+        <li>localStorage.getItem('raktas') - grazina reiksme pagal rakta</li>
+        <li>localStorage.removeItem('raktas')</li>
+        <li>localStorage.clear() - istrina viska is localStorage</li>
+        <li>localStorage.key(index) - grazina raktini zodi esanti atitinkamoje indekso pozicijoje.</li>
+      </ul>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
