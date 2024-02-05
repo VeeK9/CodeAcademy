@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>33 paskaita</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" type="module"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- API -->
+      <h1>API</h1>
+      <p>
+        Application programming interface - jusu uzklausa is aplikacijos (front-end) issiunciama i serveri (back-end) ir jeigu viskas gerai - grazinami duomenys pagal jusu uzklausa, bet jei kazkas negerai - grazinama atitinkama error'o zinute.
+      </p>
+      <p>Kas yra API - <a href="https://youtube.com/watch?v=s7wmiS2mSXY" target="_blank">video</a></p>
+    </section>
+    <section> <!-- JSON -->
+      <h1>JSON</h1>
+      <p>
+        JSON - Java Script Object Notation yra skirtas paversti duomenis i toki formata, kuris galetu buti siunciamas su API. <br>
+        JSON formatas nuo JS object formato skiriasi tuo, kad raktiniai zodziai turi buti kabutese, o pacios kabutes visada dvigubos.
+      </p>
+      <p>
+        Tam, kad paversti JS sintakse i JSON formata arba atvirskiai, naudojamos dvi JSON komandos: <br>
+        JSON.stringify(JS syntax) - is JS sintakses pavercia ir grazina JSON sintakses stringa. <br>
+        JSON.parse(JSON syntax) - is JSON sintakses pavercia ir grazina JS sintakse (kaip objekta ar masyva).
+      </p>
+    </section>
+    <section> <!-- Fetch -->
+      <h1>Fetch</h1>
+      <p>
+        Funkcija, kurios pagalba mes galime siusti uzklausas i serveri ir gauti kazkokius atsakymus.
+      </p>
+      <h3>Festch vykdymo eiga:</h3>
+      <ol>
+        <li>Fetch'inant (siunciant uzklausa) nurodomas URL, galima nurodyti ir papildomas opcijas. Tarp tu opciju yra metodai: 
+          <ul>
+            <li>GET - gauti info</li>
+            <li>POST - pateikti info</li>
+            <li>DELETE - trinti info</li>
+            <li>PATCH - redaguoti info</li>
+            <li>PUT - redaguoti info</li>
+          </ul>
+        </li>
+        <li>Apdoroti gauta info (vykdosi kai nera error)</li>
+        <li>Naudoti gauta info (vykdosi kai nera error)</li>
+        <li>Pagaunam (catch) ir kazka atliekam su tuo error (vykdosi tik error atveju)</li>
+        <li>Galiausiai (finally) dar kazka atliekam (vykdosi bet kokiu atveju)</li>
+      </ol>
+    </section>
+    <section id="randomUser">
+      <h1>Random User</h1>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
