@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 .randomUserCard{
   box-sizing: border-box;
   width: 300px;
@@ -22,5 +26,34 @@
 
   > h1 {
     text-align: center;
+  }
+}
+
+#updateISS {
+  position: absolute;
+}
+
+#flats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flatCard {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid black;
+
+  > * {
+    margin: 0;
+  }
+
+  > * + * {
+    margin: 1rem;
+  }
+
+  > img {
+    width: 100%;
   }
 }

@@ -1,0 +1,26 @@
+{
+  "filmai": [
+    {
+      "pavadinimas": "Tadas Blinda",
+      "leidimoData": 2011,
+      "id": "0",
+      "nuotrauka": "https://upload.wikimedia.org/wikipedia/lt/thumb/1/14/Tadas_Blinda_Prad%C5%BEia_DVD_vir%C5%A1elis.jpeg/200px-Tadas_Blinda_Prad%C5%BEia_DVD_vir%C5%A1elis.jpeg"
+    },{
+      "pavadinimas": "2012",
+      "leidimoData": 2009,
+      "id": "1",
+      "nuotrauka": "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/2012_Poster.jpg/220px-2012_Poster.jpg"
+    },{
+      "pavadinimas": "Seven Years in Tibet",
+      "leidimoData": 1997,
+      "id": "2",
+      "nuotrauka": "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Seven_Years_in_Tibet_cover.jpeg/220px-Seven_Years_in_Tibet_cover.jpeg"
+    }
+  ],
+  "knygos":[
+    {
+      "pavadinimas": "Vagabond",
+      "id": "0"
+    }
+  ]
+}

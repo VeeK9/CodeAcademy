@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>34 paskaita - JSON</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" type="module"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section>
+      <h1>JSON server</h1>
+      <p>
+        JSON serveris yra NPM (Node Package Manager) paketas, kurio pagalba galima susikurti lokali API serveri su savo sugalvotais duomenimis, kurie privalo buti JSON faile, JSON formatu. I si serveri galima bus siusti fetch uzklausa su ivariais metodais.
+      </p>
+      <h4>Tam, kad galetume naudotis JSON serveriu mums reikia:</h4>
+      <ol>
+        <li>npm (isiraso kartu su Node'u)</li>
+        <li>Isirasyti json-server globaliai</li>
+        <li>Susikurti JSON faila tinkama struktura</li>
+        <li>pasileisti JSON faila su json-server komanda</li>
+      </ol>
+    </section>
+    <section>
+      <h1>Terminalo komandos</h1>
+      <ul>
+        <li>cd - change directory - vaikscioti tarp aplankalu</li>
+        <li>ls - list files - isvardina failus/aplankalus esamoje direktorijoje (mac/linux)</li>
+        <li>dir - tik windows, tas pats kas ls</li>
+        <li>json-server filename.json</li>
+        <li>clear - isvalo terminalo ekrana (nukelia aukstyn)</li>
+      </ul>
+      <h2>Navigavimas (cd +?)</h2>
+      <ul>
+        <li>/ - projekto.sistemos pradzia</li>
+        <li>./ - niekur (lieki toje pacioje vietoje)</li>
+        <li>../ - vienas zingsnis per aplankala atgal</li>
+      </ul>
+    </section>
+    <section>
+      <h1>JSON server Routes</h1>
+      <p>*Kiekvienas duomenu laukas (dName) gauna savo route'us*</p>
+      <ul>
+        <li>GET dName - gauti visus dName lauke esancius duomenis</li>
+        <li>GET dName/id - gauti dName lauke esanti duomeni su nurodytu id</li>
+        <li>POST dName - papildyti dName lauke esancius duomenis nauju duomenimi</li>
+        <li>PUT dName/id - redaguoja dName lauke specifini duomeni, viska (isskyrus ID) perrasydamas nauja info</li>
+        <li>PATCH dName/id - redaguoti specifini duomeni (pagal id) dName lauke, bet tik ta informacijos dali, kuri buvo paduota</li>
+        <li>DELETE dName/id - trinimas specifinis duomuo (pagal id) dName lauke</li>
+      </ul>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
