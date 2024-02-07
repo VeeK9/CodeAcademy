@@ -1,0 +1,32 @@
+#movies {
+  >h1 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  }
+}
+
+.movieCard {
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  position: relative;
+
+  > img {
+    width: 65%;
+  }
+}
+
+.trash {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}

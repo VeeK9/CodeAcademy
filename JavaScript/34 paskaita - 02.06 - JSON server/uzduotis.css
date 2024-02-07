@@ -1,0 +1,144 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+header{
+  text-align: center;
+}
+
+#books {
+  text-align: center;
+  position: relative;
+
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+#addBook {
+  padding: 5px 9px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: 0 3px 4px lightgray;
+    transform: translateY(-1px);
+  }
+}
+
+#form {
+  width: 320px;
+  margin: 20px auto;
+  > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+
+    > textarea {
+      width: 140px;
+      resize: vertical;
+      font-family: Arial;
+    }
+  }
+}
+
+.bookCard {
+  width: 270px;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 30px;
+  background-color: white;
+  box-shadow: 1px 1px 5px gray;
+  border-radius: 5px;
+  position: relative;
+
+  > * {
+    margin-top: 0;
+  }
+
+  > img {
+    height: 200px;
+    cursor: pointer;
+  }
+}
+
+.trash {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 101;
+  padding: 5px 9px;
+  color: tomato;
+  border-radius: 4px;
+  background-color: rgba(211, 211, 211, 0.4);
+  border: 0;
+  box-shadow: 1px 1px 3px tomato;
+}
+
+.read {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  z-index: 101;
+  padding: 5px 9px;
+  color: green;
+  border-radius: 4px;
+  background-color: rgba(211, 211, 211, 0.4);
+  border: 0;
+  box-shadow: 1px 1px 3px green;
+}
+
+.notRead::after {
+  content: 'I have already read it';
+}
+.hadRead::after {
+  content: "I didn't read this";
+}
+
+.hasBeenRead {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.hasBeenRead::after {
+  content: 'DONE';
+  position: absolute;
+  top: 120px;
+  right: 10px;
+  color: lightgreen;
+  font-size: 100px;
+  transform: rotate(315deg);
+  filter: drop-shadow(1px 1px 10px black);
+}
+
+.modal {
+  width: 500px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px gray;
+  background-color: white;
+
+  > button {
+    background-color: white;
+    border-radius: 3px;
+    width: 100px;
+    border: 1px solid black;
+
+    margin: 10px auto 0;
+  }
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}

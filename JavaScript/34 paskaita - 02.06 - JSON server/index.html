@@ -51,6 +51,28 @@
         <li>DELETE dName/id - trinimas specifinis duomuo (pagal id) dName lauke</li>
       </ul>
     </section>
+    <section id="movies">
+      <h1>Prideti nauja filma</h1>
+      <form>
+        <div>
+          <label for="pavadinimas">Pavadinimas</label>
+          <input type="text" name="pavadinimas" id="pavadinimas" minlength="1" maxlength="60">
+        </div>
+        <div>
+          <label for="poster">Plakato nuoroda</label>
+          <input type="url" name="poster" id="poster">
+        </div>
+        <div>
+          <label for="year">Leidimo Metai</label>
+          <input type="number" name="year" id="year" min="1900" max="2024">
+        </div>
+        <input type="submit" value="Prideti">
+      </form>
+      <h1>Musu filmai</h1>
+      <div>
+
+      </div>
+    </section>
   </main>
   <footer></footer>
 </body>
