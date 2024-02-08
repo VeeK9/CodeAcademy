@@ -1,0 +1,28 @@
+{
+  "school": [
+    {
+      "pavadinimas": "Taurages kulturke",
+      "fakultetuKiekis": 2,
+      "miestas": "Taurage",
+      "id": "6541"
+    },
+    {
+      "id": "6544",
+      "pavadinimas": "LSMU",
+      "miestas": "Kaunas",
+      "fakultetuKiekis": 7
+    },
+    {
+      "pavadinimas": "VU",
+      "fakultetuKiekis": 10,
+      "miestas": "Vilnius",
+      "id": "6522"
+    },
+    {
+      "id": "6522",
+      "pavadinimas": "VU",
+      "miestas": "Vilnius",
+      "fakultetuKiekis": 10
+    }
+  ]
+}

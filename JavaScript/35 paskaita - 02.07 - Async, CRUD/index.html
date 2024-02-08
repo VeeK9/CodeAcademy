@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>35 paskaita - Async ir CRUD</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" type="module"></script>
+</head>
+<body>
+  <main>
+    <section> <!-- Async -->
+      <h1>Asinchroninis programavimas</h1>
+      <p>
+        Asinchroniniio pprogramavimo ideja yra ta, kad kol vykdosi vienas kodas, galima leisti vykdytis kitam kodui. Kitaip pasakius atlikti keleta veiksmu vienu metu.
+      </p>
+      <h4>Step by step</h4>
+      <ol>
+        <li>setTimeout(callback, time)</li>
+        <li>Promise(resolve, reject)</li>
+        <li>then catch finally</li>
+        <li>asyncF await</li>
+        <li>try catch finally codeBlocks</li>
+      </ol>
+      <div> <!-- setTimeout -->
+        <h3>setTimeout</h3>
+        <p>
+          SetTimeout funkcija atlieka kazkokius veiksmus (callback) po nurodyto laiko tarpo
+        </p>
+        <p>
+          setTimeout( () => {...veiksmai...}, 1000)
+        </p>
+      </div>
+      <div> <!-- Promise -->
+        <h3>Promise</h3>
+        <p>
+          Rasant asinchronini koda yra kuriami Promise'ai (pazadai). <br>
+          Promise'ai pazada grazinti kazkoki atsakyma, kurio, Promiso iskvietimo momentu, mes dar neturime. <br>
+          Promise po kazkiek laiko mums grazins atsakyma, kuri yra pazadejes (resolve'ins) ARBA del kazkokios priezasties negrazins norimo atsakymo, grazins kazkokia uzklausos atmetimo informacija (reject'ins).
+        </p>
+        <p>
+          Promise((resolve, reject) => {
+            if(good){
+              resolve('answer')
+            } else if(bad0){
+              reject('error0')
+            } else if(bad1){
+              reject('error1')
+            } else {
+              reject('errorSmth')
+            }
+          })
+        </p>
+      </div>
+      <div> <!-- then catch finally -->
+        <h3>then catch finally</h3>
+        <p>
+          Then, catch ir finally gali buti naudojami tik su funkcijomis, kurios grazina promise'us. <br>
+          Kai pazadas yra grazinamas, tik tuomes vykdosi then arba catch. <br>
+          Then vykdosi tuomet kai Promise'as yra resolve'inamas. <br>
+          Catch vykdosi tuomet kai Promise'as yra rejecti'inamas arba then viduje ivyksta klaida. <br>
+          Finally vykdosi po visu then;u ar catch'u.
+        </p>
+        <p>
+          Promise(...).then().then().then().catch().finally()
+        </p>
+      </div>
+      <div> <!-- asyncF ir await -->
+        <h3>Async ir await</h3>
+        <p>
+          Rasant koda asinchroniskai, kartais reikia kazkiek lukteleti kol bus atlikti vieni ar kiti veiksmai. <br>
+          Tam, kad palauktume atsakymo, reikia kazkaip uzdelsti koda. <br>
+          Tai galima padaryti su: setTimeout (blogai, nes kuriamas callbackHell); thenCatchFinally (good enough); arbasu async await (better?).
+        </p>
+        <p>
+          Norint rasyti asinchronini koda su async ir await, reikia: <br>
+          Promise'o (funkcijos, kuri grazina pazada); <br>
+          Asinchronines funkcijos, kurioje kreipiamasi i promise'a. <br>
+          Await raktinio zodzio pries kreipimasi i Promise'a. <br>
+          extra: try catch finally bloku (paziuresim veliau)
+        </p>
+        <p>
+          async function name(){ const ats = await Promise(); ats+='keisti' }
+        </p>
+      </div>
+      <div> <!-- try actch finally codeBlocks -->
+        <h3>Try Catch Finally</h3>
+        <p>
+          Try, Catch ir Finally yra naudojami norint aprasyti error'u handle'inima grazia, patogia ir lengvai skaitoma sintakse. <br>
+          Try bloke kodas yra vykdomas jeigu nera error'u. <br>
+          Catch blokas yra vykdomas jeigu kazkur ivyko error'as. <br>
+          Finally blokas vykdomas po try/catch.
+        </p>
+        <p>
+          try{...veiksmai...}catch{...veiksmai...}finally{...veiksmai...}
+        </p>
+      </div>
+    </section>
+    <section id="crud"> <!-- CRUD -->
+      <h1>Prideti aukstaja mokykla</h1>
+      <form>
+        <div>
+          <label for="name">Pavadinimas</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div>
+          <label for="city">Miestas</label>
+          <select name="city" id="city">
+            <option value="Vilnius">Vilnius</option>
+            <option value="Kaunas">Kaunas</option>
+            <option value="Klaipeda">Klaipeda</option>
+            <option value="Siauliai">Siauliai</option>
+            <option value="Panevezys">Panevezys</option>
+            <option value="Alytus">Alytus</option>
+            <option value="Ukmerge">Ukmerge</option>
+            <option value="Taurage">Taurage</option>
+            <option value="Utena">Utena</option>
+          </select>
+        </div>
+        <div>
+          <label for="fNr">Fakultetu Kiekis:</label>
+          <input type="number" name="fNr" id="fNr">
+        </div>
+        <input type="submit" value="prideti">
+      </form>
+      <h1>Musu aukstuju mokyklu sarasas</h1>
+      <div></div>
+    </section>
+  </main>
+</body>
+</html>
