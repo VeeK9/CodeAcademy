@@ -1,0 +1,24 @@
+{
+  "coffee": [
+      {
+          "id": "123123123123",
+          "name": "Yirgacheffe",
+          "brand": "Eskedar Coffee",
+          "countryRoastedIn": "Lithuania",
+          "region": "Yirgacheffe, Ethiopia",
+          "typeOfBeans": "Arabika",
+          "notes": "blackberries and blueberries",
+          "aroma": "Rich Chocolate"
+          
+      },{
+          "id": "124124124124",
+          "name": "Jacobs 3in1",
+          "brand": "Jacobs",
+          "countryRoastedIn": "Czhechia?",
+          "region": "hole region, Ass",
+          "typeOfBeans": "Instant",
+          "notes": "sugar and cancer",
+          "aroma": "sweet but disgusting"
+      }
+  ]
+}

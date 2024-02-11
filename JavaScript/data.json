@@ -1,0 +1,280 @@
+{
+  "filmai": [
+    {
+      "pavadinimas": "Tadas Blinda. Pradzia",
+      "leidimoData": 2011,
+      "id": "0",
+      "nuotrauka": "https://upload.wikimedia.org/wikipedia/lt/thumb/1/14/Tadas_Blinda_Prad%C5%BEia_DVD_vir%C5%A1elis.jpeg/200px-Tadas_Blinda_Prad%C5%BEia_DVD_vir%C5%A1elis.jpeg"
+    },
+    {
+      "pavadinimas": "2012",
+      "leidimoData": 2009,
+      "id": "1",
+      "nuotrauka": "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/2012_Poster.jpg/220px-2012_Poster.jpg"
+    },
+    {
+      "pavadinimas": "Seven Years in Tibet",
+      "leidimoData": 1997,
+      "id": "2",
+      "nuotrauka": "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Seven_Years_in_Tibet_cover.jpeg/220px-Seven_Years_in_Tibet_cover.jpeg"
+    },
+    {
+      "id": "5a78",
+      "pavadinimas": "Killers of the Flower Moon",
+      "leidimoData": 2023,
+      "nuotrauka": "https://upload.wikimedia.org/wikipedia/en/thumb/8/88/Killers_of_the_Flower_Moon_film_poster.jpg/220px-Killers_of_the_Flower_Moon_film_poster.jpg"
+    },
+    {
+      "pavadinimas": "The Good, the Bad and the Ugly",
+      "nuotrauka": "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Good_the_bad_and_the_ugly_poster.jpg/220px-Good_the_bad_and_the_ugly_poster.jpg",
+      "id": "e7fe",
+      "leidimoData": 1966
+    },
+    {
+      "id": "1707220809230",
+      "pavadinimas": "Mulan",
+      "nuotrauka": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Movie_poster_mulan.JPG/220px-Movie_poster_mulan.JPG",
+      "leidimoData": 1998
+    }
+  ],
+  "books": [
+    {
+      "id": "1707225859417",
+      "title": "What I Talk About When I Talk About Running",
+      "author": "Haruki Murakami",
+      "year": 2007,
+      "url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1473397159i/2195464.jpg",
+      "info": "In 1982, having sold his jazz bar to devote himself to writing, Murakami began running to keep fit. A year later, he’d completed a solo course from Athens to Marathon, and now, after dozens of such races, not to mention triathlons and a dozen critically acclaimed books, he reflects upon the influence the sport has had on his life and—even more important—on his writing.",
+      "hasBeenRead": true
+    },
+    {
+      "id": "1707226382196",
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "year": 1953,
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Fahrenheit_451_1st_ed_cover.jpg/220px-Fahrenheit_451_1st_ed_cover.jpg",
+      "info": "In a distant future, Guy Montag is a fireman employed to burn outlawed books, along with the houses they are hidden in. One fall night while returning from work, he meets his new neighbor Clarisse McClellan, a teenage girl whose free-thinking ideals and liberating spirit cause him to question his life and perceived happiness.",
+      "hasBeenRead": true
+    },
+    {
+      "id": "1707230055099",
+      "title": "Aš esu Buda",
+      "author": "Jose Freches",
+      "year": 2004,
+      "url": "https://thumb.knygos-static.lt/u9RtZnY8pM7pbLfVjF6akZllVFs=/fit-in/0x800/images/books/1154943/1504097721_jpg.jpg",
+      "info": "Budos vardas yra garsus visame pasaulyje, bet apie jį  patį mažai žinoma: Jose Freches talento dėka Buda pirmą kartą mums pasakoja savo gyvenimą... Sidharta Gautama, garsios karių šeimos įpėdinis, gimęs VI a. pr. Kr., auga apsuptas švelnumo ir pagarbos, išmoksta medžioti, patiria meilės jausmą...",
+      "hasBeenRead": true
+    },
+    {
+      "id": "1707229385070",
+      "title": "1984",
+      "author": "George Orwell",
+      "year": 1949,
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/51/1984_first_edition_cover.jpg",
+      "info": "In 1984, civilisation has been ravaged by world war, civil conflict, and revolution. Airstrip One (formerly known as Great Britain) is a province of Oceania, one of the three totalitarian super-states that rule the world. It is ruled by \"The Party\" under the ideology of \"Ingsoc\" (a Newspeak shortening of \"English Socialism\") and the mysterious leader Big Brother, who has an intense cult of personality. The Party brutally purges out anyone who does not fully conform to their regime, using the Thought Police and constant surveillance through telescreens (two-way televisions), cameras, and hidden microphones. Those who fall out of favour with the Party become \"unpersons\", disappearing with all evidence of their existence destroyed.",
+      "hasBeenRead": false
+    },
+    {
+      "id": "1707244023973",
+      "title": "The Time Traveler's Wife",
+      "author": "Audrey Niffenegger",
+      "year": 2003,
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/TimeTravellersWife.jpg/220px-TimeTravellersWife.jpg",
+      "info": "This is the extraordinary love story of Clare and Henry, who met when Clare was six and Henry was thirty-six, and were married when Clare was twenty-two and Henry was thirty. Impossible but true, because Henry suffers from a rare condition where his genetic clock periodically resets and he finds himself pulled suddenly into his past or future. In the face of this force they can neither prevent nor control, Henry and Clare’s struggle to lead normal lives is both intensely moving and entirely unforgettable.",
+      "hasBeenRead": true
+    },
+    {
+      "id": "1707249670574",
+      "title": "Balti dantys",
+      "author": "Zadie Smith",
+      "year": 2012,
+      "url": "https://thumb.knygos-static.lt/GVJrFSaLvv8DlE0Sv8o8AukobRY=/fit-in/0x800/images/books/12077/1462877281_baltij.jpg",
+      "info": "8–ojo dešimtmečio Londone du geriausi draugai – taip ir negavę progos pakovoti Antrojo pasaulinio karo veteranai britas Arčis Džounsas ir musulmonas bengalas Samadas Ikbalis – bando įšokti į nuvažiuojantį gyvenimo traukinį. Antrąjį šansą Arčiui suteikia vedybos su stulbinamai gražia, perpus jaunesne jamaikiete Klara. Tik štai jųdviejų duktė Airė visiškai nepateisina savo vardo (jamaikietiškai – \"jokių problemų\"). O iš vėlyvos Samado santuokos gimę sūnūs dvyniai griauna kiekvieną tėvo pastangą kreipti juos „teisingu“ keliu.\n",
+      "hasBeenRead": false
+    }
+  ],
+  "school": [
+    {
+      "pavadinimas": "Taurages kulturke",
+      "fakultetuKiekis": 2,
+      "miestas": "Taurage",
+      "id": "6541"
+    },
+    {
+      "pavadinimas": "LSMU",
+      "fakultetuKiekis": 7,
+      "miestas": "Kaunas",
+      "id": "6544"
+    },
+    {
+      "pavadinimas": "VU",
+      "fakultetuKiekis": 10,
+      "miestas": "Vilnius",
+      "id": "6522"
+    },
+    {
+      "id": "6522",
+      "pavadinimas": "VU",
+      "miestas": "Vilnius",
+      "fakultetuKiekis": 10
+    }
+  ],
+  "coffee": [
+    {
+      "id": "123123123123",
+      "name": "Yirgacheffe",
+      "brand": "Eskedar Coffee",
+      "countryRoastedIn": "Lithuania",
+      "region": "Yirgacheffe, Ethiopia",
+      "typeOfBeans": "Arabica",
+      "notes": "blackberries and blueberries",
+      "aroma": "Rich Chocolate",
+      "url": "https://cdn.shopify.com/s/files/1/0553/2676/9281/products/GA2A8641_Eskedar_Coffee_packages-min-scaled.jpg",
+      "clicks": 1,
+      "rtg": 5
+    },
+    {
+      "id": "124124124124",
+      "name": "Jacobs 3in1",
+      "brand": "Jacobs",
+      "countryRoastedIn": "Czhechia",
+      "region": "some shithole probably",
+      "typeOfBeans": "Instant",
+      "notes": "sugar and cancer",
+      "aroma": "sweet but disgusting",
+      "url": "https://jubileegrocery.com/wp-content/uploads/2023/10/814Um8EvsTL.jpg",
+      "clicks": 9,
+      "rtg": 10
+    },
+    {
+      "id": "1707431763348",
+      "name": "Caprisette Fragrante",
+      "brand": "Coffee Friend",
+      "countryRoastedIn": "European Union",
+      "region": "South America",
+      "typeOfBeans": "Mixed",
+      "notes": "Milk Chocolate and walnut",
+      "aroma": "Peanut butter and chocolate sweets",
+      "url": "https://img.kavosdraugas.lt/1c01e579-ed51-43fc-a209-88a9c4d69190/470x470/cafra2png.webp",
+      "clicks": 3,
+      "rtg": 13
+    },
+    {
+      "id": "1707459859563",
+      "name": "Brasilia",
+      "brand": "kava96°C",
+      "countryRoastedIn": "European Union",
+      "region": "Minas Gerais, Brazil",
+      "typeOfBeans": "Arabica",
+      "notes": "almonds and malt",
+      "aroma": "subtle, sweet dehydrated plum",
+      "url": "https://www.kava96.lt/114-home_default/kavos-pupeles-kava96c-brasilia-900-g.jpg",
+      "clicks": 3,
+      "rtg": 10
+    },
+    {
+      "id": "1707462312078",
+      "name": "Peru",
+      "brand": "kava96°C",
+      "countryRoastedIn": "European Union",
+      "region": "Pacasmayo, Peru",
+      "typeOfBeans": "Arabica",
+      "notes": "Dried exotic fruits and spices",
+      "aroma": "very sweet and fruity",
+      "url": "https://www.kava96.lt/117-home_default/kavos-pupeles-kava96c-peru-900-g.jpg",
+      "clicks": 2,
+      "rtg": 5
+    },
+    {
+      "id": "1707464784301",
+      "name": "Kenya Kiaragana Peaberry",
+      "brand": "Taste Map",
+      "countryRoastedIn": "Lithuania",
+      "region": "Kirinyaga, Kenya",
+      "typeOfBeans": "Arabica",
+      "notes": "figs, plums, orange juice",
+      "aroma": "balanced, juicy black currant and figs",
+      "url": "https://www.tastemap.lt/app/uploads/2021/12/044.png",
+      "clicks": 4,
+      "rtg": 19
+    },
+    {
+      "id": "1707470750933",
+      "name": "Espresso Pellini Top",
+      "brand": "Pellini",
+      "countryRoastedIn": "Italy",
+      "region": "Brazil, Central America",
+      "typeOfBeans": "Arabica",
+      "notes": "",
+      "aroma": "",
+      "url": "https://www.kavoszinovai.lt/images/uploader/ma/776x776.g/malta-kava-pellini-top-250g-1-1.jpg?t=6167",
+      "clicks": 4,
+      "rtg": 11
+    },
+    {
+      "name": "Infiniment Fruite",
+      "brand": "Nespresso",
+      "countryRoastedIn": "Switzerland",
+      "region": "South America",
+      "typeOfBeans": "Arabica",
+      "notes": "Raspberries and cereal",
+      "aroma": "velvety raspberries",
+      "url": "https://img.ricardostatic.ch/images/da4a5886-e415-48dd-8c31-b00d9056286d/t_1000x750/nespresso-vertuo-kapseln-infiniment-fruite-saveur-framboise",
+      "id": "1707470605661",
+      "clicks": 3,
+      "rtg": 10
+    },
+    {
+      "name": "Caprisette Italiano",
+      "brand": "Coffee Friend",
+      "countryRoastedIn": "European Union",
+      "region": "Africa, Asia, Brazil, Ethiopia, India, Mexico, South America",
+      "typeOfBeans": "Mixed",
+      "notes": "Sweet caramel and chocolate",
+      "aroma": "gourmet liqueur",
+      "url": "https://img.kavosdraugas.lt/5a14843e-700e-47d8-844a-7a05e5b441d1/400x400/capitaliano-4003png.jpg",
+      "id": "1707487231954",
+      "clicks": 2,
+      "rtg": 8
+    },
+    {
+      "id": "1707465671568",
+      "name": "Redbeans Gold",
+      "brand": "Redbeans",
+      "countryRoastedIn": "Ethiopia",
+      "region": "Africa, Asia, Central America, South America",
+      "typeOfBeans": "Arabica",
+      "notes": "Red fruits and chocolate",
+      "aroma": "subtle sweetness",
+      "url": "https://img.kavosdraugas.lt/24d8ebb9-e0b6-4dd1-a9e5-278cbb28fa5c/470x470/rgl011jpg.webp",
+      "clicks": 2,
+      "rtg": 7
+    },
+    {
+      "name": "Love Birds",
+      "brand": "Eskedar Coffee",
+      "countryRoastedIn": "Lithuania",
+      "region": "Ethiopia",
+      "typeOfBeans": "Arabica",
+      "notes": "A hint of spiced berries",
+      "aroma": "roasted almonds and caramel",
+      "url": "https://eskedarcoffee.com/cdn/shop/files/GA2A5211.jpg",
+      "id": "1707465897487",
+      "clicks": 4,
+      "rtg": 16
+    },
+    {
+      "id": "1707487485952",
+      "name": "Sidamo",
+      "brand": "Eskedar Coffee",
+      "countryRoastedIn": "Lithuania",
+      "region": "Sidamo, Ethiopia",
+      "typeOfBeans": "Arabica",
+      "notes": "Red currants and subtle hints of rose tea",
+      "aroma": "Blooming flowers",
+      "url": "https://eskedarcoffee.com/cdn/shop/products/GA2A8647_Eskedar_Coffee_packages-min-scaled.jpg",
+      "rtg": 73,
+      "clicks": 17
+    }
+  ]
+}
