@@ -178,11 +178,11 @@ export default class Coffee{
 
     const submitInput = document.createElement('input');
     submitInput.setAttribute('type', 'submit');
-    submitInput.setAttribute('value', 'change');
+    submitInput.setAttribute('value', 'Change');
 
     const close = document.createElement('button');
     close.classList.add('cancelButton');
-    const closeText = document.createTextNode('cancel');
+    const closeText = document.createTextNode('Cancel');
     close.appendChild(closeText);
     close.addEventListener('click', () => {
       editModal.remove();
