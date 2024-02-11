@@ -147,17 +147,15 @@
       "rtg": 10
     },
     {
-      "id": "1707431763348",
       "name": "Caprisette Fragrante",
       "brand": "Coffee Friend",
       "countryRoastedIn": "European Union",
       "region": "South America",
       "typeOfBeans": "Mixed",
       "notes": "Milk Chocolate and walnut",
-      "aroma": "Peanut butter and chocolate sweets",
+      "aroma": "Peanut Butter and chocolate sweets",
       "url": "https://img.kavosdraugas.lt/1c01e579-ed51-43fc-a209-88a9c4d69190/470x470/cafra2png.webp",
-      "clicks": 3,
-      "rtg": 13
+      "id": "1707431763348"
     },
     {
       "id": "1707459859563",
@@ -182,8 +180,8 @@
       "notes": "Dried exotic fruits and spices",
       "aroma": "very sweet and fruity",
       "url": "https://www.kava96.lt/117-home_default/kavos-pupeles-kava96c-peru-900-g.jpg",
-      "clicks": 2,
-      "rtg": 5
+      "clicks": 3,
+      "rtg": 8
     },
     {
       "id": "1707464784301",
@@ -212,6 +210,7 @@
       "rtg": 11
     },
     {
+      "id": "1707470605661",
       "name": "Infiniment Fruite",
       "brand": "Nespresso",
       "countryRoastedIn": "Switzerland",
@@ -220,7 +219,6 @@
       "notes": "Raspberries and cereal",
       "aroma": "velvety raspberries",
       "url": "https://img.ricardostatic.ch/images/da4a5886-e415-48dd-8c31-b00d9056286d/t_1000x750/nespresso-vertuo-kapseln-infiniment-fruite-saveur-framboise",
-      "id": "1707470605661",
       "clicks": 3,
       "rtg": 10
     },
@@ -230,12 +228,10 @@
       "countryRoastedIn": "European Union",
       "region": "Africa, Asia, Brazil, Ethiopia, India, Mexico, South America",
       "typeOfBeans": "Mixed",
-      "notes": "Sweet caramel and chocolate",
+      "notes": "sweet caramel and chocolate",
       "aroma": "gourmet liqueur",
       "url": "https://img.kavosdraugas.lt/5a14843e-700e-47d8-844a-7a05e5b441d1/400x400/capitaliano-4003png.jpg",
-      "id": "1707487231954",
-      "clicks": 2,
-      "rtg": 8
+      "id": "1707487231954"
     },
     {
       "id": "1707465671568",
@@ -247,10 +243,11 @@
       "notes": "Red fruits and chocolate",
       "aroma": "subtle sweetness",
       "url": "https://img.kavosdraugas.lt/24d8ebb9-e0b6-4dd1-a9e5-278cbb28fa5c/470x470/rgl011jpg.webp",
-      "clicks": 2,
-      "rtg": 7
+      "clicks": 3,
+      "rtg": 8
     },
     {
+      "id": "1707465897487",
       "name": "Love Birds",
       "brand": "Eskedar Coffee",
       "countryRoastedIn": "Lithuania",
@@ -259,7 +256,6 @@
       "notes": "A hint of spiced berries",
       "aroma": "roasted almonds and caramel",
       "url": "https://eskedarcoffee.com/cdn/shop/files/GA2A5211.jpg",
-      "id": "1707465897487",
       "clicks": 4,
       "rtg": 16
     },

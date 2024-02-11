@@ -8,11 +8,25 @@
   <script src="./main.js" type="module"></script>
 </head>
 <body>
-  <header></header>
+  <header>
+    <nav>
+      <div>
+        <img src="./images/coffeePot.png" alt="Coffee-S-Pot">
+        <h3>Coffee<br>-S-<br>Pot</h3>
+      </div>
+      <form id="searchBar">
+        <input id="search" type="text" placeholder="search...">
+        <button type="submit"><span class="bi bi-search"></span></button>
+      </form>
+    </nav>
+  </header>
   <main>
+    <section id="hero">
+      <p>We take our<br>coffee breaks<br>seriously.</p>
+    </section>
     <section id="uzduotis">
       <h1>Kinds of coffee</h1>
-      <button id="coffeeFormOpen">add a coffee</button>
+      <button id="coffeeFormOpen"><span class="bi bi-plus-circle-fill"></span></button>
       <dialog id="coffeeForm">
         <form class="inputForm">
           <div>
@@ -62,6 +76,9 @@
     <section id="coffees">
     </section>
   </main>
-  <footer></footer>
+  <footer>
+    <a href="#"><span class="bi bi-chevron-double-up"></span><br>Back to the top</a>
+    <p>Copyright © Coffee-S-Pot 2024.<br>Made by thoughts and prayers.</p>
+  </footer>
 </body>
 </html>

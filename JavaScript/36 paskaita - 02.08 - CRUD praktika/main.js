@@ -1,5 +1,9 @@
 import Coffee from "./components/coffee.js";
 
+document.querySelector('nav > div').addEventListener('click', () => {
+  window.location.reload();
+})
+
 document.querySelector('#coffeeFormOpen').addEventListener('click', () => {
   document.querySelector('#coffeeForm').showModal();
 });
@@ -39,6 +43,8 @@ document.querySelector('#coffeeForm > form').addEventListener('submit', e => {
   document.querySelector('#coffeeForm').close();
 })
 
+
+
 fetch('http://localhost:3000/coffee')
   .then(res => res.json())
   .then(coffees => {
@@ -46,5 +52,37 @@ fetch('http://localhost:3000/coffee')
       const coffeeCard = new Coffee(coffee);
       document.querySelector('#coffees').prepend(coffeeCard);
     });
+  })
+
+  document.querySelector('#searchBar').addEventListener('submit', e => {
+    e.preventDefault;
+    const search = e.target.elements.search.value;
+    document.querySelectorAll('#coffees > div').forEach(div => {
+      div.remove();
+    });
+    document.querySelector('#coffees').textContent = ''
+    const noLuckText = document.createTextNode(`We found nothing based on "${search}"`);
+    document.querySelector('#coffees').appendChild(noLuckText);
+
+    fetch(`http://localhost:3000/coffee`)
+      .then(res => res.json())
+      .then(coffees => {
+        coffees.forEach(coffee => {
+          // console.log(coffee);
+          // console.log(Object.values(coffee))
+          // Object.values(coffee).indexOf(e.target.elements.search.value) == true;
+          // console.log(search)
+          // console.log(Object.values(coffee).toString().toLowerCase())
+          if(Object.values(coffee).toString().toLowerCase().lastIndexOf(search.toLowerCase().trim()) >= 0){
+            const coffeeCard = new Coffee(coffee);
+            // console.log(coffeeCard);
+            document.querySelector('#coffees').prepend(coffeeCard);
+            noLuckText.remove();
+          }
+          
+        })
+        // console.dir(document.querySelector('#coffees'))
+      })
+    e.target.reset();
   })
 
