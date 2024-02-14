@@ -130,8 +130,8 @@
       "notes": "blackberries and blueberries",
       "aroma": "Rich Chocolate",
       "url": "https://cdn.shopify.com/s/files/1/0553/2676/9281/products/GA2A8641_Eskedar_Coffee_packages-min-scaled.jpg",
-      "clicks": 1,
-      "rtg": 5
+      "clicks": 6,
+      "rtg": 29
     },
     {
       "id": "124124124124",
@@ -155,7 +155,9 @@
       "notes": "Milk Chocolate and walnut",
       "aroma": "Peanut Butter and chocolate sweets",
       "url": "https://img.kavosdraugas.lt/1c01e579-ed51-43fc-a209-88a9c4d69190/470x470/cafra2png.webp",
-      "id": "1707431763348"
+      "id": "1707431763348",
+      "clicks": 1,
+      "rtg": 3
     },
     {
       "id": "1707459859563",
@@ -231,7 +233,9 @@
       "notes": "sweet caramel and chocolate",
       "aroma": "gourmet liqueur",
       "url": "https://img.kavosdraugas.lt/5a14843e-700e-47d8-844a-7a05e5b441d1/400x400/capitaliano-4003png.jpg",
-      "id": "1707487231954"
+      "id": "1707487231954",
+      "clicks": 1,
+      "rtg": 4
     },
     {
       "id": "1707465671568",
