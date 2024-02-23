@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -26,10 +30,29 @@ header {
         font-size: 20px;
 
         &:hover {
-          text-decoration: underline;
+          text-decoration: ;
         }
       }
     }
   }
+}
 
+main {
+  section#hero {
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: azure;
+    height: 60vh;
+
+    > h1 {
+      font-size: 5rem;
+      text-align: center;
+    }
+
+    > img {
+      height: 60%;
+    }
+  }
 }
