@@ -40,7 +40,7 @@ const App = () => {
         url: "https://s1.15min.lt/static/cache/MTIwMHg5MDAsOTYweDYzNyw2MjQ4NjIsb3JpZ2luYWwsLGlkPTE2NTY3MzcmZGF0ZT0yMDE1JTJGMTElMkYxMSwyMjAxNTI3ODQ1/sachtine-branduoliniu-raketu-paleidimo-baze-dvina-5643393a0a2e1.jpg",
         alt: "Plokštinės raketų bazė"
       },
-      lokacija: "",
+      lokacija: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18216.82494114046!2d21.897107711832007!3d56.01450016010354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e50d5b6f59afab%3A0x4cad8f9cb50d6e90!2sCold%20War%20Museum!5e0!3m2!1sen!2slt!4v1708939598306!5m2!1sen!2slt",
       aprasymas: "Šaltojo karo muziejus – raketų bazė – muziejus Žemaitijos nacionaliniame parke, už 24 km į šiaurę nuo Plungės. Įrengtas buvusiame Sovietų Sąjungos balistinių raketų šachtiniame paleidimo komplekse, Plokštinės raketų bazėje."
     }
   ]

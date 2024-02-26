@@ -1,12 +1,27 @@
+import Image from "./Image";
+import Heading from "./Heading";
+import Paragraph from "./Paragraph";
+import I_Frame from "./I_frame";
+
 const Kortele = ({info:{pavadinimas, nuotrauka, lokacija, aprasymas}}) => {
   return (  
-    <div>
-      <img src={nuotrauka.url} alt={nuotrauka.alt} />
+    <div className="card">
       <div>
-        <h1>{pavadinimas}</h1>
-        <p>{aprasymas}</p>
+        <Heading 
+          text={pavadinimas}
+        />
+        <Image 
+          src={nuotrauka.url}
+          alt={nuotrauka.alt}
+        />
+        <Paragraph 
+          text={aprasymas}
+        />
       </div>
-      <iframe src={lokacija} frameBorder="0"></iframe>
+      <I_Frame 
+        src={lokacija}
+        title={pavadinimas}
+      />
     </div>
   );
 }

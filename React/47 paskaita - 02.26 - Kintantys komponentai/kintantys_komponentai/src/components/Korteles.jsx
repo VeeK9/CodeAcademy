@@ -3,7 +3,7 @@ import Kortele from "./Kortele";
 
 const Korteles = ({data:vietos}) => {
   return (
-    <>
+    <section id="cards">
       <Heading 
         text='Lankytinos Lietuvos Vietos'
       />
@@ -17,7 +17,7 @@ const Korteles = ({data:vietos}) => {
           })
         }
       </div>
-    </>
+    </section>
   );
 }
  
