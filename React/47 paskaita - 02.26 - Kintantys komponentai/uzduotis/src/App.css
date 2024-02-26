@@ -34,6 +34,11 @@ p {
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(133, 173, 173);
+    }
   }
 
   > img {
