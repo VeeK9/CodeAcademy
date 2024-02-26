@@ -30,7 +30,7 @@ header {
         font-size: 20px;
 
         &:hover {
-          text-decoration: ;
+          text-decoration: underline;
         }
       }
     }
