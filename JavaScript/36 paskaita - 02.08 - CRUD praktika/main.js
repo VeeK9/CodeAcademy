@@ -1,5 +1,31 @@
 import Coffee from "./components/coffee.js";
 
+
+fetch('http://localhost:8000/tasks')
+.then(res => res.json())
+.then(data => {
+  const tasks = data;
+})
+
+// const [tasks, setTasks] = useState([
+//   {
+//     id:123,
+//     done:false,
+//     title:'Take out the trash'
+//   },{
+//     id:234,
+//     done:false,
+//     title:'Take a walk outside'
+//   },{
+//     id:345,
+//     done:false,
+//     title:'Tidy up the kitchen'
+//   }
+// ])
+// localStorage.setItem('tasks', JSON.stringify(tasks));
+
+console.log(tasks);
+
 document.querySelector('nav > div').addEventListener('click', () => {
   window.location.reload();
 })

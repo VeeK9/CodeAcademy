@@ -1,0 +1,105 @@
+{
+  "dishes": [
+    {
+      "id": "0",
+      "pavadinimas": "Kebabas",
+      "nuotrauka": "https://www.unicornsinthekitchen.com/wp-content/uploads/2022/11/Doner-kebab-sq.jpg",
+      "kilmesSalis": "Bizantija",
+      "ragautas": true,
+      "ingredientai": [
+        "mesa",
+        "lavasas",
+        "darzoves",
+        "padazas"
+      ],
+      "kaina": {
+        "nuo": 4.5,
+        "iki": 10
+      }
+    },
+    {
+      "id": "1",
+      "pavadinimas": "Pica",
+      "nuotrauka": "https://www.eatingwell.com/thmb/k3RhYf4XhAeqAejYjdInOlSOp6I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/gettyimages-1124303516-36413b5bf61f45f1b7d18d90000b56b7.jpg",
+      "kilmesSalis": "Italija",
+      "ragautas": true,
+      "ingredientai": [
+        "padazas",
+        "picos padas",
+        "suris",
+        "mesa"
+      ],
+      "kaina": {
+        "nuo": 8,
+        "iki": 16
+      }
+    },
+    {
+      "id": "2",
+      "pavadinimas": "Cepelinai",
+      "nuotrauka": "https://i0.wp.com/www.neilsowerby.co.uk/wp-content/uploads/2021/11/Zeppelins.jpg?resize=1030%2C688&ssl=1",
+      "kilmesSalis": "Lietuva",
+      "ragautas": true,
+      "ingredientai": [
+        "mesa",
+        "bulves",
+        "grietine",
+        "spirguciai"
+      ],
+      "kaina": {
+        "nuo": 1.5,
+        "iki": 5
+      }
+    },
+    {
+      "id": "3",
+      "pavadinimas": "Ceviche",
+      "nuotrauka": "https://downshiftology.com/wp-content/uploads/2023/04/How-To-Make-Ceviche-4.jpg",
+      "kilmesSalis": "Peru",
+      "ragautas": false,
+      "ingredientai": [
+        "zalia zuvis",
+        "darzoves",
+        "zalia citrina"
+      ],
+      "kaina": {
+        "nuo": 10,
+        "iki": 20
+      }
+    },
+    {
+      "id": "1709127148555",
+      "pavadinimas": "Poutine",
+      "nuotrauka": "https://www.halfbakedharvest.com/wp-content/uploads/2015/03/Authentic-Canadian-Poutine-20.jpg",
+      "kilmesSalis": "Kanada",
+      "ragautas": true,
+      "ingredientai": [
+        "bulves",
+        "padazas",
+        "suris"
+      ],
+      "kaina": {
+        "nuo": 9,
+        "iki": 15
+      }
+    },
+    {
+      "id": "1709127266155",
+      "pavadinimas": "Sushi rolls",
+      "nuotrauka": "https://www.justonecookbook.com/wp-content/uploads/2020/01/Sushi-Rolls-Maki-Sushi-%E2%80%93-Hosomaki-1106-II.jpg",
+      "kilmesSalis": "Japonija",
+      "ragautas": true,
+      "ingredientai": [
+        "ryziai",
+        "lasisa",
+        "nori",
+        "avokadai",
+        "..."
+      ],
+      "kaina": {
+        "nuo": 3,
+        "iki": 7
+      }
+    }
+  ]
+}
