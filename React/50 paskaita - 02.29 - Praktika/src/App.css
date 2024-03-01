@@ -1,0 +1,189 @@
+@import url("https://necolas.github.io/normalize.css/latest/normalize.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body {
+  position: relative;
+  font-family: 'Gill Sans';
+  background-color: #9db1ac;
+}
+
+/* HEADER */
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9db1ac;
+  padding-inline: 20px;
+
+  > img {
+    height: 70%;
+  }
+
+  > .logIn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    > .user {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      > img {
+        height: 30px;
+      }
+    }
+  }
+}
+
+/* MAIN */
+
+/* HERO */
+#hero {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  > img {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: -15px;
+    left: -20px;
+    filter: blur(10px);
+    z-index: -1;
+  }
+
+  > h1 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 5px auto;
+  }
+
+  > hr {
+    width: 250px;
+    border: 1px solid white;
+  }
+}
+
+/* CONTENT & CARDS-CONTAINER*/
+#content {
+  text-align: center;
+  padding: 20px;
+
+  > h1 {
+    margin-bottom: 5px;
+  }
+
+  > hr {
+    width: 250px;
+    margin: 0 auto 30px;
+    border:1px solid black;
+  }
+
+  #cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* CARDS */
+.runnerCard {
+  width: 200px;
+  position: relative;
+
+  > img {
+    width: 80%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  > h2 {
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -20%);
+    color: white;
+    filter: drop-shadow(0 0 2px black);
+    cursor: pointer;
+  }
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 20px;
+  background-color: #9db1ac;
+
+  > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    padding: 0;
+
+    > li > a {
+      color: black;
+    }
+  }
+}
+
+/* DIALOG */
+dialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  
+  > div {
+    position: relative;
+    background-color: white;
+    width: 500px;
+    height: 700px;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: scroll;
+
+    > h1 {
+      margin-top: 0;
+    }
+
+    > img {
+      width: 250px;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      float: right;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+
+    > i {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+}
