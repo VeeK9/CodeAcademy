@@ -1,13 +1,20 @@
-const Header = ({runnersFollowed, logIn, logOut, loggedIn, users, setUser}) => {
+const Header = ({ runnersFollowed, logIn, logOut, loggedIn, user, users }) => {
 
   const logging = e => {
     e.preventDefault();
-    // console.log(users.filter(user => user.userName === e.target.elements.user.value));
-    // if(users.filter(user => user.userName === e.target.elements.user.value)){
-      logIn()
-    // } else {
-    //   logOut()
-    // }
+    const currentUser = {
+      userName: e.target.elements.user.value,
+      password: e.target.elements.password.value
+    };
+    if (users.find(user =>
+      user.userName === currentUser.userName && user.password === currentUser.password
+    )) {
+      logIn(users.find(user =>
+        user.userName === currentUser.userName && user.password === currentUser.password
+      ))
+    } else {
+      alert('Wrong user name and/or password')
+    }
   }
   return (
     <header>
@@ -16,24 +23,28 @@ const Header = ({runnersFollowed, logIn, logOut, loggedIn, users, setUser}) => {
         alt=""
       />
       {
-        loggedIn ? 
+        loggedIn ?
           <div
             className="logIn"
           >
             <div
               className="user"
-              >
-              <span>Hello, userName</span>
+            >
+              <p>Hello, <span>{user.userName}</span></p>
               <img
                 src="https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png"
                 alt="User"
               />
             </div>
-            <span>No. of athletes followed: {runnersFollowed}</span>
+            {
+              user.type === "admin" ?
+                <p>Administration mode</p> :
+                <p>No. of athletes followed: {runnersFollowed}</p>
+            }
             <button
               onClick={() => logOut()}
             >
-              Log Out    
+              Log Out
             </button>
           </div> :
           <form
@@ -42,7 +53,7 @@ const Header = ({runnersFollowed, logIn, logOut, loggedIn, users, setUser}) => {
             <input
               type="text"
               id="user"
-              placeholder="User Name"  
+              placeholder="User Name"
             />
             <input
               type="password"
@@ -58,5 +69,5 @@ const Header = ({runnersFollowed, logIn, logOut, loggedIn, users, setUser}) => {
     </header>
   );
 }
- 
+
 export default Header;

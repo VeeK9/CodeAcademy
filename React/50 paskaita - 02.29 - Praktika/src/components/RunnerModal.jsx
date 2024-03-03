@@ -1,18 +1,29 @@
-import {createPortal} from "react-dom";
+import { createPortal } from "react-dom";
+import { useState } from "react";
 import EventTimes from "./EventTimes"
+import EditRunnerModal from './EditRunnerModal';
+import DeleteRunnerModal from './DeleteRunnerModal';
 
-const RunnerModal = ({open, modalClose, runner}) => {
+const RunnerModal = ({ open, modalClose, runner, follow, deleteRunner, user, loggedIn, editRunner }) => {
 
-  const fastestEvents = Object.keys(runner.fastestTimes)
-  const fastestTimes = Object.values(runner.fastestTimes)
+  const fastestEvents = runner.fastestTimes ? Object.keys(runner.fastestTimes) : '';
+  const fastestTimes = runner.fastestTimes ? Object.values(runner.fastestTimes) : '';
 
-  if(!open)return null
+  const [editModal, setEditModal] = useState(false);
+  const editModalOpen = () => setEditModal(true);
+  const editModalClose = () => setEditModal(false);
+
+  const [deleteModal, setDeleteModal] = useState(false);
+  const deleteModalOpen = () => setDeleteModal(true);
+  const deleteModalClose = () => setDeleteModal(false);
+
+  if (!open) return null
   return createPortal(
     <dialog
-      open={open}
       onClick={() => modalClose()}
     >
       <div
+        className="runnerModal"
         onClick={(e) => {
           e.stopPropagation()
         }}
@@ -22,11 +33,11 @@ const RunnerModal = ({open, modalClose, runner}) => {
           alt={runner.name}
         />
         <h1>{runner.name}</h1>
-        <p>Country: {runner.country}</p>
-        <p>Shoes: {runner.shoes}</p>
-        <p>Running watch: {runner.watch}</p>
-        <h4>Notable wins</h4>
-        {
+        {runner.country && <p>Country: {runner.country}</p>}
+        {runner.shoes && <p>Shoes: {runner.shoes}</p>}
+        {runner.watch && <p>Running watch: {runner.watch}</p>}
+        {runner.notableWins.length > 0 && <h4>Notable wins:</h4>}
+        {runner.notableWins.length > 0 &&
           runner.notableWins.map((e, i) =>
             <EventTimes
               key={i}
@@ -34,17 +45,17 @@ const RunnerModal = ({open, modalClose, runner}) => {
             />
           )
         }
-        <h4>Fastest Times:</h4>
-        {
-          fastestEvents.map((e, i) => 
+        {Object.keys(runner.fastestTimes).length > 0 ? <h4>Fastest Times:</h4> : <></>}
+        {Object.values(runner.fastestTimes).length > 0 ?
+          fastestEvents.map((e, i) =>
             <EventTimes
               key={i}
               event={`${e} - ${fastestTimes[i]}`}
-             />
-          )
+            />
+          ) : <></>
         }
-        <h4>Honors</h4>
-        {
+        {runner.honors.length > 0 && <h4>Honors:</h4>}
+        {runner.honors.length > 0 &&
           runner.honors.map((e, i) =>
             <EventTimes
               key={i}
@@ -52,7 +63,52 @@ const RunnerModal = ({open, modalClose, runner}) => {
             />
           )
         }
-        <i 
+        <br />
+        {
+          loggedIn ?
+            user.type === "admin" ?
+              <div
+                className="adminButtons"
+              >
+                <button
+                  className="adminButton"
+                  onClick={() => deleteModalOpen()}
+                >
+                  <DeleteRunnerModal
+                    runner={runner}
+                    modalClose={modalClose}
+                    deleteModal={deleteModal}
+                    deleteRunner={deleteRunner}
+                    deleteModalClose={deleteModalClose}
+                  />
+                  Delete runner
+                </button>
+                <button
+                  className="adminButton"
+                  onClick={editModalOpen}
+                >
+                  <EditRunnerModal
+                    runner={runner}
+                    editModal={editModal}
+                    modalClose={modalClose}
+                    editRunner={editRunner}
+                    editModalClose={editModalClose}
+                  />
+                  Edit runner
+                </button>
+              </div> :
+              <button
+                onClick={() => follow(runner.id)}
+              >
+                {
+                  runner.followed ?
+                    "Unfollow" :
+                    "Follow"
+                }
+              </button> :
+            <></>
+        }
+        <i
           onClick={() => modalClose()}
           className="bi bi-x-circle"
         />
@@ -61,5 +117,5 @@ const RunnerModal = ({open, modalClose, runner}) => {
     document.querySelector('#portal')
   );
 }
- 
+
 export default RunnerModal;

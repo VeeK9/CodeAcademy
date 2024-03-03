@@ -1,6 +1,6 @@
 const EventTimes = ({event}) => {
   return (
-    <p>{event};</p>
+    <p>{event}</p>
   );
 }
  

@@ -1,16 +1,23 @@
 import RunnerCard from "./RunnerCard";
 
-const Content = ({runners}) => {
+const Content = ({runners, follow, open, modalOpen, modalClose, deleteRunner, user, loggedIn}) => {
   return (
     <section id="content">
-      <h1>Best Runners:</h1>
+      <h1>Your Followed Runners:</h1>
       <hr />
-      <div id="cardsContainer">
+      <div className="cardsContainer">
         {
-          runners.map(runner => 
+          runners.filter(runner => runner.followed).map(runner =>
             <RunnerCard 
+              open={open}
+              deleteRunner={deleteRunner}
+              modalOpen={modalOpen}
+              modalClose={modalClose}
               key={runner.id}
+              user={user}
+              loggedIn={loggedIn}
               runner={runner}
+              follow={follow}
             />
           )
         }
