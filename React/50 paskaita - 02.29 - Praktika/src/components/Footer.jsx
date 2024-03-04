@@ -30,7 +30,7 @@ const Footer = () => {
             />)
         }
       </ul>
-      <p>Copyright © 2024 Running Socially Ltd. All rights reserved. <b>Violators will be f*cked.</b></p>
+      <p>Copyright © 2024 Running Socially Ltd. All rights reserved. Violators will be f*cked.</p>
     </footer>
   );
 }

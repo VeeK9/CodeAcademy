@@ -94,19 +94,7 @@
         "Olympic Gold for 5k 2012, 2016",
         "Olympic Gold for 10k 2012, 2016"
       ],
-      "followed": false,
-      "editedRunner": {
-        "id": "3",
-        "name": "",
-        "photo": "",
-        "country": "",
-        "shoes": "",
-        "watch": "",
-        "fastestTimes": {},
-        "notableWins": "",
-        "honors": "",
-        "followed": false
-      }
+      "followed": false
     },
     {
       "id": "4",
@@ -212,18 +200,32 @@
       "name": "Zita is Taurages",
       "photo": "https://cdn3.onlithuania.com/content/uploads/2023/02/Vidmantas-Panavas333322347_5948611031841160_1587230345083293288_n.jpg",
       "fastestTimes": {},
-      "notableWins": [],
-      "honors": [],
-      "followed": true,
-      "editedRunner": {
-        "id": "1709473506456",
-        "name": "Zita is Taurages",
-        "photo": "https://cdn3.onlithuania.com/content/uploads/2023/02/Vidmantas-Panavas333322347_5948611031841160_1587230345083293288_n.jpg",
-        "fastestTimes": {},
-        "notableWins": [],
-        "honors": [],
-        "followed": false
-      }
+      "notableWins": [
+        "laimejau medali"
+      ],
+      "honors": [
+      ],
+      "followed": false
+    },
+    {
+      "id": "1709500329315",
+      "name": "Alfonsas is Jonavos",
+      "photo": "https://sa.lt/wp-content/uploads/2019/09/a_vaskevicius.jpg",
+      "country": "Lietuva",
+      "shoes": "Saucony Guide 10",
+      "watch": "Polar Vantage M",
+      "fastestTimes": {
+        "5k ": " 21:00",
+        " 10k": " 49:30"
+      },
+      "notableWins": [
+        "Jonavos desrainiu valgymo cempionas 1999, 2018",
+        " Ikea baldu destrukturizavimo plaktukais cempionas 2023"
+      ],
+      "honors": [
+        "Didziausios ropes Jonavos rajone augintojas"
+      ],
+      "followed": true
     }
   ]
 }

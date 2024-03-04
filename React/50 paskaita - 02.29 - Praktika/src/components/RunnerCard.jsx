@@ -38,6 +38,8 @@ const RunnerCard = ({ runner, follow, deleteRunner, user, loggedIn, editRunner, 
       // deleteModalClose={deleteModalClose}
       // setNewRunnerForm={setNewRunnerForm}
       // newRunnerForm={newRunnerForm}
+        setEditRunnerForm={setEditRunnerForm}
+        editRunnerForm={editRunnerForm}
       />
       <img
         src={runner.photo}

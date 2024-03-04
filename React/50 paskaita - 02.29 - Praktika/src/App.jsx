@@ -18,7 +18,17 @@ const App = () => {
     followed: false
   })
 
-  const [editRunnerForm, setEditRunnerForm] = useState({})
+  const [editRunnerForm, setEditRunnerForm] = useState({
+    name: '',
+    photo: '',
+    country: '',
+    shoes: '',
+    watch: '',
+    fastestTimes: '',
+    notableWins: '',
+    honors: '',
+    followed: false
+  })
 
   const [user, setUser] = useState({})
 
@@ -62,20 +72,6 @@ const App = () => {
         setRunners(data)
       })},[]);
 
-  useEffect(() => {
-    setEditRunnerForm({
-      name: '',
-      photo: '',
-      country: '',
-      shoes: '',
-      watch: '',
-      fastestTimes: '',
-      notableWins: '',
-      honors: '',
-      followed: ''
-    })
-  },[])
-
   const deleteRunner = (id) => {
     fetch(`http://localhost:3000/runners/${id}`, {
       method: "DELETE"
@@ -107,11 +103,11 @@ const App = () => {
     setRunners(runners.map(runner => {
       if(runner.id === editedRunner.id){
         fetch(`http://localhost:3000/runners/${runner.id}`, {
-          method: "PATCH",
+          method: "PUT",
           headers: {
             "Content-Type":"application/json",
           },
-          body: JSON.stringify({editedRunner})
+          body: JSON.stringify(editedRunner)
         });
         return {
           editedRunner

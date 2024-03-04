@@ -4,7 +4,7 @@ import EventTimes from "./EventTimes"
 import EditRunnerModal from './EditRunnerModal';
 import DeleteRunnerModal from './DeleteRunnerModal';
 
-const RunnerModal = ({ open, modalClose, runner, follow, deleteRunner, user, loggedIn, editRunner }) => {
+const RunnerModal = ({ open, modalClose, runner, follow, deleteRunner, user, loggedIn, editRunner, editRunnerForm, setEditRunnerForm }) => {
 
   const fastestEvents = runner.fastestTimes ? Object.keys(runner.fastestTimes) : '';
   const fastestTimes = runner.fastestTimes ? Object.values(runner.fastestTimes) : '';
@@ -36,15 +36,6 @@ const RunnerModal = ({ open, modalClose, runner, follow, deleteRunner, user, log
         {runner.country && <p>Country: {runner.country}</p>}
         {runner.shoes && <p>Shoes: {runner.shoes}</p>}
         {runner.watch && <p>Running watch: {runner.watch}</p>}
-        {runner.notableWins.length > 0 && <h4>Notable wins:</h4>}
-        {runner.notableWins.length > 0 &&
-          runner.notableWins.map((e, i) =>
-            <EventTimes
-              key={i}
-              event={e}
-            />
-          )
-        }
         {Object.keys(runner.fastestTimes).length > 0 ? <h4>Fastest Times:</h4> : <></>}
         {Object.values(runner.fastestTimes).length > 0 ?
           fastestEvents.map((e, i) =>
@@ -53,6 +44,15 @@ const RunnerModal = ({ open, modalClose, runner, follow, deleteRunner, user, log
               event={`${e} - ${fastestTimes[i]}`}
             />
           ) : <></>
+        }
+        {runner.notableWins.length > 0 && <h4>Notable wins:</h4>}
+        {runner.notableWins.length > 0 &&
+          runner.notableWins.map((e, i) =>
+            <EventTimes
+              key={i}
+              event={e}
+            />
+          )
         }
         {runner.honors.length > 0 && <h4>Honors:</h4>}
         {runner.honors.length > 0 &&
@@ -93,6 +93,8 @@ const RunnerModal = ({ open, modalClose, runner, follow, deleteRunner, user, log
                     modalClose={modalClose}
                     editRunner={editRunner}
                     editModalClose={editModalClose}
+                    setEditRunnerForm={setEditRunnerForm}
+                    editRunnerForm={editRunnerForm}
                   />
                   Edit runner
                 </button>
