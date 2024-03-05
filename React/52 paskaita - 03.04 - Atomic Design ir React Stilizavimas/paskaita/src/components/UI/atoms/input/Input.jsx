@@ -8,6 +8,9 @@ const StyledInput = styled.input`
   padding: 5px 10px;
   border-radius: 5px;
   border: 1px solid black;
+  width: 100px;
+  display: block;
+  margin: 10px auto;
 `;
 
 const Input = ({type, name, id, placeholder, valueState, onChangeF}) => {

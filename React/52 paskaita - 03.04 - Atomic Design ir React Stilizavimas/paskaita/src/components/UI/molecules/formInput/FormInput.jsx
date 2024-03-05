@@ -1,9 +1,21 @@
 import Input from "../../atoms/input/Input";
 import Label from "../../atoms/label/Label";
+import styled from "styled-components";
+
+const StyledFormInput = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  > input{
+    width: 300px;
+    margin: 0;
+  }
+`;
 
 const FormInput = ({nameId, labelText, inputType, placeholderText, value, onChangeF}) => {
   return (
-    <div>
+    <StyledFormInput>
       <Label
         text={labelText}
         inputName={nameId}
@@ -16,7 +28,7 @@ const FormInput = ({nameId, labelText, inputType, placeholderText, value, onChan
         valueState={value}
         onChangeF={onChangeF}
       />
-    </div>
+    </StyledFormInput>
   );
 }
  
