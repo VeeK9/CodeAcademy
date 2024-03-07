@@ -1,0 +1,58 @@
+{
+  "staloZaidimai": [
+    {
+      "id": "0",
+      "pavadinimas": "Saboteur",
+      "nuotrauka": "https://ksd-images.lt/display/aikido/store/fed795f68f21f6c8f1042244ed106137.jpg",
+      "zaidejai": {
+        "kiekisNuo": 3,
+        "kiekisIki": 10,
+        "amziusNuo": 8
+      },
+      "aprasymas": "Vaidmenų kortų žaidimas, kurio metu žaidėjai įsikūnija į ieškančių aukso nykštukų vaidmenis. Vieni ieško aukso, tačiau kiti tampa diversantais, kurių tikslas — sutrukdyti rasti tą auksą. Kas buvo auksakasys, o kas — diversantas paaiškėja tik žaidimo pabaigoje, tai leidžia žaidėjams apgauti kitus ir priverčia būti labai atsargiems ir niekuo nepasitikėti. Linksmi ginčai, diskusijos ir įtarinėjimai garantuoti!"
+    },{
+      "id": "1",
+      "pavadinimas": "Ticket To Ride: Europe",
+      "nuotrauka": "https://kainos-img.dgn.lt/photos2_25_118777862/img.jpg",
+      "zaidejai": {
+        "kiekisNuo": 2,
+        "kiekisIki": 5,
+        "amziusNuo": 8
+      },
+      "aprasymas": "Patirkite nuotykių keliaudami traukiniu po Europą. Žaidėjai turi surinkti reikiamą kiekį specialių kortų, kurios leidžia užimti traukinių linijas. Kuo ilgesnė traukinių linija, tuo daugiau taškų už ją yra suteikiama. Papildomi taškai suteikiami ir už specialių maršrutų nutiesimą. Tad lipk į vagoną ir keliauk — kelionė prasideda!"
+    },
+    {
+      "id": "56410075-af89-4068-941d-409145006d7a",
+      "pavadinimas": "Blogiausias Prezidentas",
+      "nuotrauka": "https://slightlymagicgames.com/wp-content/uploads/2022/12/worst-prezident-2.jpg",
+      "zaidejai": {
+        "kiekisNuo": 2,
+        "kiekisIki": 9,
+        "amziusNuo": 18
+      },
+      "aprasymas": "Blogiausias Prezidentas yra užtikrintai nepolitkorektiškas ir nesutarimus provokuojantis kortų žaidimas. Jo metu žaidėjams teks balsuoti už vieną iš dviejų siaubingų, niekam tikusių kandidatų į prezidentus. Kaip ir politinės diskusijos, šis žaidimas nereikalauja aukšto intelekto, susikaupimo ar blaivaus būvio. Žaidimas net nereikalauja geros nuotaikos. Norite ar nenorite, bet pradėję žaisti – pradėsite juoktis. Išsiaiškinimas kaip žaisti, neužtruks ilgiau nei 10-20 min. KAIP GALĖJAI BALSUOTI UŽ TĄ BJAURYBĘ!?"
+    },
+    {
+      "id": "8d471025-f7fe-4417-8c2e-81d01c765eb8",
+      "pavadinimas": "Exploding Kittens",
+      "nuotrauka": "https://m.media-amazon.com/images/I/71SKIXlW9WL._AC_UF894,1000_QL80_.jpg",
+      "zaidejai": {
+        "kiekisNuo": 2,
+        "kiekisIki": 5,
+        "amziusNuo": 7
+      },
+      "aprasymas": "Jūsų vienintelis tikslas yra išlikti gyvam, tačiau kačiukai mėgsta žaisti su pavojingais dalykais! Jei paimi sprogusį kačiuką nuo stalo - pralaimi. Nebent pavyks padaryti jį nepavojingu. Arba jei surinkote pakankamai kačių kortelių rinkinių. Arba žiūrite į ateitį. Arba, arba, arba ... Šis kortų žaidimas su kvailais pokštais ir paveikslėliais garantuoja linksmą ir kupiną juoko žaidimą!"
+    },
+    {
+      "id": "2dde4671-d736-42c5-9329-625a2b8a6ae7",
+      "pavadinimas": "Carcassonne",
+      "nuotrauka": "https://www.brain-games.lt/cdn/shop/products/brain-games-lt-stalo-zaidimai-carcassonne-37379822321913.jpg?v=1656533317",
+      "zaidejai": {
+        "kiekisNuo": 2,
+        "kiekisIki": 5,
+        "amziusNuo": 7
+      },
+      "aprasymas": "„Carcassonne\" — įdomus ir nesudėtingas strateginis žaidimas, per pastaruosius keletą metų tapęs vienu populiariausių žaidimų pasaulyje. Karkasono tvirtovė Pietų Prancūzijoje — viena didžiausių viduramžio tvirtovių Europoje. Jos didingos sienos iki šiol liudija apie senai praėjusių amžių kautynes."
+    }
+  ]
+}

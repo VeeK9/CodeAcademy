@@ -3,7 +3,7 @@ import RunnerModal from './RunnerModal';
 import EditRunnerModal from './EditRunnerModal';
 import DeleteRunnerModal from './DeleteRunnerModal';
 
-const RunnerCard = ({ runner, follow, deleteRunner, user, loggedIn, editRunner, editRunnerForm, setEditRunnerForm }) => {
+const RunnerCard = ({ runner, follow, deleteRunner, user, loggedIn, editRunner, editRunnerForm, setEditRunnerForm, editting, setEditting }) => {
 
   const [open, setOpen] = useState(false);
   const modalOpen = () => setOpen(true);
@@ -40,6 +40,8 @@ const RunnerCard = ({ runner, follow, deleteRunner, user, loggedIn, editRunner, 
       // newRunnerForm={newRunnerForm}
         setEditRunnerForm={setEditRunnerForm}
         editRunnerForm={editRunnerForm}
+        editting={editting}
+        setEditting={setEditting}
       />
       <img
         src={runner.photo}
@@ -53,7 +55,21 @@ const RunnerCard = ({ runner, follow, deleteRunner, user, loggedIn, editRunner, 
             <>
               <span
                 className='bi bi-pencil'
-                onClick={editModalOpen}
+                onClick={() => {
+                  setEditRunnerForm({
+                    id: runner.id,
+                    name: runner.name,
+                    photo: runner.photo,
+                    country: runner.country,
+                    shoes: runner.shoes,
+                    watch: runner.watch,
+                    fastestTimes: runner.fastestTimes ? Object.values(runner.fastestTimes).map((el, i) => Object.keys(runner.fastestTimes)[i].concat('-', Object.values(runner.fastestTimes)[i], ';')).join('\n') : '',
+                    notableWins: runner.notableWins.join(';\n'),
+                    honors: runner.honors.join(';\n'),
+                    followed: runner.followed
+                  });
+                  editModalOpen()
+                }}
               />
               <EditRunnerModal
                 runner={runner}
@@ -63,6 +79,8 @@ const RunnerCard = ({ runner, follow, deleteRunner, user, loggedIn, editRunner, 
                 editModalClose={editModalClose}
                 setEditRunnerForm={setEditRunnerForm}
                 editRunnerForm={editRunnerForm}
+                editting={editting}
+                setEditting={setEditting}
               />
               <span
                 className='bi bi-trash'

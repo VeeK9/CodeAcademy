@@ -1,23 +1,43 @@
 import { createPortal } from "react-dom";
-import { useRef } from "react";
 
-const EditRunnerModal = ({ runner, editModal, editRunner, editModalClose, editRunnerForm, setEditRunnerForm }) => {
-  const runnerRef = useRef(runner)
-
-  // console.log(editRunnerForm)
-
-  const existingFastestTimes = runner.fastestTimes ? Object.values(runner.fastestTimes).map((el, i) => Object.keys(runner.fastestTimes)[i].concat('-', Object.values(runner.fastestTimes)[i], ';').split(',')) : '';
-
-
+const EditRunnerModal = ({ runner, editModal, editRunner, editModalClose, editRunnerForm, setEditRunnerForm, editting, setEditting }) => {
+  
+  
+      const newFastestTimes = {};
+      if (editRunnerForm.fastestTimes.length > 0) {
+        editRunnerForm.fastestTimes.split(';').forEach(time => {
+          newFastestTimes[time.split('-')[0]] = time.split('-')[1]
+        })
+      }
+    
+      let newNotableWins = [];
+      if (editRunnerForm.notableWins.indexOf(';') > 0){
+        editRunnerForm.notableWins.split(';').forEach(win => {
+          if(win.startsWith('\n')){
+            newNotableWins.pop(win.substring(2))
+          } else {
+            newNotableWins.pop(win)
+          }
+        });
+      } else {
+        newNotableWins = editRunnerForm.notableWins
+      }
+      
+      let newHonors = [];
+      if (editRunnerForm.honors.indexOf(';') > 0){
+        editRunnerForm.honors.split(';').forEach(honor => {
+          if(honor.startsWith('\n')){
+            newHonors.pop(honor.substring(2))
+          } else {
+            newHonors.pop(honor)
+          }
+        });
+      } else {
+        newHonors = editRunnerForm.honors
+      }
   const editRunnerFormSubmit = e => {
     e.preventDefault();
-
-    const fastestTimes = {};
-    if (editRunnerForm.fastestTimes.length > 0) {
-      editRunnerForm.fastestTimes.split(';').forEach(time => {
-        fastestTimes[time.split('-')[0]] = time.split('-')[1]
-      })
-    }
+  
 
     const editedRunner = {
       id: runner.id,
@@ -26,36 +46,25 @@ const EditRunnerModal = ({ runner, editModal, editRunner, editModalClose, editRu
       country: editRunnerForm.country,
       shoes: editRunnerForm.shoes,
       watch: editRunnerForm.watch,
-      fastestTimes: fastestTimes,
-      notableWins: new Array (editRunnerForm.notableWins),
-      honors: new Array(editRunnerForm.honors),
-      followed: false
+      fastestTimes: newFastestTimes,
+      notableWins: newNotableWins,
+      honors: newHonors,
+      followed: runner.followed
     }
     editRunner(editedRunner);
     editModalClose()
-
-    setEditRunnerForm({
-      id: runnerRef.current.id,
-      name: runnerRef.current.name,
-      photo: runnerRef.current.photo,
-      country: runnerRef.current.country,
-      shoes: runnerRef.current.shoes,
-      watch: runnerRef.current.watch,
-      fastestTimes: runnerRef.current.fastestTimes,
-      notableWins: runnerRef.current.notableWins,
-      honors: runnerRef.current.honors,
-      followed: runnerRef.current.followed
-    })
   }
+  console.log(editRunnerForm);
+  console.log(newFastestTimes);
+  console.log(newNotableWins);
+  console.log(newHonors);
 
   const handleInputChange = (e) => {
     setEditRunnerForm({
-      ...runnerRef.current,
+      ...editRunnerForm,
       [e.target.name]: e.target.value
     })
   };
-
-  // console.log('alio');
 
   if (!editModal) return null
   return createPortal(
@@ -87,10 +96,7 @@ const EditRunnerModal = ({ runner, editModal, editRunner, editModalClose, editRu
               name="name"
               id="name"
               value={editRunnerForm.name}
-              onChange={e => setEditRunnerForm({
-                ...editRunnerForm,
-                name: e.target.value
-              })}
+              onChange={e => handleInputChange(e)}
             />
           </div><br />
           <div
@@ -147,7 +153,7 @@ const EditRunnerModal = ({ runner, editModal, editRunner, editModalClose, editRu
             name="fastestTimes"
             id="fastestTimes"
             placeholder="e.g. 5k - 20:00; 10k - 42:00"
-            value={existingFastestTimes}
+            value={editRunnerForm.fastestTimes}
             onChange={e => handleInputChange(e)}
           /><br />
           <label htmlFor="notableWins">Notable Wins:</label> <br />
@@ -191,6 +197,6 @@ const EditRunnerModal = ({ runner, editModal, editRunner, editModalClose, editRu
     </dialog>,
     document.querySelector('#portal')
   )
-}
+} 
 
 export default EditRunnerModal;

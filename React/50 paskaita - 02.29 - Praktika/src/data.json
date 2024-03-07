@@ -199,11 +199,21 @@
       "id": "1709473506456",
       "name": "Zita is Taurages",
       "photo": "https://cdn3.onlithuania.com/content/uploads/2023/02/Vidmantas-Panavas333322347_5948611031841160_1587230345083293288_n.jpg",
-      "fastestTimes": {},
+      "country": "lietuva",
+      "shoes": "batai",
+      "watch": "laikrodis watch",
+      "fastestTimes": {
+        "2k": "14:00",
+        "5k": "32:00"
+      },
       "notableWins": [
-        "laimejau medali"
+        "laimejau medali labai grazu",
+        "labai labai",
+        "katu katu"
       ],
       "honors": [
+        "koki medali laimejau",
+        "katu katu"
       ],
       "followed": false
     },
@@ -215,12 +225,12 @@
       "shoes": "Saucony Guide 10",
       "watch": "Polar Vantage M",
       "fastestTimes": {
-        "5k ": " 21:00",
-        " 10k": " 49:30"
+        "5k ": "21:00",
+        "10k": "49:30"
       },
       "notableWins": [
         "Jonavos desrainiu valgymo cempionas 1999, 2018",
-        " Ikea baldu destrukturizavimo plaktukais cempionas 2023"
+        "Ikea baldu destrukturizavimo plaktukais cempionas 2023"
       ],
       "honors": [
         "Didziausios ropes Jonavos rajone augintojas"

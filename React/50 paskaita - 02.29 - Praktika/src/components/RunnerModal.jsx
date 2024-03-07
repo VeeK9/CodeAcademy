@@ -4,7 +4,7 @@ import EventTimes from "./EventTimes"
 import EditRunnerModal from './EditRunnerModal';
 import DeleteRunnerModal from './DeleteRunnerModal';
 
-const RunnerModal = ({ open, modalClose, runner, follow, deleteRunner, user, loggedIn, editRunner, editRunnerForm, setEditRunnerForm }) => {
+const RunnerModal = ({ open, modalClose, runner, follow, deleteRunner, user, loggedIn, editRunner, editRunnerForm, setEditRunnerForm, editting, setEditting }) => {
 
   const fastestEvents = runner.fastestTimes ? Object.keys(runner.fastestTimes) : '';
   const fastestTimes = runner.fastestTimes ? Object.values(runner.fastestTimes) : '';
@@ -85,7 +85,21 @@ const RunnerModal = ({ open, modalClose, runner, follow, deleteRunner, user, log
                 </button>
                 <button
                   className="adminButton"
-                  onClick={editModalOpen}
+                  onClick={() => {
+                    setEditRunnerForm({
+                      id: runner.id,
+                      name: runner.name,
+                      photo: runner.photo,
+                      country: runner.country,
+                      shoes: runner.shoes,
+                      watch: runner.watch,
+                      fastestTimes: runner.fastestTimes ? Object.values(runner.fastestTimes).map((el, i) => Object.keys(runner.fastestTimes)[i].concat('-', Object.values(runner.fastestTimes)[i], ';')).join('') : '',
+                      notableWins: runner.notableWins.join(';\n'),
+                      honors: runner.honors.join(';\n'),
+                      followed: runner.followed
+                    });
+                    editModalOpen()
+                  }}
                 >
                   <EditRunnerModal
                     runner={runner}
@@ -95,6 +109,8 @@ const RunnerModal = ({ open, modalClose, runner, follow, deleteRunner, user, log
                     editModalClose={editModalClose}
                     setEditRunnerForm={setEditRunnerForm}
                     editRunnerForm={editRunnerForm}
+                    editting={editting}
+                    setEditting={setEditting}
                   />
                   Edit runner
                 </button>

@@ -30,15 +30,13 @@ const App = () => {
     followed: false
   })
 
+  const [editting, setEditting] = useState(false)
+
   const [user, setUser] = useState({})
 
   const [runners, setRunners] = useState([])
 
   const [loggedIn, setLoggedIn] = useState(false)
-
-  // const [open, setOpen] = useState(false);
-  // const modalOpen = () => setOpen(true);
-  // const modalClose = () => setOpen(false);
 
   const logIn = (name) => {
     setLoggedIn(true)
@@ -69,7 +67,7 @@ const App = () => {
     fetch('http://localhost:3000/runners')
       .then(res => res.json())
       .then(data => {
-        setRunners(data)
+        setTimeout(() => {setRunners(data)}, 1000)
       })},[]);
 
   const deleteRunner = (id) => {
@@ -100,18 +98,16 @@ const App = () => {
   }
 
   const editRunner = (editedRunner) => {
+    fetch(`http://localhost:3000/runners/${editedRunner.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type":"application/json",
+      },
+      body: JSON.stringify(editedRunner)
+    });
     setRunners(runners.map(runner => {
       if(runner.id === editedRunner.id){
-        fetch(`http://localhost:3000/runners/${runner.id}`, {
-          method: "PUT",
-          headers: {
-            "Content-Type":"application/json",
-          },
-          body: JSON.stringify(editedRunner)
-        });
-        return {
-          editedRunner
-        }
+        return editedRunner
       } else {
         return runner;
       }
@@ -155,6 +151,8 @@ const App = () => {
       newRunnerForm={newRunnerForm}
       setEditRunnerForm={setEditRunnerForm}
       editRunnerForm={editRunnerForm}
+      editting={editting}
+      setEditting={setEditting}
     />
     <Footer />
     </>

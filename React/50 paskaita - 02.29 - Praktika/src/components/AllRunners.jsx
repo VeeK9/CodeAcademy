@@ -2,7 +2,7 @@ import { useState } from "react";
 import RunnerCard from "./RunnerCard";
 import AddNewRunnerModal from "./AddNewRunnerModal";
 
-const AllRunners = ({ runners, follow, open, modalOpen, modalClose, deleteRunner, user, loggedIn, editRunner, addRunner, newRunnerForm, setNewRunnerForm, editRunnerForm, setEditRunnerForm }) => {
+const AllRunners = ({ runners, follow, open, modalOpen, modalClose, deleteRunner, user, loggedIn, editRunner, addRunner, newRunnerForm, setNewRunnerForm, editRunnerForm, setEditRunnerForm, editting, setEditting }) => {
 
   const [addModal, setAddModal] = useState(false);
   const addModalOpen = () => setAddModal(true);
@@ -29,6 +29,8 @@ const AllRunners = ({ runners, follow, open, modalOpen, modalClose, deleteRunner
               addRunner={addRunner}
               setEditRunnerForm={setEditRunnerForm}
               editRunnerForm={editRunnerForm}
+              editting={editting}
+              setEditting={setEditting}
             />
           )
         }
