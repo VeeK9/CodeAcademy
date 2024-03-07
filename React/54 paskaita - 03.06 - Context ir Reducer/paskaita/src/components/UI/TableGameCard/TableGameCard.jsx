@@ -2,8 +2,11 @@ import { useContext } from "react";
 import styled from "styled-components"
 import TableGamesContext from "../../../contexts/TableGamesContext";
 import PageLoaderContext from "../../../contexts/pageLoaderContext";
+import FormContext from "../../../contexts/FormContext";
+import { actionTypes } from "../../../contexts/TableGamesContext";
 
 const StyledDiv = styled.div`
+  position: relative;
   width: 500px;
   text-align: justify;
   padding: 20px;
@@ -13,6 +16,21 @@ const StyledDiv = styled.div`
   display: grid;
   grid-template: repeat(3, auto) 30px / 2fr 3fr;
   gap: 10px;
+  column-gap: 20px;
+  color: ${props => props.$arPazymetas ? '#74a285' : '#e66a54'};
+  .pazymetas {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: ${props => props.$arPazymetas ? '#74a285' : '#e66a54'};
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    &:hover {
+      background-color: ${props => props.$arPazymetas ? '#456952' : '#804b42'};
+    }
+  }
   > h2 {
     grid-column-start: span 2;
     text-align: center;
@@ -22,7 +40,7 @@ const StyledDiv = styled.div`
   > img {
     grid-row-start: span 3;
     place-self: center;
-    max-width: 100%;
+    width: 100%;
     max-height: 100%;
   }
   > p{
@@ -52,11 +70,12 @@ const StyledDiv = styled.div`
 
 const TableGameCard = ({ game }) => {
 
-  const { deleteTableGame } = useContext(TableGamesContext);
-  const { pageLoader } = useContext(PageLoaderContext);
+  const { setTableGames } = useContext(TableGamesContext);
+  const { pageLoader, setPageLoader } = useContext(PageLoaderContext);
+  const { setFormInputsToCardInfo } = useContext(FormContext);
 
   return (
-    <StyledDiv>
+    <StyledDiv $arPazymetas={game.pazymetas}>
       <h2>{game.pavadinimas}</h2>
       <img
         src={game.nuotrauka}
@@ -74,18 +93,34 @@ const TableGameCard = ({ game }) => {
         className="buttons"
       >
         {
-          pageLoader === "cards" &&
+          pageLoader === "korteles" &&
           <button
-            onClick={() => deleteTableGame(game.id)}
-          >Edit Game</button>
+            onClick={() => {
+              setFormInputsToCardInfo(game);
+              setPageLoader('redagavimas');
+            }}
+          >Redaguoti</button>
         }
         {
-          pageLoader !== "addForm" &&
+          pageLoader === "korteles" &&
           <button
-          onClick={() => deleteTableGame(game.id)}
-          >Delete Game</button>
+            onClick={() => setTableGames({
+              type: actionTypes.delete,
+              id: game.id
+            })}
+          >Trinti</button>
         }
       </div>
+      {
+        pageLoader === "korteles" &&
+        <button
+          className="pazymetas"
+          onClick={() => setTableGames({
+            type: actionTypes.editStatus,
+            id: game.id
+          })}
+        >{game.pazymetas ? 'nezaidei?' : 'zaidei?'}</button>
+      }
     </StyledDiv>
   );
 }

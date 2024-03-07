@@ -4,6 +4,7 @@ import AddNewTableGamePage from './components/pages/AddNewTableGame/AddNewTableG
 import Header from './components/UI/Header/Header';
 import PageLoaderContext from './contexts/pageLoaderContext';
 import { useContext } from 'react';
+import EditTableGamePage from './components/pages/EditTableGame/EditTableGamePage';
 
 const App = () => {
 
@@ -11,13 +12,13 @@ const App = () => {
 
   return (
     <>
-    <Header />
-      {
-        pageLoader === "addForm" ?
-        <AddNewTableGamePage
-        /> : pageLoader === "cards" ?
-        <TableGamesPage/> : null
-      }
+    { pageLoader !== 'redagavimas' && <Header /> }
+    {
+      pageLoader === "prideti" ? <AddNewTableGamePage/>
+      : pageLoader === "korteles" ? <TableGamesPage/>
+      : pageLoader === "redagavimas" ? <EditTableGamePage/>
+      : null
+    }
     </>
   );
 }

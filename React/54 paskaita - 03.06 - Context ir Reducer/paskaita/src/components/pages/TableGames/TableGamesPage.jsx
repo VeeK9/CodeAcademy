@@ -12,7 +12,7 @@ const TableGamesPage = () => {
 
   return (
     <StyledSection>
-      <h1>Our Table Games</h1>
+      <h1>Musu zaidimai</h1>
       <TableGameList/>
     </StyledSection>
   );

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {v4 as uuid} from "uuid";
 import { useContext } from "react";
 import TableGamesContext from "../../../contexts/TableGamesContext";
 import FormContext from "../../../contexts/FormContext";
@@ -27,7 +26,7 @@ const StyledSection = styled.section`
         border-radius: 5px;
       }
       input:last-of-type {
-        width: 120px;
+        width: 150px;
         align-self: center;
         background-color: white;
         border-radius: 20px;
@@ -41,21 +40,31 @@ const StyledSection = styled.section`
         resize: none;
         font-family: 'Helvetica';
       }
+      > button {
+        width: 150px;
+        align-self: center;
+        background-color: white;
+        border-radius: 20px;
+        cursor: pointer;
+        &:hover {
+          background-color: #efefef;
+        }
+      }
     }
   }
 `
 
-const AddNewTableGamePage = () => {
+const EditTableGamePage = () => {
 
   const { setTableGames } = useContext(TableGamesContext);
   const { formInputs, onChangeF, resetFormInputs } = useContext(FormContext);
   const { setPageLoader } = useContext(PageLoaderContext);
   
-  const addNewTableGameSubmit = e => {
+  const editTableGameSubmit = e => {
     e.preventDefault();
     
-    const newTableGame = {
-      id: uuid(),
+    const editedTableGame = {
+      id: formInputs.id,
       pavadinimas: formInputs.pavadinimas,
       pazymetas: formInputs.pazymetas,
       nuotrauka: formInputs.nuotrauka,
@@ -66,10 +75,10 @@ const AddNewTableGamePage = () => {
       },
       aprasymas: formInputs.aprasymas
     }
-    console.log(newTableGame)
     setTableGames({
-      type: actionTypes.addNew,
-      data: newTableGame
+      type: actionTypes.editFull,
+      editedTableGame: editedTableGame
+
     });
     setPageLoader('korteles');
     resetFormInputs();
@@ -77,10 +86,10 @@ const AddNewTableGamePage = () => {
 
   return (
     <StyledSection>
-      <h1>Prideti nauja zaidima</h1>
+      <h1>Redaguoti zaidima</h1>
       <div>
         <form
-          onSubmit={addNewTableGameSubmit}
+          onSubmit={editTableGameSubmit}
         >
           <input
             type="text"
@@ -144,8 +153,14 @@ const AddNewTableGamePage = () => {
           />
           <input
             type="submit"
-            value="Prideti zaidima"
+            value="Redaguoti zaidima"
           />
+          <button
+            onClick={() => {
+              resetFormInputs();
+              setPageLoader('korteles')
+            }}
+          >Grizti</button>
         </form>
         <TableGameCard 
           game={{
@@ -165,4 +180,4 @@ const AddNewTableGamePage = () => {
   );
 }
  
-export default AddNewTableGamePage;
+export default EditTableGamePage;

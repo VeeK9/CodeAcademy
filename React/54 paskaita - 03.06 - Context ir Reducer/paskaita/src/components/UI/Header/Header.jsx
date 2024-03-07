@@ -28,11 +28,11 @@ const Header = () => {
   return (
     <StyledHeader>
       <button
-        onClick={()=>setPageLoader("cards")}
-      >Cards</button>
+        onClick={()=>setPageLoader("korteles")}
+      >Zaidimai</button>
       <button
-        onClick={()=>setPageLoader('addForm')}
-      >Add Form</button>
+        onClick={()=>setPageLoader('prideti')}
+      >Prideti</button>
     </StyledHeader>
   );
 }

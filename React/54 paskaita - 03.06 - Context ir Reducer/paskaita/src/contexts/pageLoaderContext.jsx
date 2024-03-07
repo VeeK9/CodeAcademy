@@ -5,7 +5,7 @@ const PageLoaderContext = createContext();
 
 const PageLoaderProvider = ({ children }) => {
 
-  const [pageLoader, setPageLoader] = useState("cards");
+  const [pageLoader, setPageLoader] = useState("korteles");
 
   return (
     <PageLoaderContext.Provider
