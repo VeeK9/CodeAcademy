@@ -5,13 +5,7 @@ const PageLoaderContext = createContext()
 
 const PageLoaderProvider = ({ children }) => {
 
-  const [pageLoader, setPageLoader] = useState({
-    "name":"user",
-    "type":"user",
-    "plantIDs": ["0", "2"]
-  })
-
-
+  const [pageLoader, setPageLoader] = useState('allPlants')
 
   return (
     <PageLoaderContext.Provider

@@ -2,21 +2,24 @@ import styled from "styled-components";
 
 const StyledArticle = styled.article`
   display: grid;
-  grid-template: auto auto / 60% 40%;
+  grid-template: auto auto / 1fr 1fr;
   justify-content: center;
-  margin: 10px;
+  /* box-sizing: border-box; */
   padding: 10px;
   column-gap: 10px;
   overflow: hidden;
-  border: 1px solid black;
+  background-color: white;
   > h2 {
-    grid-column-start: span 2;
+    grid-column-start: 2;
     text-align: center;
   }
   > img {
-    max-width: 300px;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    width: 100%;
+    height: 300px;
     display: block;
-    margin: 0;
+    object-fit: cover;
   }
 `
 

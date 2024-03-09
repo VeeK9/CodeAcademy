@@ -2,11 +2,13 @@ import styled from "styled-components";
 import Icon from "../UI/Icon";
 
 const StyledFooter = styled.footer`
-  margin: 20px;
+  height: 200px;
+  background-color: lightgray;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  box-sizing: border-box;
   > ul {
     list-style-type: none;
     padding: 0;
@@ -19,6 +21,9 @@ const StyledFooter = styled.footer`
   }
   > p {
     margin: 5px;
+  }
+  &:last-child {
+    padding-bottom: 20px;
   }
 `
 

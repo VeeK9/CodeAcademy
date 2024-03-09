@@ -6,6 +6,7 @@ import PlantsContext from "../../contexts/PlantsContext";
 const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 10px;
 `
 
 const PlantList = () => {

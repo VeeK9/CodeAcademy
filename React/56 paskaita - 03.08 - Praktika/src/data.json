@@ -15,19 +15,51 @@
       "name":"Monstera Deliciosa",
       "photo":"https://cdn.webshopapp.com/shops/59449/files/421106958/image.jpg",
       "description":"Also known as the Swiss Cheese plant, Monstera Deliciosa are native to Mexico and Central America. This tropical plant features leaves with holes, which lend to their exotic vibe. It needs moderate watering and indirect light (bright to medium is best). Take note: This plant is toxic to cats and dogs."
+    },{
+      "id":"3",
+      "name":"Orchid",
+      "photo":"https://bloomscape.com/wp-content/uploads/2022/04/bloomscape_orchid-purple_group_Cropped.jpg?ver=763210",
+      "description":"When it comes to low-maintenance flowering plants, you'd be hard-pressed to find a better option than an orchid. Don't overwater them (once a week will do) and give this popular pick bright, indirect light. We especially love them for offices!"
+    },{
+      "id":"4",
+      "name":"Snake Plant",
+      "photo":"https://www.bhg.com/thmb/ziFdnGAX92p7ibnG7PYDyVXTnhY=/1569x0/filters:no_upscale():strip_icc()/five-snake-plants-b43d5e13-58fd8a4ff2784b6a9685285f21e834b0.jpg",
+      "description":"One of many sansevierias, the snake plant is tough to kill. Those can go for a month without water. The leaves are typically stiff, sharp and spikey. Take note: This plant is toxic to cats and dogs."
+    },{
+      "id":"5",
+      "name":"Monstera Deliciosa",
+      "photo":"https://cdn.webshopapp.com/shops/59449/files/421106958/image.jpg",
+      "description":"Also known as the Swiss Cheese plant, Monstera Deliciosa are native to Mexico and Central America. This tropical plant features leaves with holes, which lend to their exotic vibe. It needs moderate watering and indirect light (bright to medium is best). Take note: This plant is toxic to cats and dogs."
+    },{
+      "id":"6",
+      "name":"Orchid",
+      "photo":"https://bloomscape.com/wp-content/uploads/2022/04/bloomscape_orchid-purple_group_Cropped.jpg?ver=763210",
+      "description":"When it comes to low-maintenance flowering plants, you'd be hard-pressed to find a better option than an orchid. Don't overwater them (once a week will do) and give this popular pick bright, indirect light. We especially love them for offices!"
+    },{
+      "id":"7",
+      "name":"Snake Plant",
+      "photo":"https://www.bhg.com/thmb/ziFdnGAX92p7ibnG7PYDyVXTnhY=/1569x0/filters:no_upscale():strip_icc()/five-snake-plants-b43d5e13-58fd8a4ff2784b6a9685285f21e834b0.jpg",
+      "description":"One of many sansevierias, the snake plant is tough to kill. Those can go for a month without water. The leaves are typically stiff, sharp and spikey. Take note: This plant is toxic to cats and dogs."
+    },{
+      "id":"8",
+      "name":"Monstera Deliciosa",
+      "photo":"https://cdn.webshopapp.com/shops/59449/files/421106958/image.jpg",
+      "description":"Also known as the Swiss Cheese plant, Monstera Deliciosa are native to Mexico and Central America. This tropical plant features leaves with holes, which lend to their exotic vibe. It needs moderate watering and indirect light (bright to medium is best). Take note: This plant is toxic to cats and dogs."
     }
   ],
   "users": [
     {
       "id":"0",
       "name":"user",
+      "avatar":"https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg",
       "password":"pass",
       "type":"user",
-      "plantIDs": ["0", "2"]
+      "plantIDs": ["0", "3", "6"]
     },{
       "id":"1",
       "name":"helloWorld",
-      "password":"admin",
+      "avatar":"https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg",
+      "password":"hello",
       "type":"admin"
     }
   ]
