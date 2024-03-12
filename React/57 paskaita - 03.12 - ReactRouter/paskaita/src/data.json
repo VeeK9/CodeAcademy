@@ -1,0 +1,88 @@
+{
+  "users": [
+    {
+      "id": "0",
+      "username": "kitten",
+      "name": "Fluffy",
+      "avatar": "https://www.purina.co.uk/sites/default/files/2020-11/8-Fluffy-Cat-BreedsTEASER.jpg",
+      "password": "kazkas1",
+      "email": "kit@kat.com"
+    },
+    {
+      "id": "1",
+      "username": "doggo",
+      "name": "Killer",
+      "avatar": "https://m.media-amazon.com/images/I/71fD2ebwkeL._AC_UF1000,1000_QL80_.jpg",
+      "password": "kazkas12",
+      "email": "woof@dog.com"
+    },
+    {
+      "id": "2",
+      "username": "chick",
+      "name": "Clucky",
+      "avatar": "https://bunniesbythebay.com/cdn/shop/products/861104-Clucky_800x.jpg?v=1626851263",
+      "password": "kazkas123",
+      "email": "egg@chicken.com"
+    },
+    {
+      "id": "3",
+      "username": "duck",
+      "name": "Donald",
+      "avatar": "https://easydrawingguides.com/wp-content/uploads/2019/09/Donald-Duck-10.png",
+      "password": "kazkas1234",
+      "email": "f@wahattheduck.com"
+    },
+    {
+      "id": "29b97297-95f7-4040-b94a-5b5c5c57925a",
+      "username": "bober",
+      "name": "Bober",
+      "avatar": "https://ih1.redbubble.net/image.5354942838.1287/flat,750x,075,f-pad,750x1000,f8f8f8.jpg",
+      "password": "pingvinkrv",
+      "email": "ice@popsicle.com"
+    }
+  ],
+  "plants": [
+    {
+      "id": "0",
+      "name": "Orchid",
+      "photo": "https://bloomscape.com/wp-content/uploads/2022/04/bloomscape_orchid-purple_group_Cropped.jpg?ver=763210",
+      "description": "When it comes to low-maintenance flowering plants, you'd be hard-pressed to find a better option than an orchid. Don't overwater them (once a week will do) and give this popular pick bright, indirect light. We especially love them for offices!"
+    },
+    {
+      "id": "1",
+      "name": "Snake Plant",
+      "photo": "https://www.bhg.com/thmb/ziFdnGAX92p7ibnG7PYDyVXTnhY=/1569x0/filters:no_upscale():strip_icc()/five-snake-plants-b43d5e13-58fd8a4ff2784b6a9685285f21e834b0.jpg",
+      "description": "One of many sansevierias, the snake plant is tough to kill. Those can go for a month without water. The leaves are typically stiff, sharp and spikey. Take note: This plant is toxic to cats and dogs."
+    },
+    {
+      "id": "2",
+      "name": "Monstera Deliciosa",
+      "photo": "https://cdn.webshopapp.com/shops/59449/files/421106958/image.jpg",
+      "description": "Also known as the Swiss Cheese plant, Monstera Deliciosa are native to Mexico and Central America. This tropical plant features leaves with holes, which lend to their exotic vibe. It needs moderate watering and indirect light (bright to medium is best). Take note: This plant is toxic to cats and dogs."
+    },
+    {
+      "id": "3",
+      "name": "Spider Plant",
+      "photo": "https://kyari.co/cdn/shop/products/DSC5s535.webp?v=1709357536&width=1946",
+      "description": "What's better than one spider plant? Multiple spider plants. The fast-growing shoots produce little 'babies' that you can re-pot for added greenery elsewhere. Just stick to well-lit spots, and don't forget weekly watering."
+    },
+    {
+      "id": "4",
+      "name": "String of Pearls",
+      "photo": "https://abeautifulmess.com/wp-content/uploads/2023/06/Stringofpearls-1.jpg",
+      "description": "Bring the beauty of this unusual plant into your home, and you won't be disappointed. Keep it happy with a watering schedule of two to three weeks — soil that's kept lightly moist is best. Aim for bright, indirect sunlight several hours every day."
+    },
+    {
+      "id": "5",
+      "name": "Asparagus Fern",
+      "photo": "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1641553087/ckmde1wyj4k2yvvla3yl.jpg",
+      "description": "Purchase an asparagus fern, and you'll find that it can handle much more abuse than its counterparts. That's because it's really not a fern after all. Asparagus setaceus can thrive in bright spaces as well as corners with very little light. Keep this fluffy plant's soil moist at all times. Take note: This plant is toxic to cats and dogs."
+    },
+    {
+      "id": "5fe94153-2d7b-4db7-85b3-3c3899861932",
+      "name": "String of Hearts",
+      "photo": "https://img1.wsimg.com/isteam/ip/669f9e5e-27b5-4686-a1d1-2acb03adeb73/sohcloseupwatermarked1.png",
+      "description": "If you're partial to trailing plants, you'll appreciate the beauty of the String of Hearts. They're native to South Africa and have heart-shaped leaves that add to its charm. It's common for their vines to grow up to 12 feet long."
+    }
+  ]
+}
