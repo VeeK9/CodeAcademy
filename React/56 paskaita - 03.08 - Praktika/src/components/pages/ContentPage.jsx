@@ -8,15 +8,20 @@ import AboutUs from "../organisms/AboutUs";
 import Community from "../organisms/Community";
 import LogInForm from "../organisms/LogInForm";
 import SignUpForm from "../organisms/SignUpForm";
+import UserPlantList from "../organisms/UserPlantList";
 
 const StyledSection = styled.section`
   min-height: calc(100vh - 340px);
   display: grid;
   justify-content: center;
   grid-template-columns: calc(20% - 10px) 60% calc(20% - 10px);
-  background-color: lightgray;
+  background-color: #f4f4f4;
   padding: 10px;
   gap: 10px;
+  > h1 {
+    margin-top: 30px;
+    text-align: center;
+  }
 `
 
 const ContentPage = () => {
@@ -30,7 +35,7 @@ const ContentPage = () => {
         pageLoader === 'allPlants' ?
         <PlantList /> : 
         pageLoader === 'myPlants' ?
-        null :
+        <UserPlantList /> :
         pageLoader === 'aboutUs' ?
         <AboutUs /> :
         pageLoader === 'community' ?
@@ -39,7 +44,7 @@ const ContentPage = () => {
         <LogInForm />:
         pageLoader === 'signUp' ?
         <SignUpForm />:
-        <h1>error no. 404</h1>
+        <h1>Page Not Found</h1>
       }
       <UserAside />
     </StyledSection>

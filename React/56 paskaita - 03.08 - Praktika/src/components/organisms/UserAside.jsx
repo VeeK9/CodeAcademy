@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import User from "../UI/User";
 import UserSuggestion from "../UI/UserSuggestion";
+import { useContext } from "react";
+import UsersContext from "../../contexts/UsersContext";
 
 const StyledDiv = styled.div`
   position: sticky;
@@ -9,13 +11,19 @@ const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  height: 800px;
+  max-height: calc(100vh - 340px);
 `
 
 const UserAside = () => {
+
+  const {currentUser} = useContext(UsersContext)
+
   return (
     <StyledDiv>
-      <User />
+      {
+        currentUser &&
+        <User />
+      }
       <UserSuggestion />
     </StyledDiv>
   );

@@ -11,13 +11,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <PageLoaderProvider>
     <LogInProvider>
-      <UsersProvider>
-        <PlantFormProvider>
-          <PlantsProvider>
+      <PlantsProvider>
+        <UsersProvider>
+          <PlantFormProvider>
             <App />
-          </PlantsProvider>
-        </PlantFormProvider>
-      </UsersProvider>
+          </PlantFormProvider>
+        </UsersProvider>
+      </PlantsProvider>
     </LogInProvider>
   </PageLoaderProvider>
 );

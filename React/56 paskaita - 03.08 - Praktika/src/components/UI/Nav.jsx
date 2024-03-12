@@ -30,7 +30,7 @@ const Nav = () => {
           />
         </li>
         {
-          currentUser !== '' ?
+          currentUser.type === 'user' ?
           <li>
             <Button 
               text="My Plants"
@@ -40,7 +40,7 @@ const Nav = () => {
           </li> : null
         }
         {
-          currentUser !== 'admin' ?
+          currentUser.type !== 'admin' ?
           <>
             <li>
               <Button 

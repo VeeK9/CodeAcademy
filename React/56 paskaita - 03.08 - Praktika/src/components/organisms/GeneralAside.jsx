@@ -11,7 +11,7 @@ const StyledDiv = styled.div`
   flex-direction: column;
   background-color: white;
 
-  height: 500px;
+  height: calc(100vh - 340px);
 
   > div {
     display: flex;

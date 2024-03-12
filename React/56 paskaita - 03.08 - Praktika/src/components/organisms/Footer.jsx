@@ -3,7 +3,7 @@ import Icon from "../UI/Icon";
 
 const StyledFooter = styled.footer`
   height: 200px;
-  background-color: lightgray;
+  background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

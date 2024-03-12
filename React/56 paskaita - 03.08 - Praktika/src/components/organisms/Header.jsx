@@ -8,11 +8,12 @@ import UsersContext from "../../contexts/UsersContext";
 
 const StyledHeader = styled.header`
   position: sticky;
+  z-index: 1;
   top: 0;
   height: 120px;
   display: grid;
   border-bottom: 1px solid lightgray;
-  grid-template-columns: 15% 70% 15%;
+  grid-template-columns: 20% 60% 20%;
   justify-content: center;
   align-items: center;
   padding-inline: 20px;
@@ -31,9 +32,9 @@ const StyledHeader = styled.header`
     gap: 10px;
     > img {
       border-radius: 50%;
-      width: 60%;
-      height: 60%;
+      height: 50px;
       object-fit: cover;
+      border: 1px solid lightgray;
     }
   }
 `
@@ -42,6 +43,11 @@ const Header = () => {
 
   const {setPageLoader} = useContext(PageLoaderContext)
   const { currentUser, setCurrentUser } = useContext(UsersContext)
+
+  const logOut = () => {
+    setCurrentUser('');
+    setPageLoader('allPlants')
+  }
 
   return (
     <StyledHeader>
@@ -59,8 +65,7 @@ const Header = () => {
           />
           <Button 
             text="Log Out"
-            func={setCurrentUser}
-            info={''}
+            func={logOut}
           />
         </div> :
         <div>

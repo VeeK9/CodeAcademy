@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import PlantCard from "../UI/PlantCard";
 import { useContext } from "react";
-import PlantsContext from "../../contexts/PlantsContext";
+import UsersContext from "../../contexts/PlantsContext";
 import PageLoaderContext from "../../contexts/PageLoaderContext";
 
 const StyledDiv = styled.div`
@@ -11,13 +11,15 @@ const StyledDiv = styled.div`
 
 const UserPlantList = () => {
 
-  const { plants } = useContext(PlantsContext)
+  const { userPlants } = useContext(UsersContext)
   const { pageLoader } = useContext(PageLoaderContext)
+
+  console.log(userPlants)
 
   return (
     <StyledDiv>
       {
-        plants.map(plant => 
+        userPlants.map(plant => 
           <PlantCard 
             key={plant.id}
             plant={plant}
