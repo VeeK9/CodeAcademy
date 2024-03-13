@@ -5,6 +5,9 @@ import {useNavigate } from "react-router-dom";
 import styled from "styled-components"
 
 const StyledSection = styled.section`
+  > p {
+    text-align: center;
+  }
   > form {
     width: 70%;
     display: flex;
@@ -95,7 +98,7 @@ const Login = () => {
       </form>
       {
         failedToLogin &&
-        <p>Username or password incorrect</p>
+        <p>Incorrect username or password.</p>
       }
     </StyledSection>
   );

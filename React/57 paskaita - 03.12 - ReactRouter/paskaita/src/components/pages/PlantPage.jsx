@@ -47,7 +47,6 @@ const PlantPage = () => {
   const navigate = useNavigate()
 
   useEffect(() => {
-    console.log(id)
     fetch(`http://localhost:8080/plants/${id}`)
       .then(res => res.json())
       .then(data => setPlant(data))
