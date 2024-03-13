@@ -41,3 +41,13 @@ section {
     padding-left: 20px;
   }
 }
+
+section.errorPage {
+  > img {
+    aspect-ratio: unset;
+
+  }
+  > p {
+    text-align: center;
+  }
+}

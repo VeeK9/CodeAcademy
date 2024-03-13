@@ -32,7 +32,8 @@ const PlantFormProvider = ({children}) => {
       value={{
         plantFormInputs,
         onChangeFunc,
-        resetPlantFormInputs
+        resetPlantFormInputs,
+        setPlantFormInputs
       }}
     >
       {children}

@@ -7,6 +7,9 @@ import Header from './components/UI/Header';
 import { Routes, Route } from "react-router-dom"
 import Footer from './components/UI/Footer';
 import AddNewPlant from './components/pages/AddNewPlant';
+import EditExistingPlant from './components/pages/EditExistingPlant';
+import PlantPage from './components/pages/PlantPage';
+import ErrorPage from './components/pages/ErrorPage';
 
 
 const App = () => {
@@ -15,13 +18,18 @@ const App = () => {
       <Header />
       <main>
         <Routes>
-          <Route 
+          <Route
             path='/'
             element={<Home />}
           />
+          <Route path='/plants'>
+            <Route index element={<Cards />} />
+            <Route path=':id' element={<PlantPage />} />
+            <Route path=':id/edit' element={<EditExistingPlant />} />
+          </Route>
           <Route
-            path='/plants'
-            element={<Cards />}
+            path='addNewPlant'
+            element={<AddNewPlant />}
           />
           <Route 
             path='/login'
@@ -31,10 +39,7 @@ const App = () => {
             path='/register'
             element={<Register />}
           />
-          <Route 
-            path='/addNewPlant'
-            element={<AddNewPlant />}
-          />
+          <Route path='*' element={<ErrorPage />} />
         </Routes>
       </main>
       <Footer />

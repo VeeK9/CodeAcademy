@@ -1,8 +1,7 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import PlantFormContext from "../../contexts/PlantFormContext";
 import PlantsContext from "../../contexts/PlantsContext";
-import { useNavigate } from "react-router-dom";
-import {v4 as uuid} from "uuid";
+import { useNavigate, useParams } from "react-router-dom";
 import styled from "styled-components"
 
 const StyledSection = styled.section`
@@ -27,21 +26,16 @@ const StyledSection = styled.section`
         resize: none;
       }
     }
-    > div:last-child {
-      justify-content: center;
-      gap: 20px;
-      > input, button {
-        width: fit-content;
-        margin-top: 20px;
-        align-self: center;
-        padding: 5px 10px;
-        border: 1px solid lightgray;
-        border-radius: 10px;
-        cursor: pointer;
-        background-color: white;
-        &:hover {
-          background-color: #b8deb8;
-        }
+    > input {
+      margin-top: 20px;
+      align-self: center;
+      padding: 5px 10px;
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: white;
+      &:hover {
+        background-color: #b8deb8;
       }
     }
   }
@@ -61,7 +55,6 @@ const StyledSection = styled.section`
       width: 70%;
       object-fit: cover;
       aspect-ratio: 1 / 1;
-      border-radius: 15px;
     }
     > h2 {
       margin-top: 0;
@@ -69,38 +62,52 @@ const StyledSection = styled.section`
   }
 `
 
-const AddNewPlant = () => {
+const EditExistingPlant = () => {
 
+  const {id} = useParams();
   const navigate = useNavigate();
-  const { plantFormInputs, onChangeFunc, resetPlantFormInputs } = useContext(PlantFormContext);
-  const { addPlant } = useContext(PlantsContext);
+  const { plantFormInputs, onChangeFunc, resetPlantFormInputs, setPlantFormInputs } = useContext(PlantFormContext);
+  const { editPlant } = useContext(PlantsContext);
 
-  const newPlantFormSubmit = e => {
+  useEffect(() => {
+    fetch(`http://localhost:8080/plants/${id}`)
+      .then(res => res.json())
+      .then(data => {
+        setPlantFormInputs({
+          id: id,
+          name: data.name,
+          photo: data.photo,
+          description: data.description
+        })
+      })
+      // eslint-disable-next-line
+  }, [])
+
+  const editPlantFormSubmit = e => {
     e.preventDefault();
 
-    const newPlant = {
-      id: uuid(),
+    const editedPlant = {
+      id: plantFormInputs.id,
       name: plantFormInputs.name,
       photo: plantFormInputs.photo,
       description: plantFormInputs.description
     }
 
-    addPlant(newPlant);
+    editPlant(editedPlant);
     resetPlantFormInputs();
-    navigate('/plants');
+    navigate(-1);
   }
 
   return (
     <StyledSection>
       <h1>Add new plant to the list</h1>
-      <form onSubmit={newPlantFormSubmit}>
+      <form onSubmit={editPlantFormSubmit}>
         <div>
           <label htmlFor="name">Name of the plant:</label>
           <input
             type="text"
             name="name"
             id="name"
-            placeholder="e.g. Money Tree"
             value={plantFormInputs.name}
             onChange={onChangeFunc}
           />
@@ -111,7 +118,6 @@ const AddNewPlant = () => {
             type="url"
             name="photo"
             id="photo"
-            placeholder="Paste the URL of the plant photo"
             value={plantFormInputs.photo}
             onChange={onChangeFunc}
           />
@@ -121,27 +127,19 @@ const AddNewPlant = () => {
           <textarea
             name="description"
             id="description"
-            placeholder="Money tree obviously grow money banknotes etc."
             value={plantFormInputs.description}
             onChange={onChangeFunc}
           />
         </div>
-        <div>
-          <input
-            type="submit"
-            value="Add plant"
-          />
-          <input
-            type="button"
-            onClick={() => resetPlantFormInputs()}
-            value="Clear Form"
-          />
-        </div>
+        <input
+          type="submit"
+          value="Edit plant"
+        />
       </form>
       <div>
         <h2>{plantFormInputs.name}</h2>
         <img
-          src={plantFormInputs.photo ? plantFormInputs.photo : "https://priyanthiv.files.wordpress.com/2019/01/soil-in-a-pot.jpg?w=640"}
+          src={plantFormInputs.photo}
           alt={plantFormInputs.name}
         />
         <p>{plantFormInputs.description}</p>
@@ -150,4 +148,4 @@ const AddNewPlant = () => {
   );
 };
  
-export default AddNewPlant;
+export default EditExistingPlant;

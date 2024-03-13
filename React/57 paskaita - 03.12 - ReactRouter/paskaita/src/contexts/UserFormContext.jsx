@@ -11,7 +11,8 @@ const UserFormProvider = ({children}) => {
     avatar: "",
     password: "",
     passwordRepeat: "",
-    email: ""
+    email: "",
+    type: ""
   });
 
   const onChangeFunc = e => {
@@ -29,7 +30,8 @@ const UserFormProvider = ({children}) => {
       avatar: "",
       password: "",
       passwordRepeat: "",
-      email: ""
+      email: "",
+      type: ""
     })
   }
 

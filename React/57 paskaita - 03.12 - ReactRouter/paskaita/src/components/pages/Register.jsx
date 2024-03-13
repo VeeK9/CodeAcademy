@@ -59,7 +59,8 @@ const Register = () => {
       name: formInputs.name,
       avatar: formInputs.avatar,
       password: formInputs.password,
-      email: formInputs.email
+      email: formInputs.email,
+      type: "user"
     }
 
     addNewUser(newUser);
@@ -73,7 +74,7 @@ const Register = () => {
       <h1>Register</h1>
       <form onSubmit={registerFormSubmit}>
         <div>
-          <label htmlFor="username">Create your username</label>
+          <label htmlFor="username">Create your username:</label>
           <input
             type="text"
             name="username"
@@ -84,7 +85,7 @@ const Register = () => {
           />
         </div>
         <div>
-          <label htmlFor="email">Enter your email address</label>
+          <label htmlFor="email">Enter your email address:</label>
           <input
             type="email"
             name="email"
@@ -95,7 +96,7 @@ const Register = () => {
           />
         </div>
         <div>
-          <label htmlFor="name"></label>
+          <label htmlFor="name">Enter Your name:</label>
           <input
             type="text"
             name="name"

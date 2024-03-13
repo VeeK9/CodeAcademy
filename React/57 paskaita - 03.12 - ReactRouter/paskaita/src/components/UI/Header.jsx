@@ -82,7 +82,7 @@ const Header = () => {
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/plants">All plants</NavLink></li>
           {
-            loggedInUser && <li><NavLink to="/addNewPlant">Add new plant</NavLink></li>
+            loggedInUser && <li><NavLink to="addNewPlant">Add new plant</NavLink></li>
           }
         </ul>
       </nav>

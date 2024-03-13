@@ -6,7 +6,8 @@
       "name": "Fluffy",
       "avatar": "https://www.purina.co.uk/sites/default/files/2020-11/8-Fluffy-Cat-BreedsTEASER.jpg",
       "password": "kazkas1",
-      "email": "kit@kat.com"
+      "email": "kit@kat.com",
+      "type": "user"
     },
     {
       "id": "1",
@@ -14,7 +15,8 @@
       "name": "Killer",
       "avatar": "https://m.media-amazon.com/images/I/71fD2ebwkeL._AC_UF1000,1000_QL80_.jpg",
       "password": "kazkas12",
-      "email": "woof@dog.com"
+      "email": "woof@dog.com",
+      "type": "user"
     },
     {
       "id": "2",
@@ -22,7 +24,8 @@
       "name": "Clucky",
       "avatar": "https://bunniesbythebay.com/cdn/shop/products/861104-Clucky_800x.jpg?v=1626851263",
       "password": "kazkas123",
-      "email": "egg@chicken.com"
+      "email": "egg@chicken.com",
+      "type": "user"
     },
     {
       "id": "3",
@@ -30,7 +33,8 @@
       "name": "Donald",
       "avatar": "https://easydrawingguides.com/wp-content/uploads/2019/09/Donald-Duck-10.png",
       "password": "kazkas1234",
-      "email": "f@wahattheduck.com"
+      "email": "f@wahattheduck.com",
+      "type": "user"
     },
     {
       "id": "29b97297-95f7-4040-b94a-5b5c5c57925a",
@@ -38,7 +42,8 @@
       "name": "Bober",
       "avatar": "https://ih1.redbubble.net/image.5354942838.1287/flat,750x,075,f-pad,750x1000,f8f8f8.jpg",
       "password": "pingvinkrv",
-      "email": "ice@popsicle.com"
+      "email": "ice@popsicle.com",
+      "type": "admin"
     }
   ],
   "plants": [
@@ -83,6 +88,18 @@
       "name": "String of Hearts",
       "photo": "https://img1.wsimg.com/isteam/ip/669f9e5e-27b5-4686-a1d1-2acb03adeb73/sohcloseupwatermarked1.png",
       "description": "If you're partial to trailing plants, you'll appreciate the beauty of the String of Hearts. They're native to South Africa and have heart-shaped leaves that add to its charm. It's common for their vines to grow up to 12 feet long."
+    },
+    {
+      "id": "73f0c32e-6db1-41f8-b028-f9f10b919981",
+      "name": "Snake Plant",
+      "photo": "https://www.bhg.com/thmb/ziFdnGAX92p7ibnG7PYDyVXTnhY=/1569x0/filters:no_upscale():strip_icc()/five-snake-plants-b43d5e13-58fd8a4ff2784b6a9685285f21e834b0.jpg",
+      "description": "One of many sansevierias, the snake plant is tough to kill. Those can go for a month without water. The leaves are typically stiff, sharp and spikey. Take note: This plant is toxic to cats and dogs."
+    },
+    {
+      "id": "7136e4b7-6b48-4b89-9602-657e17efd0e0",
+      "name": "kazkokia gele",
+      "photo": "",
+      "description": "Gele, auginanti plastikinius butelius"
     }
   ]
 }
