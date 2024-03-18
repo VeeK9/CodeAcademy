@@ -1,0 +1,38 @@
+{
+  "users":[
+    {
+      "id":"0",
+      "username":"MrAdmin",
+      "password":"Hello1",
+      "role":"admin"
+    },{
+      "id":"1",
+      "username":"MsPinky",
+      "password":"Hello12",
+      "role":"user"
+    }
+  ],
+  "cards":[
+    {
+      "id":"0",
+      "title":"Title1",
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure omnis unde, distinctio excepturi expedita!",
+      "userId":"1"
+    },{
+      "id":"1",
+      "title":"Title2",
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure omnis unde, distinctio excepturi expedita!",
+      "userId":"1"
+    },{
+      "id":"2",
+      "title":"Title3",
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure omnis unde, distinctio excepturi expedita!",
+      "userId":"1"
+    },{
+      "id":"3",
+      "title":"Title4",
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure omnis unde, distinctio excepturi expedita!",
+      "userId":"0"
+    }
+  ]
+}

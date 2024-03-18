@@ -5,6 +5,9 @@ import {v4 as uuid} from "uuid";
 import {useNavigate } from "react-router-dom";
 import styled from "styled-components"
 
+// import { useFormik } from "formik";
+// import * as Yup from "yup";
+
 const StyledSection = styled.section`
   > form {
     width: 70%;
@@ -68,6 +71,26 @@ const Register = () => {
     resetFormInputs();
     navigate('/');
   }
+
+  // const formik = useFormik({
+  //   initialValues:{
+  //     username: "",
+  //     name: "",
+  //     avatar: "",
+  //     password: "",
+  //     email: ""
+  //   },
+  //   validationSchema: Yup.object({
+  //     username: Yup.string().min(3, 'Username must be at least 3 symbols')
+  //       .max(25, 'Username must be less than 25 symbols')
+  //       .required('This field is required').trim(),
+  //     name: Yup.string().trim(),
+  //     email: Yup.string().email('Enter a valid email.'),
+  //     avatar: Yup.string().trim(),
+  //     password: Yup.string(),
+  //     passwordRepeat: Yup.string()
+  //   })
+  // });
 
   return (
     <StyledSection>

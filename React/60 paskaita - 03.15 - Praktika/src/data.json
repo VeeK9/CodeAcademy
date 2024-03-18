@@ -1,0 +1,104 @@
+{
+  "users": [
+    {
+      "id": "0",
+      "username": "btcFreak",
+      "password": "2moon",
+      "name": "Satoshi Nakamoto",
+      "type": "admin",
+      "email": "satoshi@btc.com",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png",
+      "description": "Quam dolore, vero, earum perferendis nostrum ex corrupti ut consectetur beatae natus porro perspiciatis voluptates."
+    },
+    {
+      "id": "1",
+      "username": "lovely",
+      "password": "doorknob",
+      "name": "Emily Dickinson",
+      "type": "user",
+      "email": "e.dick@yahoo.com",
+      "avatar": "https://ei7cr2pn3uw.exactdn.com/wp-content/uploads/2021/01/Emily-Dickinson-Potrait.jpg?strip=all&lossy=1&ssl=1",
+      "description": "Quam dolore, vero, earum perferendis nostrum ex corrupti ut consectetur beatae natus porro perspiciatis voluptates."
+    },
+    {
+      "id": "2fc4fc21-94e3-4df4-893f-03f156860a5f",
+      "type": "user",
+      "username": "useris",
+      "password": "Welcome-0",
+      "passwordConfirm": "Welcome-0",
+      "name": "Useris Useriauskas",
+      "email": "user@writersblock.com",
+      "avatar": "https://www.new.ox.ac.uk/sites/default/files/styles/large_navigation/public/default_images/Fellows%20placeholder_0.jpg.webp?itok=Ldi7pvRW",
+      "description": "Author did not provide any additional info about Himself/Herself"
+    },
+    {
+      "id": "34d6bdd3-7221-459f-ac6f-3359b9e0dea5",
+      "type": "user",
+      "username": "ChuckDick",
+      "password": "Charlie1!",
+      "passwordConfirm": "Charlie1!",
+      "name": "Charles Dickens",
+      "email": "charles.dickens@gmail.com",
+      "avatar": "https://miro.medium.com/v2/resize:fit:1050/1*mA7agvt3HkiMHTxRPujxHA.jpeg",
+      "description": "Dickens's approach to the novel is influenced by various things, including the picaresque novel tradition, melodrama and the novel of sensibility.  Other than these, perhaps the most important literary influence on him was derived from the fables of The Arabian Nights. Satire and irony are central to the picaresque novel. Comedy is also an aspect of the British picaresque novel tradition of Laurence Sterne, Henry Fielding and Tobias Smollett. Fielding's Tom Jones was a major influence on the 19th-century novelist including Dickens, who read it in his youth and named a son Henry Fielding Dickens after him. Influenced by Gothic fiction—a literary genre that began with The Castle of Otranto (1764) by Horace Walpole—Dickens incorporated Gothic imagery, settings and plot devices in his works."
+    }
+  ],
+  "posts": [
+    {
+      "id": "0",
+      "title": "Today we celebrate!",
+      "image": "https://bitpay.com/blog/content/images/2022/05/bitcoin-pizza-day.jpg",
+      "post": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sunt temporibus porro aspernatur. Eligendi nesciunt delectus, temporibus atque aut quidem veniam accusamus error quos optio? Cumque libero optio earum dolorum facilis doloribus nam incidunt animi laudantium, ipsam ratione nihil dicta fuga illo tenetur veritatis, maiores molestias inventore ad aut atque, dignissimos ea quas! Id laudantium aut incidunt, dicta assumenda tempore omnis doloremque eveniet ea quidem, placeat ex explicabo mollitia accusamus ipsam magnam soluta aperiam voluptates. Consequatur corrupti quasi atque magnam neque velit odio? Sapiente nemo esse voluptatum cum animi adipisci rem, mollitia veritatis beatae perferendis? Reprehenderit nobis officia, natus architecto eum, fugit possimus in ipsum voluptatum iste repudiandae nemo rerum sapiente accusamus aliquid at ratione quia magni omnis a numquam repellendus ipsam consequatur excepturi! Corporis, natus assumenda? Aut laboriosam obcaecati veniam iste mollitia voluptas omnis voluptate odio velit error nam voluptatibus culpa doloremque autem perferendis quo nulla, libero atque dolor.",
+      "timestamp": "Mon May 22 2023 18:45",
+      "authorId": "0"
+    },
+    {
+      "id": "1",
+      "title": "I felt lonely today...",
+      "image": "https://w0.peakpx.com/wallpaper/257/332/HD-wallpaper-beautiful-rose-garden-flowers-garden-nature-beautiful-roses.jpg",
+      "post": "Reprehenderit nobis officia, natus architecto eum, fugit possimus in ipsum voluptatum iste repudiandae nemo rerum sapiente accusamus aliquid at ratione quia magni omnis a numquam repellendus ipsam consequatur excepturi! Corporis, natus assumenda? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sunt temporibus porro aspernatur. Eligendi nesciunt delectus, temporibus atque aut quidem veniam accusamus error quos optio? Cumque dignissimos ea quas! Id laudantium aut incidunt, dicta assumenda tempore omnis doloremque eveniet ea quidem, placeat ex explicabo mollitia accusamus ipsam magnam soluta aperiam voluptates. Consequatur corrupti quasi atque magnam neque velit odio? Sapiente nemo esse voluptatum cum animi adipisci rem, mollitia veritatis beatae perferendis?",
+      "timestamp": "Sun Feb 18 2024 23:52",
+      "authorId": "1"
+    },
+    {
+      "id": "f3d42367-8ee3-4341-a72d-c45c1beb83a4",
+      "timestamp": "Sun Mar 15 2024 19:44",
+      "authorId": "1",
+      "title": "hello",
+      "image": "",
+      "post": "im writing my first post on writers block"
+    },
+    {
+      "id": "759f5ec5-93dd-4c58-93ff-83cd6dc1bdde",
+      "timestamp": "Sun Mar 15 2024 20:38",
+      "authorId": "0",
+      "title": "alio naujas postas",
+      "image": "",
+      "post": "aheleo l edo edl sdf"
+    },
+    {
+      "id": "5e9833f0-6c5e-4d7d-b2ed-8f9a76d8bb88",
+      "timestamp": "Sun Mar 16 2024 21:52",
+      "authorId": "1",
+      "title": "Went for a walk today",
+      "image": "https://avocadosinthealpine.com/wp-content/uploads/2023/08/BCBB6298-49AE-4D4F-BF1B-5BEA96EFA7FB-scaled.jpg",
+      "post": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, qui exercitationem deleniti distinctio, maiores iusto dicta vel quo sunt fuga debitis natus itaque! Non ad dolor, inventore quisquam omnis maxime, veritatis, vel numquam aspernatur officiis eveniet amet doloremque autem dignissimos architecto expedita velit exercitationem nam fugiat distinctio assumenda? Quo voluptatum, laudantium corporis consectetur quod eaque nostrum sunt explicabo adipisci delectus rerum? Quos fugiat omnis corporis doloribus vero sint iusto dolore quisquam, ex est in nostrum modi, perferendis nobis odit aperiam minus sed optio, blanditiis porro aspernatur velit! Ipsa rerum totam corrupti quasi hic voluptatibus doloremque illum aliquam soluta asperiores odit, ab accusamus, facere quos reprehenderit sit! Quod commodi odit distinctio eligendi et similique non deleniti mollitia reprehenderit fugit. At, autem!"
+    },
+    {
+      "id": "89325294-77bf-45dc-88c2-6eddeb861f88",
+      "timestamp": "Sun Mar 16 2024 23:20",
+      "authorId": "0",
+      "title": "Bitcoin Price",
+      "image": "https://pbs.twimg.com/media/GIYF51nXQAA5wNQ.png",
+      "post": "Bitcoin crossed $71,000 for the first time ever during the Asian trading hours on Monday.\nThe leading cryptocurrency has been steadily rising since the approval of the spot bitcoin exchange-traded funds in the U.S. The token crossed $70,000 for the first time ever last week. Ether also crossed $4,000 on Monday.\nThe rally has lifted the annualized three-month futures premium on major exchanges, including Binance, to above 25%. The elevated premium could attract cash and carry traders, boosting overall market liquidity."
+    },
+    {
+      "id": "baa0ea80-4aec-4631-acbf-2737bb664567",
+      "timestamp": "Sun Mar 16 2024 23:26",
+      "authorId": "0",
+      "title": "asdasd",
+      "image": "",
+      "post": "asdasdasdasdasdasdasdasd"
+    }
+  ]
+}

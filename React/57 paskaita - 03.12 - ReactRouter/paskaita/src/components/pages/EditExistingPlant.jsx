@@ -4,6 +4,9 @@ import PlantsContext from "../../contexts/PlantsContext";
 import { useNavigate, useParams } from "react-router-dom";
 import styled from "styled-components"
 
+// import { useFormik } from "formik";
+// import * as Yup from "yup";
+
 const StyledSection = styled.section`
   > form {
     width: 70%;
