@@ -1,4 +1,7 @@
+import { useContext } from "react";
 import styled from "styled-components"
+import CardsContext, {CardsActionTypes} from "../../contexts/CardsContext";
+import UsersContext from "../../contexts/UsersContext";
 
 const StyledDiv = styled.div`
   padding: 10px 20px;
@@ -17,10 +20,27 @@ const StyledDiv = styled.div`
 `
 
 const Card = ({card}) => {
+
+  const {setCards} = useContext(CardsContext);
+  const {loggedInUser} = useContext(UsersContext);
+
   return (
     <StyledDiv>
       <h3>{card.title}</h3>
       <p>{card.description}</p>
+      {
+        card.id === loggedInUser.id ?
+        <button
+          onClick={() => {
+            setCards({
+              type: CardsActionTypes.delete,
+              id: card.id
+            })
+          }}
+        >Delete
+        </button> :
+        null
+      }
     </StyledDiv>
   );
 }

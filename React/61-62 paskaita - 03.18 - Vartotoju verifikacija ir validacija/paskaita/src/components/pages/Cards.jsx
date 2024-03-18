@@ -2,6 +2,8 @@ import { useContext } from "react";
 import CardsContext from "../../contexts/CardsContext";
 import Card from "../UI/Card"
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+import UsersContext from "../../contexts/UsersContext";
 
 const StyledSection = styled.section`
   > h1 {
@@ -14,15 +16,33 @@ const StyledSection = styled.section`
     gap: 10px;
     grid-template-columns: 1fr 1fr;
   }
+  > a {
+    width: fit-content;
+    display: block;
+    margin: 10px auto;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid lightgray;
+    transition: 0.3s;
+    &:hover {
+      background-color: lightgray;
+    }
+  }
 `
 
 const Cards = () => {
 
+  const {loggedInUser} = useContext(UsersContext)
   const {cards} = useContext(CardsContext);
   
   return (
     <StyledSection>
       <h1>Cards</h1>
+      {
+        loggedInUser && 
+        <Link to='/cards/addNew'>Add New Card</Link>
+      }
       <div>
         {
           cards.map(card =>

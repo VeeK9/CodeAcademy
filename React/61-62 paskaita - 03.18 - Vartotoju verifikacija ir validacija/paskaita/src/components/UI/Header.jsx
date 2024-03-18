@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import UsersContext from "../../contexts/UsersContext";
 
 const StyledHeader = styled.header`
   display: flex;
@@ -14,11 +16,16 @@ const StyledHeader = styled.header`
     height: 100%;
     }
   }
+  > div:last-child {
+    display: flex;
+    gap: 10px;
+  }
   ul {
     display: flex;
     gap: 15px;
     list-style-type: none;
     padding: 0;
+
     a {
       color: black;
       text-decoration: none;
@@ -39,6 +46,8 @@ const StyledHeader = styled.header`
 
 const Header = () => {
 
+  const {loggedInUser, setLoggedInUser} = useContext(UsersContext);
+
   const navigate = useNavigate();
 
   return (
@@ -57,12 +66,22 @@ const Header = () => {
           <li><NavLink to='/cards/allCards'>Cards</NavLink></li>
         </ul>
       </nav>
-      <nav>
-        <ul>
-          <li><NavLink to='/user/register'>Register</NavLink></li>
-          <li><NavLink to='/user/login'>Login</NavLink></li>
-        </ul>
-      </nav>
+      {
+        loggedInUser ?
+        <div>
+          <p>{loggedInUser.username}</p>
+          <button onClick={() => {
+            setLoggedInUser(false);
+            navigate('/');
+            }}>Log Out</button>
+        </div> :
+        <nav>
+          <ul>
+            <li><NavLink to='/user/register'>Register</NavLink></li>
+            <li><NavLink to='/user/login'>Login</NavLink></li>
+          </ul>
+        </nav>
+      }
     </StyledHeader>
   );
 }
