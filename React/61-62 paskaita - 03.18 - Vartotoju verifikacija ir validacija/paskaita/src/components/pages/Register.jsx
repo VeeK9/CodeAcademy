@@ -1,8 +1,13 @@
+import styled from "styled-components";
+
+const StyledSection = styled.section`
+`
+
 const Register = () => {
   return (
-    <>
-    <h1>Register</h1>
-    </>
+    <StyledSection>
+      <h1>Register</h1>
+    </StyledSection>
   );
 }
  

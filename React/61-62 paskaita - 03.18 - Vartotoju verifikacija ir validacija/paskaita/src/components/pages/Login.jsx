@@ -1,8 +1,13 @@
+import styled from "styled-components";
+
+const StyledSection = styled.section`
+`
+
 const Login = () => {
   return (
-    <>
-    <h1>Login</h1>
-    </>
+    <StyledSection>
+      <h1>Login</h1>
+    </StyledSection>
   );
 }
  
