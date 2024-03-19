@@ -29,34 +29,40 @@ const StyledSection = styled.section`
       background-color: lightgray;
     }
   }
+  h3 {
+    padding-top: 30px;
+    text-align: center;
+  }
 `
 
-const Cards = () => {
+const UserPage = () => {
 
   const {loggedInUser} = useContext(UsersContext)
   const {cards} = useContext(CardsContext);
   const location = useLocation();
-  
+  const userCards = cards.filter(card => card.userId === loggedInUser.id)
+
   return (
     <StyledSection>
-      <h1>Cards</h1>
+      <h1>All {loggedInUser.username} cards</h1>
       {
         loggedInUser && 
         <Link to='/cards/addNew'>Add New Card</Link>
       }
-      <div>
         {
-          cards.map(card =>
+          userCards.length ?
+          <div>
+            {userCards.map(card =>
             <Card 
               key={card.id}
               card={card}
               location={location.pathname}
-            />
-          )
+            />)}
+          </div> :
+          <h3>You haven't posted any cards</h3>
         }
-      </div>
     </StyledSection>
   );
 }
  
-export default Cards;
+export default UserPage;

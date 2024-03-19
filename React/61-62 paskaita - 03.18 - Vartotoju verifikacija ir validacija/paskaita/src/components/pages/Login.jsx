@@ -4,6 +4,7 @@ import UsersContext from "../../contexts/UsersContext";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
+import bcrypt from "bcryptjs";
 
 const StyledSection = styled.section`
   display: flex;
@@ -60,7 +61,7 @@ const Login = () => {
       password: ""
     },
     onSubmit:(values) => {
-      const loggingUser = users.find(user => user.username === values.username && user.password === values.password);
+      const loggingUser = users.find(user => user.username === values.username && bcrypt.compareSync(values.password, user.password));
 
       if(loggingUser){
         setLoggedInUser(loggingUser);

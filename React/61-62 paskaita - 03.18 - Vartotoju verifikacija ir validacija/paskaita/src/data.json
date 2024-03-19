@@ -3,19 +3,29 @@
     {
       "id": "0",
       "username": "MrAdmin",
-      "password": "Hello1",
+      "passwordNoHash": "Hello1",
+      "password": "$2a$08$ktuWZCFwAh7csBgpJoOOK.F.HptogLiT9zUArwDa1ia.8342x.a0m",
       "role": "admin"
     },
     {
       "id": "1",
       "username": "MsPinky",
-      "password": "Hello12",
+      "passwordNoHash": "Hello12",
+      "password": "$2a$08$KBLlJsJM.r8qlmzMonYltukvFM4GvJGqfty8iHeDa8cCrTkQq65qq",
       "role": "user"
     },
     {
       "id": "09aa25ee-bf07-40a3-864d-4d8ce4e5ceaf",
       "username": "rasytojas",
-      "password": "Slaptazodis!1",
+      "passwordNoHash": "Slaptazodis!1",
+      "password": "$2a$08$FZGT/Nk5vUrAKwjJzDZv4ObrNubOvuRIM91nWFcgnWv4/v2SuUhfe",
+      "role": "user"
+    },
+    {
+      "id": "b293236b-db70-44fb-9ba6-de29244a5bfc",
+      "username": "labadiena",
+      "passwordNoHash": "Turkas123@",
+      "password": "$2a$08$U4y5Ey4RbZzQiM8Hjm6DxOJcwSmTIXHeGcfAP5xHMIumZOGqJozE2",
       "role": "user"
     }
   ],

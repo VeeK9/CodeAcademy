@@ -8,6 +8,7 @@ import OneCardPage from "./components/pages/OneCardPage"
 import Header from "./components/UI/Header"
 import Footer from "./components/UI/Footer"
 import AddNewCard from './components/pages/AddNewCard';
+import UserPage from './components/pages/UserPage';
 import { useContext } from 'react';
 import UsersContext from './contexts/UsersContext';
 
@@ -30,6 +31,7 @@ const App = () => {
           <Route path='/user'>
             <Route path='login' element={<Login />} />
             <Route path='register' element={<Register />} />
+            <Route path=':name' element={loggedInUser ? <UserPage /> : <Navigate to='/user/login' />} />
           </Route>
         </Routes>
       </main>

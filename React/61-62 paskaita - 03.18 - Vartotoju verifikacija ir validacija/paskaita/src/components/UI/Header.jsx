@@ -19,6 +19,21 @@ const StyledHeader = styled.header`
   > div:last-child {
     display: flex;
     gap: 10px;
+    align-items: center;
+    > p > a {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    > button {
+      padding: 5px 10px;
+      background-color: white;
+      border: 1px solid black;
+      cursor: pointer;
+      &:hover {
+        background-color: lightgray;
+      }
+    }
   }
   ul {
     display: flex;
@@ -69,7 +84,9 @@ const Header = () => {
       {
         loggedInUser ?
         <div>
-          <p>{loggedInUser.username}</p>
+          <p>
+            <Link to={`/user/${loggedInUser.username}`}>{loggedInUser.username}</Link>
+          </p>
           <button onClick={() => {
             setLoggedInUser(false);
             navigate('/');

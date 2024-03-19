@@ -4,7 +4,8 @@ import UsersContext, { UsersActionTypes } from "../../contexts/UsersContext";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
-import {v4 as uuid} from "uuid"
+import {v4 as uuid} from "uuid";
+import bcrypt from "bcryptjs";
 
 const StyledSection = styled.section`
   display: flex;
@@ -67,7 +68,8 @@ const Register = () => {
       } else {
         const newUser = {
           username: values.username,
-          password: values.password,
+          passwordNoHash: values.password,
+          password: bcrypt.hashSync(values.password, 8),
           id: uuid(),
           role: "user"
         }
