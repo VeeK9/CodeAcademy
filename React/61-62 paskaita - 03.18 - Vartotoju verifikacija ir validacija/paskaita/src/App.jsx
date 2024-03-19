@@ -4,6 +4,7 @@ import Home from "./components/pages/Home"
 import Cards from "./components/pages/Cards"
 import Login from "./components/pages/Login"
 import Register from "./components/pages/Register"
+import OneCardPage from "./components/pages/OneCardPage"
 import Header from "./components/UI/Header"
 import Footer from "./components/UI/Footer"
 import AddNewCard from './components/pages/AddNewCard';
@@ -24,6 +25,7 @@ const App = () => {
             {
               <Route path='addNew' element ={loggedInUser ? <AddNewCard /> : <Navigate to='/user/login' />} /> 
             }
+            <Route path=':id' element={<OneCardPage />} />
           </Route>
           <Route path='/user'>
             <Route path='login' element={<Login />} />

@@ -2,6 +2,7 @@ import { useContext } from "react";
 import styled from "styled-components"
 import CardsContext, {CardsActionTypes} from "../../contexts/CardsContext";
 import UsersContext from "../../contexts/UsersContext";
+import {Link} from "react-router-dom";
 
 const StyledDiv = styled.div`
   padding: 10px 20px;
@@ -19,7 +20,7 @@ const StyledDiv = styled.div`
   }
 `
 
-const Card = ({card}) => {
+const Card = ({card, location}) => {
 
   const {setCards} = useContext(CardsContext);
   const {loggedInUser} = useContext(UsersContext);
@@ -28,8 +29,11 @@ const Card = ({card}) => {
     <StyledDiv>
       <h3>{card.title}</h3>
       <p>{card.description}</p>
+      <Link to={`/cards/${card.id}`}>More Info</Link>
       {
-        card.id === loggedInUser.id ?
+        card.userId === loggedInUser.id &&
+        location !== "/cards/allCards" ||
+        loggedInUser.role === "admin" ?
         <button
           onClick={() => {
             setCards({
