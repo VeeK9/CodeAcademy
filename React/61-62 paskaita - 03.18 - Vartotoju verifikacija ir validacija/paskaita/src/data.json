@@ -19,7 +19,7 @@
       "username": "rasytojas",
       "passwordNoHash": "Slaptazodis!1",
       "password": "$2a$08$FZGT/Nk5vUrAKwjJzDZv4ObrNubOvuRIM91nWFcgnWv4/v2SuUhfe",
-      "role": "user"
+      "role": "admin"
     },
     {
       "id": "b293236b-db70-44fb-9ba6-de29244a5bfc",
@@ -59,6 +59,12 @@
       "title": "asdasdasd",
       "description": "qweqweqweqwe",
       "userId": "09aa25ee-bf07-40a3-864d-4d8ce4e5ceaf"
+    },
+    {
+      "id": "248316fa-ab5a-4d7d-a6f2-6b14f9e1f34a",
+      "title": "admino zinute",
+      "description": "visiem galiu uzdet banus",
+      "userId": "0"
     }
   ]
 }

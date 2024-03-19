@@ -32,8 +32,7 @@ const Card = ({card, location}) => {
       <Link to={`/cards/${card.id}`}>More Info</Link>
       {
         card.userId === loggedInUser.id &&
-        location !== "/cards/allCards" ||
-        loggedInUser.role === "admin" ?
+        location !== "/cards/allCards" ?
         <button
           onClick={() => {
             setCards({

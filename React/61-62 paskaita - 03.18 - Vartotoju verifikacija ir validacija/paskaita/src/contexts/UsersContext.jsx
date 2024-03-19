@@ -4,7 +4,8 @@ const UsersContext = createContext();
 
 const UsersActionTypes = {
   getAll: 'fetches all data on initial load',
-  addNew: 'adds new user data'
+  addNew: 'adds new user data',
+  changeData: 'change one thing of user data'
 }
 
 const reducer = (state, action) => {
@@ -20,6 +21,24 @@ const reducer = (state, action) => {
         body: JSON.stringify(action.data)
       })
       return [...state, action.data];
+    case UsersActionTypes.changeData:
+      fetch(`http://localhost:8080/users/${action.id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type":"application/json"
+        },
+        body: JSON.stringify(action.data)
+      })
+      return state.map(user => {
+        if(user.id === action.id){
+          return {
+            ...user,
+            ...action.data
+          } 
+        } else {
+          return user;
+        }
+      })
     default:
       console.error(`No such action: ${action.type}`);
       return state;
