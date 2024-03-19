@@ -35,15 +35,11 @@
       "title": "Title1",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure omnis unde, distinctio excepturi expedita!",
       "userId": "1",
-      "comments":[
+      "comments": [
         {
-          "id":"0",
-          "authorId":"0",
-          "text":"Va cia tai geras postas"
-        },{
-          "id":"1",
-          "authorId":"09aa25ee-bf07-40a3-864d-4d8ce4e5ceaf",
-          "text":"Nu ka as zinau"
+          "id": "1",
+          "authorId": "09aa25ee-bf07-40a3-864d-4d8ce4e5ceaf",
+          "text": "Nu ka as zinau"
         }
       ]
     },
@@ -51,7 +47,24 @@
       "id": "1",
       "title": "Title2",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure omnis unde, distinctio excepturi expedita!",
-      "userId": "1"
+      "userId": "1",
+      "comments": [
+        {
+          "text": "asdasdasdasd",
+          "id": "2bebc546-b33f-44b9-93b3-73ab3171bde5",
+          "authorId": "0"
+        },
+        {
+          "text": "asdasdasdasd",
+          "id": "2f20bf45-187f-4219-ba52-274ec6f1c114",
+          "authorId": "0"
+        },
+        {
+          "text": "hello, this is a comment",
+          "id": "c287c4d2-c841-406b-9a3f-b0c6abc8d9a1",
+          "authorId": "0"
+        }
+      ]
     },
     {
       "id": "2",
@@ -76,15 +89,21 @@
       "title": "admino zinute",
       "description": "visiem galiu uzdet banus",
       "userId": "0",
-      "comments":[
+      "comments": [
         {
-          "id":"0",
-          "authorId":"0",
-          "text":"Va cia tai geras postas"
-        },{
-          "id":"1",
-          "authorId":"09aa25ee-bf07-40a3-864d-4d8ce4e5ceaf",
-          "text":"Nu ka as zinau"
+          "id": "0",
+          "authorId": "0",
+          "text": "Va cia tai geras postas"
+        },
+        {
+          "id": "1",
+          "authorId": "09aa25ee-bf07-40a3-864d-4d8ce4e5ceaf",
+          "text": "Nu ka as zinau"
+        },
+        {
+          "text": "nu cia tai geras naujas postas",
+          "id": "53847a3e-2e41-4cb5-9d4d-4001e7aa3e2b",
+          "authorId": "0"
         }
       ]
     }

@@ -1,4 +1,7 @@
+import { useContext } from "react";
 import styled from "styled-components";
+import UsersContext from "../../contexts/UsersContext";
+import CardsContext, {CardsActionTypes} from "../../contexts/CardsContext";
 
 const StyledDiv = styled.div`
   padding: 10px 20px;
@@ -8,8 +11,11 @@ const StyledDiv = styled.div`
   gap: 10px;
   align-items: center;
   position: relative;
-  > h3 {
+  > h4 {
     margin: 0;
+    > span {
+      text-decoration: underline;
+    }
   }
   > p {
     text-align: justify;
@@ -17,10 +23,34 @@ const StyledDiv = styled.div`
   }
 `
 
-const Comment = ({comment}) => {
+const Comment = ({comment, cardId}) => {
+
+  const {users, loggedInUser} = useContext(UsersContext);
+  const {setCards} = useContext(CardsContext);
+
+  const author = users.find(user => user.id === comment.authorId);
+
   return (
     <StyledDiv>
-      <p>{comment.text}</p>
+      {
+        users.length ?
+        <>
+          <h4>Comment by <span>{author.username}</span>:</h4>
+          <p>{comment.text}</p>
+          {
+            loggedInUser.id === author.id &&
+            <button
+              className="deleteBtn"
+              onClick={()=>setCards({
+                type: CardsActionTypes.deleteComment,
+                commentId: comment.id,
+                cardId: cardId
+              })}
+            >Delete</button>
+          }
+        </> :
+        null
+      }
     </StyledDiv>
   );
 }

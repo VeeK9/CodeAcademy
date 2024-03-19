@@ -5,7 +5,9 @@ const CardsContext = createContext();
 const CardsActionTypes = {
   getAll: 'fetches all data on initial load',
   addNew: 'adds new card to the data',
-  delete: 'deletes a specific card'
+  delete: 'deletes a specific card',
+  addComment: 'add a new comment to a specific card',
+  deleteComment: 'deletes a specific comment on a card'
 }
 
 const reducer = (state, action) => {
@@ -23,7 +25,47 @@ const reducer = (state, action) => {
       return [...state, action.data];
     case CardsActionTypes.delete:
       fetch(`http://localhost:8080/cards/${action.id}`, {method: "DELETE"})
-      return state.filter(card => card.id !== action.id)
+      return state.filter(card => card.id !== action.id);
+    case CardsActionTypes.deleteComment:
+      const cardToChange = state.find(card => card.id === action.cardId);
+      const modifiedCard = {
+        ...cardToChange,
+        comments: cardToChange.comments.filter(comment => comment.id !== action.commentId)
+      };
+      fetch(`http://localhost:8080/cards/${action.cardId}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type":"application/json"
+        },
+        body: JSON.stringify(modifiedCard)
+      });
+      return state.map(card => {
+        if(card.id === action.cardId){
+          return modifiedCard;
+        } else {
+          return card;
+        }
+      });
+    case CardsActionTypes.addComment:
+      const cardToComment = state.find(card => card.id === action.cardId);
+      const commentedCard = {
+        ...cardToComment,
+        comments: cardToComment.comments? [...cardToComment.comments, action.comment] : [action.comment]
+      }
+      fetch(`http://localhost:8080/cards/${action.cardId}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type":"application/json"
+        },
+        body: JSON.stringify(commentedCard)
+      });
+      return state.map(card => {
+        if(card.id === action.cardId){
+          return commentedCard;
+        } else {
+          return card;
+        }
+      });
     default:
       console.error(`No such action: ${action.type}`);
       return state;
