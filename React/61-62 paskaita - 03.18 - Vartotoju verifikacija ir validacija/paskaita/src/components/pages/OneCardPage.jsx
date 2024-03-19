@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useState, useEffect, useContext } from "react";
 import UsersContext from "../../contexts/UsersContext";
 import CardsContext, {CardsActionTypes} from "../../contexts/CardsContext";
+import Comment from "../UI/Comment";
 
 const StyledSection = styled.section`
   padding-top: 30px;
@@ -46,7 +47,7 @@ const OneCardPage = () => {
     fetch(`http://localhost:8080/cards/${id}`)
       .then(res => res.json())
       .then(data => setCard(data))
-  },[])
+  },[id])
 
   return (
     <StyledSection>
@@ -68,6 +69,22 @@ const OneCardPage = () => {
           null
         }
       </div>
+      <article>
+        {
+          card.comments?.map(comment => 
+            <Comment
+              key={comment.id}
+              comment={comment}
+            />
+          )
+        }
+      </article>
+      {
+        loggedInUser &&
+        <form>
+          <input type="text" />
+        </form>
+      }
     </StyledSection>
   );
 }

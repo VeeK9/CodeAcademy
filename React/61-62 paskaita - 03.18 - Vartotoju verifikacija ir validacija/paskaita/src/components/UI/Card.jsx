@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import styled from "styled-components"
+import styled from "styled-components";
 import CardsContext, {CardsActionTypes} from "../../contexts/CardsContext";
 import UsersContext from "../../contexts/UsersContext";
 import {Link} from "react-router-dom";
@@ -11,6 +11,7 @@ const StyledDiv = styled.div`
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  position: relative;
   > h3 {
     margin: 0;
   }
@@ -34,6 +35,7 @@ const Card = ({card, location}) => {
         card.userId === loggedInUser.id &&
         location !== "/cards/allCards" ?
         <button
+          className="deleteBtn"
           onClick={() => {
             setCards({
               type: CardsActionTypes.delete,

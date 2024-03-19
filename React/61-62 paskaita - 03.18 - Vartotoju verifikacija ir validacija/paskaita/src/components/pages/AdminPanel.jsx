@@ -1,6 +1,6 @@
 
 import styled from "styled-components";
-import UsersContext, {UsersActionTypes} from "../../contexts/UsersContext";
+import UsersContext from "../../contexts/UsersContext";
 import { useContext } from "react";
 import UserCard from "../UI/UserCard";
 
@@ -20,7 +20,7 @@ const StyledSection = styled.section`
 
 const AdminPanel = () => {
 
-  const {users, setUsers, loggedInUser} = useContext(UsersContext);
+  const {users, loggedInUser} = useContext(UsersContext);
 
   return (
     <StyledSection>

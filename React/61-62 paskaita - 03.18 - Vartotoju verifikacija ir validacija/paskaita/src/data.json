@@ -34,7 +34,18 @@
       "id": "0",
       "title": "Title1",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure omnis unde, distinctio excepturi expedita!",
-      "userId": "1"
+      "userId": "1",
+      "comments":[
+        {
+          "id":"0",
+          "authorId":"0",
+          "text":"Va cia tai geras postas"
+        },{
+          "id":"1",
+          "authorId":"09aa25ee-bf07-40a3-864d-4d8ce4e5ceaf",
+          "text":"Nu ka as zinau"
+        }
+      ]
     },
     {
       "id": "1",
@@ -64,7 +75,18 @@
       "id": "248316fa-ab5a-4d7d-a6f2-6b14f9e1f34a",
       "title": "admino zinute",
       "description": "visiem galiu uzdet banus",
-      "userId": "0"
+      "userId": "0",
+      "comments":[
+        {
+          "id":"0",
+          "authorId":"0",
+          "text":"Va cia tai geras postas"
+        },{
+          "id":"1",
+          "authorId":"09aa25ee-bf07-40a3-864d-4d8ce4e5ceaf",
+          "text":"Nu ka as zinau"
+        }
+      ]
     }
   ]
 }
