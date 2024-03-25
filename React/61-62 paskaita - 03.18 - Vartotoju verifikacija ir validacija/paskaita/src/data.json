@@ -40,6 +40,21 @@
           "id": "1",
           "authorId": "09aa25ee-bf07-40a3-864d-4d8ce4e5ceaf",
           "text": "Nu ka as zinau"
+        },
+        {
+          "text": "siaip tai nezinau ar cia gerai",
+          "id": "8cbab016-9d12-4e00-b5c6-ef091a67dcc3",
+          "authorId": "1"
+        },
+        {
+          "text": "komentarai eina is po apacios, turbut reiktu geriau kad eitu is virasu nauji komentarai, ne? komentarai eina is po apacios, turbut reiktu geriau kad eitu is virasu nauji komentarai, ne? komentarai eina is po apacios, turbut reiktu geriau kad eitu is virasu nauji komentarai, ne? komentarai eina is po apacios, turbut reiktu geriau kad eitu is virasu nauji komentarai, ne? komentarai eina is po apacios, turbut reiktu geriau kad eitu is virasu nauji komentarai, ne?",
+          "id": "2d99b6dd-a429-4aa8-8f41-add83b9d0445",
+          "authorId": "1"
+        },
+        {
+          "text": "gal ir tiesa MsPinky, reiktu padaryt kad komentaras naujas eitu is virsau, ir dar reiktu siaip padaryt kad butu matoma pries kiek laiko buvo parasytas komentaras, ir kad postas turetu savo koia nors data, kada buvo parasytas, nes dabar tai nelabai aisku, kada buvo parasyta, ir kada kokie komentarai buvo komentuoti.",
+          "id": "7c777944-b408-494b-8294-639e288938d8",
+          "authorId": "09aa25ee-bf07-40a3-864d-4d8ce4e5ceaf"
         }
       ]
     },
@@ -77,12 +92,6 @@
       "title": "Title4",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure omnis unde, distinctio excepturi expedita!",
       "userId": "0"
-    },
-    {
-      "id": "6f8f1770-d5d5-48d7-afea-47930304fd76",
-      "title": "asdasdasd",
-      "description": "qweqweqweqwe",
-      "userId": "09aa25ee-bf07-40a3-864d-4d8ce4e5ceaf"
     },
     {
       "id": "248316fa-ab5a-4d7d-a6f2-6b14f9e1f34a",
